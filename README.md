@@ -42,7 +42,7 @@ github : https://github.com/PDKSophia
     <li>事件机制</li>
     <li>来聊聊五毛钱话题-跨域问题</li>
     <li>浏览器渲染页面原理及流程</li>
-    <li>...</li>
+    <li>Event Loop</li>
     <li>...</li>
 </ul>
 
