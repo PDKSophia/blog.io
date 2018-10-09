@@ -30,7 +30,7 @@ github : https://github.com/PDKSophia
     <li>...</li>
 </ul>
 
-### CSS篇
+### CSS篇 (未完成)
 <ul>
     <li>...</li>
     <li>...</li>
@@ -41,14 +41,15 @@ github : https://github.com/PDKSophia
 <ul>
     <li>事件机制</li>
     <li>来聊聊五毛钱话题-跨域问题</li>
-    <li>浏览器渲染页面原理及流程</li>
+    <li>浏览器渲染页面原理及流程</li>
     <li>...</li>
     <li>...</li>
 </ul>
 
-### 性能及协作篇
+### 性能及协作篇 (未完成)
 <ul>
-    
+    <li>...</li>
+    <li>...</li> 
 </ul>
 
 ### 计算机知识篇
@@ -56,7 +57,7 @@ github : https://github.com/PDKSophia
     <li>从输入 URL 到页面加载完成的过程</li>
     <li>XSS和CSRF攻击</li>
     <li>HTTP 和 HTTPS 的区别</li>
-    <li>HTTP1.0 和 HTTP1.1 以及 HTTP2.0的区别</li>
+    <li>HTTP1.0 和 HTTP1.1 以及 HTTP2.0的区别</li>
     <li>TCP三次握手和四次挥手</li>
     <li>...</li>
     <li>...</li>
