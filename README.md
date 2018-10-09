@@ -73,8 +73,8 @@ github : https://github.com/PDKSophia
 
 ### React篇
 <ul>
-    <li>React生命周期的理解</li>
-    <li>Vue和React的区别</li>
+    <li>从源码看React的生命周期</li>
+    <li>今天的考核题目: 你知道Vue和React的区别吗?</li>
     <li>...</li>
     <li>...</li>
 </ul>
