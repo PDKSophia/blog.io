@@ -13,6 +13,8 @@ github : https://github.com/PDKSophia
 
 我的面试知识地址: http://www.pengdaokuan.cn:3000
 
+blog.id : https://github.com/PDKSophia/blog.io
+
 ### JavaScript篇
 <ul>
     <li>聊下操作符</li>
@@ -89,6 +91,15 @@ github : https://github.com/PDKSophia
     <li>最大子序和</li>
     <li>冒泡排序</li>
     <li>插入排序</li>
+    <li>...</li>
+    <li>...</li>
+</ul>
+
+### 数据结构
+<ul>
+    <li>栈</li>
+    <li>队列</li>
+    <li>链表</li>
     <li>...</li>
     <li>...</li>
 </ul>
