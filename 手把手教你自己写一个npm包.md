@@ -19,6 +19,8 @@
   npm init
 ```
 
+<!--more-->
+
 ### 2.3 package.json
 因为这是一个vue的组件包，而且使用了es6和webpack，所以在devDependencies字段中，应该至少加入以下依赖，下边这是我的package.json，对应的字段，自己查一哈
 ```json
