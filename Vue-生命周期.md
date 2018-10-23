@@ -27,7 +27,7 @@ tags:
 ```
 2 : 初始化完后，到beforeCreate周期，在beforeCreatecreated之间进行一个数据观测，可看到created的时候，数据已经和data属性绑定，但是此时还没有el选项。
 
-3 :在created和beforeMounted之间，先判断有无el选项，因为我们在main.js中，有一个class Vue 里存放着一个el : #app, 所以判断是否有无el，有接着判断有无template，有则进行编译步骤，将其编译成render函数； 无template则将外部的html作为模编译，无el选项就停止编译，暂时停止了生命周期，直到 $mount(el 载组件。
+3 :在created和beforeMounted之间，先判断有无el选项，因为我们在main.js中，有一个class Vue 里存放着一个el : #app, 所以判断是否有无el，有接着判断有无template，有则进行编译步骤，将其编译成render函数； 无template则将外部的html作为模编译，无el选项就停止编译，暂时停止了生命周期，直到 $mount(el）挂载组件。
 ```javascript
     export function mountComponent {
         callHook(vm, 'beforeMount')
