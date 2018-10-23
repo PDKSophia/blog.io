@@ -13,7 +13,7 @@ github : https://github.com/PDKSophia
 
 我的面试知识地址: http://www.pengdaokuan.cn:3000
 
-blog.id : https://github.com/PDKSophia/blog.io
+blog.io : https://github.com/PDKSophia/blog.io
 
 ### JavaScript篇
 <ul>
