@@ -117,7 +117,7 @@ blog.io : https://github.com/PDKSophia/blog.io
     <li>有赞一面总结(2018.10.07）</li>
     <li>毅能科技一面到拿offer总结(2018.10.15)</li>
     <li>合创廸安科技一面到拿offer总结(2018.10.16)</li>
-    <li>小鹅通一面总结(2018.10.23)</li>
+    <li>小鹅通一面到拿offer总结(2018.10.23)</li>
     <li>...</li>
     <li>...</li>
 </ul>
