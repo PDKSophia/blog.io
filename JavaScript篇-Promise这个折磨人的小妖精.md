@@ -1,5 +1,5 @@
 ---
-title: 谈谈promise这个折磨人的小妖精
+title: JavaScript篇-Promise这个折磨人的小妖精
 date: 2018-08-30 14:59:03
 tags:
 ---
