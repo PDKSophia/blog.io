@@ -1,5 +1,5 @@
 ---
-title: '今天考核题目: 你知道React和Vue的区别吗?'
+title: 'React篇-React和Vue的区别'
 date: 2018-10-08 15:42:52
 tags:
 ---
