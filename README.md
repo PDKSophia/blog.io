@@ -15,6 +15,19 @@ github : https://github.com/PDKSophia
 
 blog.io : https://github.com/PDKSophia/blog.io
 
+### HTML篇
+<ul>
+    <li>DOCTYPE作用 ？ 标准模式（严格模式）和 兼容模式（混杂模式）有什么区别？</li>
+    <li>行内元素有哪些？块级元素有哪些？</li>
+    <li>页面导入样式时，使用 link 和 @import 有什么区别 ？</li>
+    <li>如何进行网站性能优化</li>
+    <li>HTTP 状态码</li>
+    <li>HTML语义化的理解</li>
+    <li>sessionStorage 、localStorage 、 cookie、 indexDB</li>
+    <li>...</li>
+    <li>...</li>
+</ul>
+
 ### JavaScript篇
 <ul>
     <li>聊下操作符</li>
