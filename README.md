@@ -60,33 +60,29 @@ blog.io : https://github.com/PDKSophia/blog.io
 </ul>
 
 
-### 浏览器篇
+### 浏览器篇（不断更新）
 <ul>
     <li>事件机制</li>
     <li>来聊聊五毛钱话题-跨域问题</li>
     <li>浏览器渲染页面原理及流程</li>
     <li>Event Loop</li>
-    <li>...</li>
 </ul>
 
-### 性能及协作篇 (未完成)
+### 性能及协作篇 (还未完成)
 <ul>
-    <li>...</li>
-    <li>...</li> 
+    <li>懒加载和预加载</li>
 </ul>
 
-### 计算机知识篇
+### 计算机网络篇（不断更新）
 <ul>
     <li>从输入 URL 到页面加载完成的过程</li>
     <li>XSS和CSRF攻击</li>
     <li>HTTP 和 HTTPS 的区别</li>
     <li>HTTP1.0 和 HTTP1.1 以及 HTTP2.0的区别</li>
     <li>TCP三次握手和四次挥手</li>
-    <li>...</li>
-    <li>...</li>
 </ul>
 
-### Vue篇
+### Vue篇（不断更新）
 <ul>
     <li>Vue生命周期的理解</li>
     <li>Vue的双向数据绑定原理是什么？</li>
@@ -94,15 +90,13 @@ blog.io : https://github.com/PDKSophia/blog.io
     <li>...</li>
 </ul>
 
-### React篇
+### React篇 （不断更新）
 <ul>
     <li>从源码看React的生命周期</li>
     <li>今天的考核题目: 你知道Vue和React的区别吗?</li>
-    <li>...</li>
-    <li>...</li>
 </ul>
 
-### 算法篇 (暂定)
+### 算法篇 (还未完成)
 <ul>
     <li>解析URL Params 对象</li>
     <li>trim 实现去除字符串首尾指定字符</li>
@@ -112,17 +106,14 @@ blog.io : https://github.com/PDKSophia/blog.io
     <li>最大子序和</li>
     <li>冒泡排序</li>
     <li>插入排序</li>
-    <li>...</li>
-    <li>...</li>
 </ul>
 
-### 数据结构
+### 数据结构（不断更新）
 <ul>
     <li>栈</li>
     <li>队列</li>
     <li>链表</li>
-    <li>...</li>
-    <li>...</li>
+    <li>二叉树</li>
 </ul>
 
 ### 个人面试总结篇 (暂定)
