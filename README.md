@@ -15,7 +15,7 @@ github : https://github.com/PDKSophia
 
 blog.io : https://github.com/PDKSophia/blog.io
 
-### HTML篇
+### HTML篇（不断更新）
 <ul>
     <li>DOCTYPE作用 ？ 标准模式（严格模式）和 兼容模式（混杂模式）有什么区别？</li>
     <li>行内元素有哪些？块级元素有哪些？</li>
@@ -24,11 +24,9 @@ blog.io : https://github.com/PDKSophia/blog.io
     <li>HTTP 状态码</li>
     <li>HTML语义化的理解</li>
     <li>sessionStorage 、localStorage 、 cookie、 indexDB</li>
-    <li>...</li>
-    <li>...</li>
 </ul>
 
-### JavaScript篇
+### JavaScript篇（不断更新）
 <ul>
     <li>聊下操作符</li>
     <li>聊下Ajax原理</li>
@@ -41,14 +39,24 @@ blog.io : https://github.com/PDKSophia/blog.io
     <li>防抖和节流</li>
     <li>call与apply终极大boss</li>
     <li>扯一哈 - 前端模块化</li>
-    <li>...</li>
-    <li>...</li>
 </ul>
 
-### CSS篇 (未完成)
+### CSS篇（不断更新）
 <ul>
-    <li>...</li>
-    <li>...</li>
+    <li>盒模型</li>
+    <li>如何画一条0.5px的线</li>
+    <li>transition和animation的区别</li>
+    <li>Flex布局</li>
+    <li>BFC的理解</li>
+    <li>清除浮动的几种方式</li>
+    <li>块级元素和行内元素</li>
+    <li>visibility : hidden 和 display : none 以及 opacity : 0</li>
+    <li>border: none 和 border: 0 的区别</li>
+    <li>垂直居中的方式</li>
+    <li>面试题: CSS3 新特性</li>
+    <li>CSS优先级算法如何计算</li>
+    <li>position属性的了解</li>
+    <li>如果需要手动写动画，你认为最小时间间隔是多久，为什么</li>
 </ul>
 
 
