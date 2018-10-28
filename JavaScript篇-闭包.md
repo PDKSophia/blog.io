@@ -1,5 +1,5 @@
 ---
-title: 闭包
+title: JavaScript篇-闭包
 date: 2018-10-08 15:23:45
 tags:
 ---
