@@ -1,5 +1,5 @@
 ---
-title: 垃圾回收机制
+title: JavaScript篇-垃圾回收机制
 date: 2018-10-08 15:27:10
 tags:
 ---
