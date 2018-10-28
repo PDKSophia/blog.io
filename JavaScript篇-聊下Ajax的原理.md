@@ -1,5 +1,5 @@
 ---
-title: 聊下Ajax的原理
+title: JavaScript篇-聊下Ajax的原理
 date: 2018-10-08 15:25:26
 tags:
 ---
