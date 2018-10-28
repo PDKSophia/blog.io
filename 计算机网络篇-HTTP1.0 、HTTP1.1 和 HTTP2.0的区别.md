@@ -1,5 +1,5 @@
 ---
-title: HTTP1.0 、HTTP1.1 和 HTTP2.0的区别
+title: 计算机网络篇-HTTP1.0 、HTTP1.1 和 HTTP2.0的区别
 date: 2018-10-08 15:38:13
 tags: HTTP
 ---
