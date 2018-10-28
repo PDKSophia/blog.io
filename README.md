@@ -86,14 +86,14 @@ blog.io : https://github.com/PDKSophia/blog.io
 <ul>
     <li>Vue生命周期的理解</li>
     <li>Vue的双向数据绑定原理是什么？</li>
-    <li>...</li>
-    <li>...</li>
+    <li>Vue中的computed和methods有什么区别</li>
 </ul>
 
 ### React篇 （不断更新）
 <ul>
     <li>从源码看React的生命周期</li>
     <li>今天的考核题目: 你知道Vue和React的区别吗?</li>
+    <li>Vue和React中key的作用吗</li>
 </ul>
 
 ### 算法篇 (还未完成)
