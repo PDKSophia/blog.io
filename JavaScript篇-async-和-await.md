@@ -1,5 +1,5 @@
 ---
-title: async 和 await
+title: JavaScript篇-async 和 await
 date: 2018-08-30 15:02:48
 tags:
 ---
