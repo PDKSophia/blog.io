@@ -12,11 +12,13 @@ github : https://github.com/PDKSophia
 如果觉得对您有帮助的话，点个star再走？
 
 ## 博客地址
-我的博客地址: http://blog.pengdaokuan.cn:4001
+博客: http://blog.pengdaokuan.cn:4001
 
-我的面试知识地址: http://www.pengdaokuan.cn:3000
+掘金: https://juejin.im/user/594ca8a35188250d892f4139/posts
 
 blog.io : https://github.com/PDKSophia/blog.io
+
+微博: https://weibo.com/u/2971991985
 
 ### HTML篇（不断更新）
 - [DOCTYPE作用 ？ 标准模式（严格模式）和 兼容模式（混杂模式）有什么区别？](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-HTML%E7%AF%87.md#doctype%E4%BD%9C%E7%94%A8--%E6%A0%87%E5%87%86%E6%A8%A1%E5%BC%8F%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F%E5%92%8C-%E5%85%BC%E5%AE%B9%E6%A8%A1%E5%BC%8F%E6%B7%B7%E6%9D%82%E6%A8%A1%E5%BC%8F%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB)
