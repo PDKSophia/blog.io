@@ -1,5 +1,5 @@
 ---
-title: apply和call终极大boss
+title: JavaScript篇-apply和call
 date: 2018-10-08 15:30:42
 tags:
 ---
