@@ -1,5 +1,5 @@
 ---
-title: 原型和原型链
+title: JavaScript篇0原型和原型链
 date: 2018-10-08 15:22:40
 tags:
 ---
