@@ -69,7 +69,7 @@ blog.io : https://github.com/PDKSophia/blog.io
 - [Git的团队协作](https://github.com/PDKSophia/blog.io/blob/master/%E6%80%A7%E8%83%BD%E5%8F%8A%E5%8D%8F%E4%BD%9C%E7%AF%87-Git%E7%9A%84%E5%9B%A2%E9%98%9F%E5%8D%8F%E4%BD%9C.md)
 
 ### 计算机网络篇（不断更新）
-- [从输入 URL 到页面加载完成的过程](hhttps://github.com/PDKSophia/blog.io/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87-%E4%BB%8E%E8%BE%93%E5%85%A5URL%E5%88%B0%E9%A1%B5%E9%9D%A2%E5%8A%A0%E8%BD%BD%E5%AE%8C%E6%88%90%E8%BF%87%E7%A8%8B.md)
+- [从输入 URL 到页面加载完成的过程](https://github.com/PDKSophia/blog.io/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87-%E4%BB%8E%E8%BE%93%E5%85%A5URL%E5%88%B0%E9%A1%B5%E9%9D%A2%E5%8A%A0%E8%BD%BD%E5%AE%8C%E6%88%90%E8%BF%87%E7%A8%8B.md)
 - [XSS和CSRF攻击](https://github.com/PDKSophia/blog.io/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87-XSS%E5%92%8CCSRF%E7%9A%84%E6%94%BB%E5%87%BB.md)
 - [HTTP 和 HTTPS 的区别](https://github.com/PDKSophia/blog.io/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87-HTTP%E5%92%8CHTTPS%E7%9A%84%E5%8C%BA%E5%88%AB.md)
 - [HTTP1.0 和 HTTP1.1 以及 HTTP2.0的区别](https://github.com/PDKSophia/blog.io/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87-HTTP1.0%20%E3%80%81HTTP1.1%20%E5%92%8C%20HTTP2.0%E7%9A%84%E5%8C%BA%E5%88%AB.md)
