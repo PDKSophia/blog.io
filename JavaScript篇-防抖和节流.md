@@ -1,5 +1,5 @@
 ---
-title: 防抖和节流
+title: JavaScript篇-防抖和节流
 date: 2018-10-08 15:29:30
 tags:
 ---
