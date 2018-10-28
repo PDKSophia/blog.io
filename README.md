@@ -64,9 +64,10 @@ blog.io : https://github.com/PDKSophia/blog.io
 - [浏览器渲染页面原理及流程](https://github.com/PDKSophia/blog.io/blob/master/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%AF%87-%E6%B5%8F%E8%A7%88%E5%99%A8%E6%B8%B2%E6%9F%93%E5%8E%9F%E7%90%86%E5%8F%8A%E6%B5%81%E7%A8%8B.md)
 - [Event Loop](https://github.com/PDKSophia/blog.io/blob/master/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%AF%87-Event-Loop.md)
 
-### 性能及协作篇 (还未完成)
-- [懒加载和预加载]()
+### 性能及协作篇 (不断更新)
+- [懒加载和预加载](https://github.com/PDKSophia/blog.io/blob/master/%E6%80%A7%E8%83%BD%E5%8F%8A%E5%8D%8F%E4%BD%9C%E7%AF%87-%E6%87%92%E5%8A%A0%E8%BD%BD%E5%92%8C%E9%A2%84%E5%8A%A0%E8%BD%BD.md)
 - [Git的团队协作](https://github.com/PDKSophia/blog.io/blob/master/%E6%80%A7%E8%83%BD%E5%8F%8A%E5%8D%8F%E4%BD%9C%E7%AF%87-Git%E7%9A%84%E5%9B%A2%E9%98%9F%E5%8D%8F%E4%BD%9C.md)
+
 ### 计算机网络篇（不断更新）
 - [从输入 URL 到页面加载完成的过程](hhttps://github.com/PDKSophia/blog.io/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87-%E4%BB%8E%E8%BE%93%E5%85%A5URL%E5%88%B0%E9%A1%B5%E9%9D%A2%E5%8A%A0%E8%BD%BD%E5%AE%8C%E6%88%90%E8%BF%87%E7%A8%8B.md)
 - [XSS和CSRF攻击](https://github.com/PDKSophia/blog.io/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87-XSS%E5%92%8CCSRF%E7%9A%84%E6%94%BB%E5%87%BB.md)
@@ -77,7 +78,7 @@ blog.io : https://github.com/PDKSophia/blog.io
 ### Vue篇（不断更新）
 - [Vue生命周期的理解](https://github.com/PDKSophia/blog.io/blob/master/Vue%E7%AF%87-Vue%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.md)
 - [Vue的双向数据绑定原理是什么](https://github.com/PDKSophia/blog.io/blob/master/Vue%E7%AF%87-%E6%95%B0%E6%8D%AE%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A%E5%8E%9F%E7%90%86.md)
-- [Vue中的computed和methods有什么区别]()
+- [Vue中的computed和methods有什么区别](https://github.com/PDKSophia/blog.io/blob/master/Vue%E7%AF%87-Vue%E4%B8%AD%E7%9A%84computed%E5%92%8Cmethods%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB.md)
 
 ### React篇 （不断更新）
 - [从源码看React的生命周期](https://github.com/PDKSophia/blog.io/blob/master/React%E7%AF%87-%E4%BB%8E%E6%BA%90%E7%A0%81%E7%9C%8BReact%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.md)
