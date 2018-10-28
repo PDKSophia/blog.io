@@ -1,5 +1,5 @@
 ---
-title: 扯一哈-前端模块化
+title:JavaScript篇-前端模块化
 date: 2018-10-08 15:31:57
 tags:
 ---
