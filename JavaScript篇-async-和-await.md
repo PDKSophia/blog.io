@@ -18,7 +18,7 @@ tags:
 感觉加没加都一个样，那我还用它干什么 ？
 
 ### async
-async用来表示函数是异步的，定义的函数会返回一个promise对象，可以使用then方法添加回调函数
+`async`用来表示函数是异步的，定义的函数会返回一个promise对象，可以使用then方法添加回调函数
 ```javascript
     async function demo1 () {
         return 111;
@@ -30,7 +30,7 @@ async用来表示函数是异步的，定义的函数会返回一个promise对�
 ```
 
 ### await
-await 可以理解为是 async wait 的简写。await 必须出现在 async 函数内部，不能单独使用!!!
+`await` 可以理解为是 async wait 的简写。await 必须出现在 async 函数内部，不能单独使用!!!
 ```javascript
     function errorDemo2() {
         await Math.random()
@@ -49,6 +49,7 @@ await 可以理解为是 async wait 的简写。await 必须出现在 async 函�
     }
 
     function demo5 (delay2) {
+        console.log('想不到吧')
         setTimeout(()=>{
             console.log('I am demo5')
         }, delay2)
@@ -59,20 +60,22 @@ await 可以理解为是 async wait 的简写。await 必须出现在 async 函�
 
         console.log('嘻嘻嘻')
 
-        let result = await demo4（2000）
+        let result = await demo4(2000)
         console.log(result)
     }
 
     demo6()
-
-    // I am demo5
+    
+    // 想不到吧
     // 嘻嘻嘻
+    // I am demo5
     // I am demo4
+    
 ```
-为什么会先打印demo5呢？明明它存在一个setTimeout，过了delay2之后才执行的啊，而我的“嘻嘻嘻”是同步代码，为什么不优先打印“嘻嘻嘻” ?
-
 <!--more-->
-这是因为 await 会等待 sleep 函数 resolve ，所以即使后面是同步代码，也不会先去执行同步代码再来执行异步代码
+await 会等待 sleep 函数 resolve ，所以即使后面是同步代码，也不会先去执行同步代码再来执行异步代码。
+
+调用 demo6 函数，它里面遇到了await, await 表示等一下，代码就暂停到这里，不再向下执行了，它等什么呢？等后面的promise对象执行完毕，然后拿到promise resolve 的值并进行返回，返回值拿到之后，它继续向下执行，而promise的.then是一个异步操作，加入到task队列中。换个角度来将，await之后一定能够拿到async，也就是promise请求后的值
 
 async 和 await 相比直接使用 Promise 来说，优势在于处理 then 的调用链，能够更清晰准确的写出代码。缺点在于滥用 await 可能会导致性能问题，因为 await 会阻塞代码，也许之后的异步代码并不依赖于前者，但仍然需要等待前者完成，导致代码失去了并发性。
 
