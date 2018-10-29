@@ -147,11 +147,11 @@ JS 在创建对象（不论是普通对象还是函数对象）的时候，都�
 ```javascript
     // 概念
 
-    1 : Person 构函数
+    1 : Person 构造函数
 
     2 : var person1 = new Person() , person1 是实例
 
-    3 : prototype是原型对象，只有FunctionObject(函数对象) 才存在
+    3 : prototype是原型对象，只有Function Object(函数对象) 才存在
 
     4 : __proto__是原型，每个对象都存在原型
 
