@@ -6,9 +6,9 @@ tags:
 ## Vue的数据双向绑定原理 - 响应式系统的基本原理
 这也是必问，我是看了掘金上的小册《剖析 Vue.js 内部运行机制》，然后理解梳理了一遍，记录一下 ～ 99%是从小册上搬运下来的，请叫我搬运侠 ～
 
-### Object.definePropert
+### Object.defineProperty
 ```javascript
-        // Vue.js就是基于Object.definePropert实现「 响应式系统 」的
+        // Vue.js就是基于Object.defineProperty实现「 响应式系统 」的
         
         /*
             obj: 目标对象
