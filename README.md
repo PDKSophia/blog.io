@@ -29,21 +29,6 @@ blog.io : https://github.com/PDKSophia/blog.io
 - [HTML语义化的理解](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-HTML%E7%AF%87.md#html%E8%AF%AD%E4%B9%89%E5%8C%96%E7%9A%84%E7%90%86%E8%A7%A3)
 - [sessionStorage 、localStorage 、 cookie、 indexDB](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-HTML%E7%AF%87.md#sessionstorage-localstorage--cookie-indexdb)
 
-
-### JavaScript篇（不断更新）
-- [JS异步加载，defer和async的区别?](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E5%BC%82%E6%AD%A5%E5%8A%A0%E8%BD%BDjs%2C%20async%E5%92%8Cdefer.md)
-- [聊下操作符](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E8%81%8A%E4%B8%8B%E6%93%8D%E4%BD%9C%E7%AC%A6.md)
-- [原型与原型链](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E5%8E%9F%E5%9E%8B%E5%92%8C%E5%8E%9F%E5%9E%8B%E9%93%BE.md)
-- [闭包](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E9%97%AD%E5%8C%85.md)
-- [谈谈Promise这个折磨人的小妖精](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-Promise%E8%BF%99%E4%B8%AA%E6%8A%98%E7%A3%A8%E4%BA%BA%E7%9A%84%E5%B0%8F%E5%A6%96%E7%B2%BE.md)
-- [async 和 await](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-async-%E5%92%8C-await.md)
-- [垃圾回收机制](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6.md)
-- [深拷贝和浅拷贝](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E6%B7%B1%E6%8B%B7%E8%B4%9D%E5%92%8C%E6%B5%85%E6%8B%B7%E8%B4%9D.md)
-- [防抖和节流](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E9%98%B2%E6%8A%96%E5%92%8C%E8%8A%82%E6%B5%81.md)
-- [聊下Ajax原理](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E8%81%8A%E4%B8%8BAjax%E7%9A%84%E5%8E%9F%E7%90%86.md)
-- [call与apply终极大boss](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-apply%E5%92%8Ccall.md)
-- [前端模块化](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96.md)
-
 ### CSS篇（不断更新）
 - [盒模型](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-CSS%E7%AF%87.md#%E7%9B%92%E6%A8%A1%E5%9E%8B)
 - [如何画一条0.5px的线](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-CSS%E7%AF%87.md#%E5%A6%82%E4%BD%95%E7%94%BB%E4%B8%80%E6%9D%A105px%E7%9A%84%E7%BA%BF-)
@@ -60,6 +45,20 @@ blog.io : https://github.com/PDKSophia/blog.io
 - [position属性的了解](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-CSS%E7%AF%87.md#position%E5%B1%9E%E6%80%A7%E7%9A%84%E4%BA%86%E8%A7%A3)
 - [如果需要手动写动画，你认为最小时间间隔是多久，为什么](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-CSS%E7%AF%87.md#%E5%A6%82%E6%9E%9C%E9%9C%80%E8%A6%81%E6%89%8B%E5%8A%A8%E5%86%99%E5%8A%A8%E7%94%BB%E4%BD%A0%E8%AE%A4%E4%B8%BA%E6%9C%80%E5%B0%8F%E6%97%B6%E9%97%B4%E9%97%B4%E9%9A%94%E6%98%AF%E5%A4%9A%E4%B9%85%E4%B8%BA%E4%BB%80%E4%B9%88)
 
+### JavaScript篇（不断更新）
+- [JS异步加载，defer和async的区别?](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E5%BC%82%E6%AD%A5%E5%8A%A0%E8%BD%BDjs%2C%20async%E5%92%8Cdefer.md)
+- [聊下操作符](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E8%81%8A%E4%B8%8B%E6%93%8D%E4%BD%9C%E7%AC%A6.md)
+- [原型与原型链](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E5%8E%9F%E5%9E%8B%E5%92%8C%E5%8E%9F%E5%9E%8B%E9%93%BE.md)
+- [闭包](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E9%97%AD%E5%8C%85.md)
+- [谈谈Promise这个折磨人的小妖精](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-Promise%E8%BF%99%E4%B8%AA%E6%8A%98%E7%A3%A8%E4%BA%BA%E7%9A%84%E5%B0%8F%E5%A6%96%E7%B2%BE.md)
+- [async 和 await](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-async-%E5%92%8C-await.md)
+- [垃圾回收机制](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6.md)
+- [0.1 + 0.2 != 0.3](https://github.com/PDKSophia/read-booklist/blob/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1/play-card-1.md#number-%E7%B1%BB%E5%9E%8B)
+- [深拷贝和浅拷贝](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E6%B7%B1%E6%8B%B7%E8%B4%9D%E5%92%8C%E6%B5%85%E6%8B%B7%E8%B4%9D.md)
+- [防抖和节流](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E9%98%B2%E6%8A%96%E5%92%8C%E8%8A%82%E6%B5%81.md)
+- [聊下Ajax原理](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E8%81%8A%E4%B8%8BAjax%E7%9A%84%E5%8E%9F%E7%90%86.md)
+- [call与apply终极大boss](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-apply%E5%92%8Ccall.md)
+- [前端模块化](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96.md)
 
 ### 浏览器篇（不断更新）
 - [事件机制](https://github.com/PDKSophia/blog.io/blob/master/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%AF%87-%E4%BA%8B%E4%BB%B6%E6%9C%BA%E5%88%B6.md)
