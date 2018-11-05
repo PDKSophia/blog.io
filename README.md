@@ -31,6 +31,7 @@ blog.io : https://github.com/PDKSophia/blog.io
 
 
 ### JavaScript篇（不断更新）
+- [JS异步加载，defer和async的区别?](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E5%BC%82%E6%AD%A5%E5%8A%A0%E8%BD%BDjs%2C%20async%E5%92%8Cdefer.md)
 - [聊下操作符](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E8%81%8A%E4%B8%8B%E6%93%8D%E4%BD%9C%E7%AC%A6.md)
 - [原型与原型链](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E5%8E%9F%E5%9E%8B%E5%92%8C%E5%8E%9F%E5%9E%8B%E9%93%BE.md)
 - [闭包](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E9%97%AD%E5%8C%85.md)
