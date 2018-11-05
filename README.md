@@ -127,9 +127,14 @@ blog.io : https://github.com/PDKSophia/blog.io
 
 ----------
 
+### 吐槽一下
+认真的准备和复习了一个月，才发现，自己有多么的菜，好多东西都不会，又不能靠脸吃饭，哎，还是好好学习吧，<strong>我累了!!!</strong>
+
+![image](https://github.com/PDKSophia/ONE_WORD/raw/master/images/g2.gif)
+
 ### 立个里程碑
 
-11 月的书单
+[11 月的书单](https://github.com/PDKSophia/read-booklist)
 
 | 序号 | 数名 | 开始时间 | 结束时间 | 进度 |
 | :------: | :------: | :------: | :------: | :------: | 
