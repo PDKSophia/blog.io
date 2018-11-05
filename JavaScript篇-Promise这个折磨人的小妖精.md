@@ -11,7 +11,7 @@ tags:
 在过去写异步代码都要靠回调函数，当异步操作依赖于其他异步操作的返回值时，会出现一种现象，被程序员称为 “回调地狱”，比如这样 ：
 
 ```javascript
-    // 假设我们要请求用户数据信息，它接收两个回调，假设我们要请求用户数据信息，它接收两个回调，successCallback 和 errCallback
+    // 假设我们要请求用户数据信息，它接收两个回调，successCallback 和 errCallback
 
     function getUserInfo (successCallback, errCallback) {
         $.ajax({
