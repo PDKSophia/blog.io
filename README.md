@@ -59,11 +59,11 @@ blog.io : https://github.com/PDKSophia/blog.io
 - [聊下Ajax原理](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E8%81%8A%E4%B8%8BAjax%E7%9A%84%E5%8E%9F%E7%90%86.md)
 - [call与apply终极大boss](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-apply%E5%92%8Ccall.md)
 - [前端模块化](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96.md)
-- [执行环境及作用域](https://github.com/PDKSophia/read-booklist/blob/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1/play-card-1.md#%E6%89%A7%E8%A1%8C%E7%8E%AF%E5%A2%83%E5%8F%8A%E4%BD%9C%E7%94%A8%E5%9F%9F) <span style='color: red'>new</span>
-- [函数声明及函数表达式](https://github.com/PDKSophia/read-booklist/blob/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1/play-card-2.md#%E5%87%BD%E6%95%B0%E5%A3%B0%E6%98%8E%E4%B8%8E%E5%87%BD%E6%95%B0%E8%A1%A8%E8%BE%BE%E5%BC%8F)
-- [函数内部属性](https://github.com/PDKSophia/read-booklist/blob/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1/play-card-2.md#%E5%87%BD%E6%95%B0%E5%86%85%E9%83%A8%E5%B1%9E%E6%80%A7)
-- [数据属性于访问器属性](https://github.com/PDKSophia/read-booklist/blob/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1/play-card-3.md#%E6%95%B0%E6%8D%AE%E5%B1%9E%E6%80%A7)
-- [闯关BOSS-JS的继承](https://github.com/PDKSophia/read-booklist/blob/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1/play-card-3.md#%E7%BB%A7%E6%89%BF)
+- [执行环境及作用域](https://github.com/PDKSophia/read-booklist/blob/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1/play-card-1.md#%E6%89%A7%E8%A1%8C%E7%8E%AF%E5%A2%83%E5%8F%8A%E4%BD%9C%E7%94%A8%E5%9F%9F) ` · new`
+- [函数声明及函数表达式](https://github.com/PDKSophia/read-booklist/blob/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1/play-card-2.md#%E5%87%BD%E6%95%B0%E5%A3%B0%E6%98%8E%E4%B8%8E%E5%87%BD%E6%95%B0%E8%A1%A8%E8%BE%BE%E5%BC%8F) ` · new`
+- [函数内部属性](https://github.com/PDKSophia/read-booklist/blob/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1/play-card-2.md#%E5%87%BD%E6%95%B0%E5%86%85%E9%83%A8%E5%B1%9E%E6%80%A7) ` · new`
+- [数据属性于访问器属性](https://github.com/PDKSophia/read-booklist/blob/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1/play-card-3.md#%E6%95%B0%E6%8D%AE%E5%B1%9E%E6%80%A7) ` · new`
+- [闯关BOSS-JS的继承](https://github.com/PDKSophia/read-booklist/blob/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1/play-card-3.md#%E7%BB%A7%E6%89%BF) ` · new`
 
 ### 浏览器篇（不断更新）
 - [事件机制](https://github.com/PDKSophia/blog.io/blob/master/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%AF%87-%E4%BA%8B%E4%BB%B6%E6%9C%BA%E5%88%B6.md)
