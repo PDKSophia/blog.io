@@ -310,4 +310,4 @@ JS 在创建对象（不论是普通对象还是函数对象）的时候，都�
   console.log(SuperType.__proto__ == Function.prototype) // true
   console.log(SuperType.prototype.__proto__ == Object.prototype) // true 
 ```
-详情看这里啊，《JavaScript高级程序设计 第三版》中[继承]()
+详情看这里啊，《JavaScript高级程序设计 第三版》中: [继承](https://github.com/PDKSophia/read-booklist/blob/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1/play-card-3.md#%E7%BB%A7%E6%89%BF)
