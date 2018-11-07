@@ -245,3 +245,69 @@ JS 在创建对象（不论是普通对象还是函数对象）的时候，都�
     console.log(f.constructor.prototype.__proto__) // { a: [Function] } 可以访问到a函数，因为f.constructor.prototype其实就是等于FunctionExample {}，而每个对象都有个__proto__属性，Function.prototype.__proto__ == Object.prototype，所以也能访问到a方法
 
 ```
+
+### 再来两个题
+```javascript
+  function SuperType() {
+    this.colors = ['red', 'yellow']
+  }
+
+  function SubType() {
+    
+  }
+
+  // 继承了SuperType
+  SubType.prototype = new SuperType()
+
+  var instance1 = new SubType() // intance.constructor = SuperType
+  instance1.colors.push('black')
+  console.log(instance1.colors) // ['red', 'yellow', 'black']
+
+  var instance2 = new SubType() 
+  console.log(instance2.colors) // ['red', 'yellow', 'black']
+
+  // 理解一下原型和原型链
+  console.log(instance1.constructor) // SuperType
+  console.log(SubType.prototype.constructor) // SuperType
+  console.log(SubType.prototype.__proto__ == SuperType.prototype) // true
+  console.log(instance1.__proto__ == SubType.prototype) // true
+  console.log(SubType.__proto__ == SuperType.prototype) // false
+  console.log(SubType.__proto__ == Function.prototype) // true
+  console.log(SuperType.prototype.constructor == SuperType) // true
+  console.log(SuperType.__proto__ == Function.prototype) // true
+  console.log(SuperType.prototype.__proto__ == Object.prototype) // true 
+
+  // 为什么instance1.constructor = SuperType ？ 为什么 SubType.prototype.constructor = SuperType ？ 
+```
+
+```javascript
+  function SuperType() {
+    this.colors = ['red', 'yellow']
+  }
+
+  function SubType() {
+    // 继承了SuperType
+    SuperType.call(this)
+  }
+
+  var instance1 = new SubType()
+  instance1.colors.push('black')
+  console.log(instance1.colors) // ['red', 'yellow', 'black']
+
+  var instance2 = new SubType() 
+  console.log(instance2.colors) // ['red', 'yellow']
+
+  // 思考一哈？
+  console.log(instance1.constructor) // SubType
+  console.log(SubType.prototype.constructor) // SubType
+  console.log(SubType.prototype.__proto__) // {}
+  console.log(SubType.prototype.__proto__ == SuperType.prototype) // false
+  console.log(SubType.prototype.__proto__ == Object.prototype) // true
+  console.log(instance1.__proto__ == SubType.prototype) // true
+  console.log(SubType.__proto__ == SuperType.prototype) // false
+  console.log(SubType.__proto__ == Function.prototype) // true
+  console.log(SuperType.prototype.constructor == SuperType) // true
+  console.log(SuperType.__proto__ == Function.prototype) // true
+  console.log(SuperType.prototype.__proto__ == Object.prototype) // true 
+```
+详情看这里啊，《JavaScript高级程序设计 第三版》中[继承]()
