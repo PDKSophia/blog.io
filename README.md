@@ -144,10 +144,12 @@ blog.io : https://github.com/PDKSophia/blog.io
 
 | 序号 | 数名 | 开始时间 | 结束时间 | 进度 | 状态 |
 | :------: | :------: | :------: | :------: | :------: |  :------: | 
-| 1 | `《JavaScript高级程序设计 第3版》` |  2018.11.05 | 2018.11.11 | 12% | [跟读](https://github.com/PDKSophia/read-booklist/tree/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1) |
+| 1 | `《JavaScript高级程序设计 第3版》` |  2018.11.05 | 2018.11.11 | 22% | [跟读](https://github.com/PDKSophia/read-booklist/tree/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1) |
 | 2 | `《计算机网络 第七版》` |  2018.11.12 | 2018.11.16 | 0% | 未读 |
 | 3 | `《图解HTTP》` |  2018.11.17 | 2018.11.18 | 0% | 未读 |
 | 4 | `《ECMAScript 6 入门》` |  2018.11.19 | 2018.11.26 | 0% | 未读 |
 | 5 | `《JavaScript正则表达式》` |  2018.11.27 | 2018.11.31 | 0% | 未读 |
-| 6 | `《算法图解》` | 暂定 | 暂定 | 0% | 未读 |
-| 7 | `《数据结构与算法 JavaScript描述》` |  暂定 | 暂定 | 0% | 未读 |
+| 6 | `《剑指 offer》` | 暂定 | 暂定 | 0% | 未读 |
+| 7 | `《算法图解》` | 暂定 | 暂定 | 0% | 未读 |
+| 8 | `《数据结构与算法 JavaScript描述》` |  暂定 | 暂定 | 0% | 未读 |
+| 9 | `《JavaScript设计模式与开发实践》` |  暂定 | 暂定 | 0% | 未读 |
