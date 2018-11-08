@@ -1,7 +1,7 @@
 ---
 title: JavaScript篇-闭包
 date: 2018-10-08 15:23:45
-tags:
+tags: 闭包
 ---
 ## 闭包
 (面试时候一般扯到垃圾回收机制和作用域链)
@@ -121,6 +121,47 @@ tags:
 
 ```
 在上述代码中，没有立即将闭包赋给数组，而是定义了一个匿名函数，并将立即执行该匿名函数的结果赋给数组。这里的匿名函数有一个参数 num，也就是最终的函数要返回的值。在调用每个匿名函数时，我 们传入了变量 i。由于函数参数是按值传递的，所以就会将变量 i 的当前值`复制`给参数 num。而在这个 匿名函数内部，又创建并返回了一个访问 num 的闭包。这样一来，result 数组中的每个函数都有自己 num 变量的一个副本，因此就可以返回各自不同的数值了
+
+
+#### 闭包与this对象
+this 对象是在运行时基于函数的执 行环境绑定的: `在全局函数中，this 等于 window，而当函数被作为某个对象的方法调用时，this 等于那个对象`。不过，<strong>匿名函数的执行环境具有全局性</strong>，因此其 this 对象通常指向 window，(在使用call和apply改变函数执行环境下，this会指向其他对象)。但有时候，由于编写闭包的方式不同，这一点可能不会那么明显
+
+```javascript
+  var name = "The Window"
+  var object = {
+    name : "My Object",
+    getNameFunc : function () {
+      console.log('@@@@', this)  // 执行 object
+      return function () {
+        console.log(this)       // 指向 window 
+        return this.name
+      }
+    }
+  }
+  console.log(object.getNameFunc()()) "The Window"(在非严格模式下)
+  
+  // 把外部作用域中的this对象保存在一个闭包能访问得到的变量里，这样就能让闭包访问该对象了
+
+  var name = "The Window"
+  var object = {
+    name : "My Object",
+    getNameFunc : function () {
+      console.log('@@@@', this)  // 执行 object
+      let _this = this
+      return function () {
+        console.log(this)       // 指向 window 
+        console.log(_this)      // 指向 object
+        return _this.name
+      }
+    }
+  }
+  console.log(object.getNameFunc()()) "My Object"
+```
+为什么匿名函数没 有取得其包含作用域(或外部作用域)的 this 对象呢 ? 
+
+> 每个函数在被调用时都会自动取得两个特殊变量:`this` 和 `arguments`。内部函数在搜索这两个变量时，只会搜索到其活动对象为止，因此永远不可能直接访问外部函数中的这两个变量。
+
+(怎么理解这句话？)，个人的理解： 在执行过程中，每个函数都会有一个执行环境，在getNameFunc()函数里的执行环境this指向的是 object，而在闭包中，`闭包又有自己的执行环境，而这里的this与它外部函数getNameFunc()的this是不相等的`，可能在某种情况下，它们都指向window，但是并不能说它们相等，而上述代码里，在定义匿名函数前，把this对象赋值给了 _this 变量，而在定义了闭包之后，闭包可以访问到外部函数的变量，即使在函数返回之后，闭包将活动对象添加到作用域链的前端，_this仍然引用着 object，所以会打印出 "My Object"
 
 <!--more-->
 
