@@ -49,7 +49,7 @@ blog.io : https://github.com/PDKSophia/blog.io
 - [JS异步加载，defer和async的区别?](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E5%BC%82%E6%AD%A5%E5%8A%A0%E8%BD%BDjs%2C%20async%E5%92%8Cdefer.md)
 - [聊下操作符](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E8%81%8A%E4%B8%8B%E6%93%8D%E4%BD%9C%E7%AC%A6.md)
 - [原型与原型链](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E5%8E%9F%E5%9E%8B%E5%92%8C%E5%8E%9F%E5%9E%8B%E9%93%BE.md)
-- [闭包](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E9%97%AD%E5%8C%85.md)
+- [闭包](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E9%97%AD%E5%8C%85.md)  ` · fix`
 - [谈谈Promise这个折磨人的小妖精](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-Promise%E8%BF%99%E4%B8%AA%E6%8A%98%E7%A3%A8%E4%BA%BA%E7%9A%84%E5%B0%8F%E5%A6%96%E7%B2%BE.md)
 - [async 和 await](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-async-%E5%92%8C-await.md)
 - [垃圾回收机制](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6.md)
@@ -64,6 +64,7 @@ blog.io : https://github.com/PDKSophia/blog.io
 - [函数内部属性](https://github.com/PDKSophia/read-booklist/blob/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1/play-card-2.md#%E5%87%BD%E6%95%B0%E5%86%85%E9%83%A8%E5%B1%9E%E6%80%A7) ` · new`
 - [数据属性于访问器属性](https://github.com/PDKSophia/read-booklist/blob/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1/play-card-3.md#%E6%95%B0%E6%8D%AE%E5%B1%9E%E6%80%A7) ` · new`
 - [闯关BOSS-JS的继承](https://github.com/PDKSophia/read-booklist/blob/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1/play-card-3.md#%E7%BB%A7%E6%89%BF) ` · new`
+- [匿名函数与闭包](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E9%97%AD%E5%8C%85.md#%E5%8C%BF%E5%90%8D%E5%87%BD%E6%95%B0%E4%B8%8E%E9%97%AD%E5%8C%85)  ` · new`
 
 ### 浏览器篇（不断更新）
 - [事件机制](https://github.com/PDKSophia/blog.io/blob/master/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%AF%87-%E4%BA%8B%E4%BB%B6%E6%9C%BA%E5%88%B6.md)
