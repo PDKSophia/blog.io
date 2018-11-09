@@ -83,7 +83,9 @@ setTimeout()的第二个参数告诉 JavaScript 再过多长时间把当前任�
   <li>而且这里我们能够看到，T1定时器执行结束后立即执行了T2代码，所以并没有达到定时器的效果</li>
 </ol>
 所以我们能知道，setInterval有两个缺点:
+
 - 使用setInterval时，某些间隔会被跳过
+
 - 可能多个定时器会连续执行
 
 所以我们这么理解: <strong>每个setTimeout产生的任务会直接push到任务队列中；而setInterval在每次把任务push到任务队列前，都要进行一下判断(看上次的任务是否仍在队列中，在则跳过，不在则添加至Task队列)</strong>
