@@ -72,6 +72,7 @@ blog.io : https://github.com/PDKSophia/blog.io
 - [来聊聊五毛钱话题-跨域问题](https://github.com/PDKSophia/blog.io/blob/master/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%AF%87-%E6%9D%A5%E8%81%8A%E8%81%8A%E4%BA%94%E6%AF%9B%E9%92%B1%E7%9A%84%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98.md)
 - [浏览器渲染页面原理及流程](https://github.com/PDKSophia/blog.io/blob/master/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%AF%87-%E6%B5%8F%E8%A7%88%E5%99%A8%E6%B8%B2%E6%9F%93%E5%8E%9F%E7%90%86%E5%8F%8A%E6%B5%81%E7%A8%8B.md)
 - [Event Loop](https://github.com/PDKSophia/blog.io/blob/master/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%AF%87-Event-Loop.md)
+- [setTimeout和setInterval的小秘密](https://github.com/PDKSophia/blog.io/blob/master/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%AF%87%20-%20setTimeout%E4%B8%8EsetInterval.md) ` · new`
 
 ### 性能及协作篇 (不断更新)
 - [懒加载和预加载](https://github.com/PDKSophia/blog.io/blob/master/%E6%80%A7%E8%83%BD%E5%8F%8A%E5%8D%8F%E4%BD%9C%E7%AF%87-%E6%87%92%E5%8A%A0%E8%BD%BD%E5%92%8C%E9%A2%84%E5%8A%A0%E8%BD%BD.md)
