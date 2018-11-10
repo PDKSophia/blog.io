@@ -89,6 +89,7 @@ blog.io : https://github.com/PDKSophia/blog.io
 - [Vue生命周期的理解](https://github.com/PDKSophia/blog.io/blob/master/Vue%E7%AF%87-Vue%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.md)
 - [Vue的双向数据绑定原理是什么](https://github.com/PDKSophia/blog.io/blob/master/Vue%E7%AF%87-%E6%95%B0%E6%8D%AE%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A%E5%8E%9F%E7%90%86.md)
 - [Vue中的computed和methods有什么区别](https://github.com/PDKSophia/blog.io/blob/master/Vue%E7%AF%87-Vue%E4%B8%AD%E7%9A%84computed%E5%92%8Cmethods%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB.md)
+- [Vue之nextTick与Watcher以及Dep的蓝色生死恋](https://github.com/PDKSophia/blog.io/blob/master/Vue%E7%AF%87-nextTick%E4%B8%8Ewatcher%E4%BB%A5%E5%8F%8ADep%E7%9A%84%E8%93%9D%E8%89%B2%E7%94%9F%E6%AD%BB%E6%81%8B.md)
 
 ### React篇 （不断更新）
 - [从源码看React的生命周期](https://github.com/PDKSophia/blog.io/blob/master/React%E7%AF%87-%E4%BB%8E%E6%BA%90%E7%A0%81%E7%9C%8BReact%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.md)
