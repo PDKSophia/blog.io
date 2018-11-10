@@ -75,7 +75,7 @@
 ```
 在点击click触发handleClick()事件之后，number会被遍历增加10000次，在vue的双向绑定-响应式系统中，会经过 “setter -> Dep -> Watcher -> patch -> 视图” 这个流水线。那么是不是可以这么理解，每次number++，都会经过这个“流水线”来修改真实的DOM，然后DOM被更新了10000次。
 
-但是身为一位“资深”的前端小白来说，都知道，前端对性能的看中，而频繁的操作DOM，那可是一大“忌讳”啊。Vue.js 肯定不会以如此低效的方法来处理。Vue.js在默认情况下，每次触发某个数据的 setter 方法后，对应的 Watcher 对象其实会被 push 进一个队列 queue 中，在下一个 <strong>tick</strong> 的时候将这个队列 queue 全部拿出来 run一遍。这里我们看看[Vue官网的描述](https://cn.vuejs.org/v2/guide/reactivity.html#%E5%BC%82%E6%AD%A5%E6%9B%B4%E6%96%B0%E9%98%9F%E5%88%97) : Vue <strong>`异步执行`</strong> DOM 更新。只要观察到数据变化，Vue 将开启一个队列，并缓冲在同一事件循环中发生的所有数据改变。如果同一个 watcher 被多次触发，只会被推入到队列中一次。这种在缓冲时去除重复数据对于避免不必要的计算和 DOM 操作上非常重要。然后，在下一个的事件循环“tick”中，Vue 刷新队列并执行实际 (已去重的) 工作。
+但是身为一位“资深”的前端小白来说，都知道，前端对性能的看中，而频繁的操作DOM，那可是一大“忌讳”啊。Vue.js 肯定不会以如此低效的方法来处理。Vue.js在默认情况下，每次触发某个数据的 setter 方法后，对应的 Watcher 对象其实会被 push 进一个队列 queue 中，在下一个 <strong>tick</strong> 的时候将这个队列 queue 全部拿出来 run一遍。这里我们看看[Vue官网的描述](https://cn.vuejs.org/v2/guide/reactivity.html#%E5%BC%82%E6%AD%A5%E6%9B%B4%E6%96%B0%E9%98%9F%E5%88%97) : Vue <strong>`异步执行`</strong> DOM 更新。只要观察到数据变化，Vue 将开启一个队列，并缓冲在同一事件循环中发生的所有数据改变。如果同一个 watcher 被多次触发，只会被推入到队列中一次。这种在缓冲时去除重复数据对于避免不必要的计算和 DOM 操作上非常重要。然后，在下一个的事件循环“tick”中，Vue 刷新队列并执行实际 (已去重的) 工作。
 
 <img src='https://github.com/PDKSophia/blog.io/raw/master/image/pic_2.jpg'>
 
