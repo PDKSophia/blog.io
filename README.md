@@ -68,7 +68,7 @@ blog.io : https://github.com/PDKSophia/blog.io
 - [JS-私有变量](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E7%A7%81%E6%9C%89%E5%8F%98%E9%87%8F.md)  ` · new`
 
 ### 浏览器篇（不断更新）
-- [事件机制](https://github.com/PDKSophia/blog.io/blob/master/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%AF%87-%E4%BA%8B%E4%BB%B6%E6%9C%BA%E5%88%B6.md)
+- [事件机制及事件委托](https://github.com/PDKSophia/blog.io/blob/master/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%AF%87-%E4%BA%8B%E4%BB%B6%E6%9C%BA%E5%88%B6.md) ` · fix`
 - [来聊聊五毛钱话题-跨域问题](https://github.com/PDKSophia/blog.io/blob/master/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%AF%87-%E6%9D%A5%E8%81%8A%E8%81%8A%E4%BA%94%E6%AF%9B%E9%92%B1%E7%9A%84%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98.md)
 - [浏览器渲染页面原理及流程](https://github.com/PDKSophia/blog.io/blob/master/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%AF%87-%E6%B5%8F%E8%A7%88%E5%99%A8%E6%B8%B2%E6%9F%93%E5%8E%9F%E7%90%86%E5%8F%8A%E6%B5%81%E7%A8%8B.md)
 - [Event Loop](https://github.com/PDKSophia/blog.io/blob/master/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%AF%87-Event-Loop.md)
