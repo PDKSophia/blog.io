@@ -174,3 +174,11 @@ blog.io : https://github.com/PDKSophia/blog.io
 | 18 | `《了不起到Node.js》` |  暂定 | 暂定 | 0% | 未读 |
 | 19 | `《黑客与画家》` |  暂定 | 暂定 | 0% | 未读 |
 | 20 | `《丑陋的中国人》` |  暂定 | 暂定 | 0% | 未读 |
+
+-----------
+
+### 给个支持？
+客官，如果你觉得我写的还阔以，打个赏？
+
+<img src='https://github.com/PDKSophia/blog.io/raw/master/image/agree.jpeg'>
+
