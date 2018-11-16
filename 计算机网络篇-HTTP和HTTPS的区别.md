@@ -26,7 +26,7 @@ SSL采用了一种叫做 <strong>公开密钥加密</strong>的加密处理方�
 
 使用公开密钥加密方式，发送密文的一方使用对方的`公开密钥`
 
-<img src='https://github.com/PDKSophia/read-booklist/raw/master/book-image/http-27.png' width=680 height=600>
+<img src='https://github.com/PDKSophia/read-booklist/raw/master/book-image/http-27.png' width=640 height=500 />
 
 ### HTTPS的工作原理(简单版)
 ```javascript
@@ -43,7 +43,7 @@ SSL采用了一种叫做 <strong>公开密钥加密</strong>的加密处理方�
 
 ### HTTPS的通信步骤(详情版)
 
-<img src='https://github.com/PDKSophia/read-booklist/raw/master/book-image/http-28.png' width=580 height=700>
+<img src='https://github.com/PDKSophia/read-booklist/raw/master/book-image/http-28.png' width=450 height=650 />
 
 1 : 客户端发送Client Hello报文开始SSL通信，报文中包含客户端支持的SSL指定版本，加密组件列表(所使用的加密算法和密钥长度等)
 
@@ -69,7 +69,7 @@ SSL采用了一种叫做 <strong>公开密钥加密</strong>的加密处理方�
 
 12 : 最后由客户端断开连接，断开连接时，发送 close_notify 报文
 
-<img src='https://github.com/PDKSophia/read-booklist/raw/master/book-image/http-29.png' width=580 height=700>
+<img src='https://github.com/PDKSophia/read-booklist/raw/master/book-image/http-29.png' width=720 height=520>
 
 ### HTTPS的优缺点
 #### 优点 
