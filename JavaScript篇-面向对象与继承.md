@@ -187,7 +187,7 @@ ES5中，还没有类的概念，而是通过函数来声明，到了ES6，有�
   Child.prototype.contructor = Parent
   ch1.constructor = Parent
 ```
-那么原型链继承的问题有哪些呢？
+那么原型链继承的问题有哪些呢？
 
 <strong>原型链中的原型对象是共用的，子类无法通过父类创建私有属性</strong>， 比如你 new 两个子类 child1 和 child2 的时候，你改 child1 的属性，child2 也会跟着改变，比如下边的代码
 
@@ -215,7 +215,7 @@ ES5中，还没有类的概念，而是通过函数来声明，到了ES6，有�
 你看，这就出问题了吧，因为在 Parent 构造函数中定义了一个 colors 属性，当通过`原型链`继承了之后，Child.prototype 就变成了 Parent 的一个实例，因此它也拥有了一个它自己的 colors 属性——就跟专门创建了一个 Child.prototype.colors 一样，那么所有 Child 的实例都会共享这个colors属性，而 ch1 和 ch2 都是 Child 的实例，对 ch1.colors 的修改，在 ch2.colors 中也会反映出来
 
 ### 借用构造函数
-为了解决上边 原型链继承 存在的问题，现在使用构造函数去继承，在子类的构造函数里执行父类的构造函数, 主要通过 `call / apply` 去改变 `this` 的指向，从而导致父类构造函数执行时的这些属性都会挂载到子类实例上去
+为了解决上边 原型链继承 存在的问题，现在使用构造函数去继承，在子类的构造函数里执行父类的构造函数, 主要通过 `call / apply` 去改变 `this` 的指向，从而导致父类构造函数执行时的这些属性都会挂载到子类实例上去
 
 ```javascript
   function Parent () {
@@ -276,8 +276,8 @@ ES5中，还没有类的概念，而是通过函数来声明，到了ES6，有�
   ch1.sayAge() // 21
   console.log(ch1.colors) // ['red', 'yellow', 'black']
 
-  var ch2 = new Child('PDK', 18)
-  ch1.sayName() // PDK
+  var ch2 = new Child('PDK', 18)
+  ch1.sayName() // PDK
   ch1.sayAge() // 18
   console.log(ch1.colors) // ['red', 'yellow']
 
@@ -461,15 +461,15 @@ ES5 的继承，实质是先创造子类的实例对象this，然后再将父类
   console.log(instance2.colors) // ['red', 'yellow', 'black']
 
   // 这里多出几道题，理解一下原型和原型链
-  console.log(instance1.constructor) // SuperType
-  console.log(SubType.prototype.constructor) // SuperType
-  console.log(SubType.prototype.__proto__ == SuperType.prototype) // true
-  console.log(instance1.__proto__ == SubType.prototype) // true
-  console.log(SubType.__proto__ == SuperType.prototype) // false
-  console.log(SubType.__proto__ == Function.prototype) // true
-  console.log(SuperType.prototype.constructor == SuperType) // true
-  console.log(SuperType.__proto__ == Function.prototype) // true
-  console.log(SuperType.prototype.__proto__ == Object.prototype) // true 
+  console.log(instance1.constructor)
+  console.log(SubType.prototype.constructor) 
+  console.log(SubType.prototype.__proto__ == SuperType.prototype)
+  console.log(instance1.__proto__ == SubType.prototype) 
+  console.log(SubType.__proto__ == SuperType.prototype)
+  console.log(SubType.__proto__ == Function.prototype)
+  console.log(SuperType.prototype.constructor == SuperType) 
+  console.log(SuperType.__proto__ == Function.prototype) 
+  console.log(SuperType.prototype.__proto__ == Object.prototype)
 
 ```
 
@@ -491,17 +491,17 @@ ES5 的继承，实质是先创造子类的实例对象this，然后再将父类
   console.log(instance2.colors) // ['red', 'yellow']
 
   // 思考一哈？
-  console.log(instance1.constructor) // SubType
-  console.log(SubType.prototype.constructor) // SubType
-  console.log(SubType.prototype.__proto__) // {}
-  console.log(SubType.prototype.__proto__ == SuperType.prototype) // false
-  console.log(SubType.prototype.__proto__ == Object.prototype) // true
-  console.log(instance1.__proto__ == SubType.prototype) // true
-  console.log(SubType.__proto__ == SuperType.prototype) // false
-  console.log(SubType.__proto__ == Function.prototype) // true
-  console.log(SuperType.prototype.constructor == SuperType) // true
-  console.log(SuperType.__proto__ == Function.prototype) // true
-  console.log(SuperType.prototype.__proto__ == Object.prototype) // true 
+  console.log(instance1.constructor) 
+  console.log(SubType.prototype.constructor)
+  console.log(SubType.prototype.__proto__) 
+  console.log(SubType.prototype.__proto__ == SuperType.prototype) 
+  console.log(SubType.prototype.__proto__ == Object.prototype)
+  console.log(instance1.__proto__ == SubType.prototype)
+  console.log(SubType.__proto__ == SuperType.prototype) 
+  console.log(SubType.__proto__ == Function.prototype) 
+  console.log(SuperType.prototype.constructor == SuperType) 
+  console.log(SuperType.__proto__ == Function.prototype)
+  console.log(SuperType.prototype.__proto__ == Object.prototype)
 
 ```
 
