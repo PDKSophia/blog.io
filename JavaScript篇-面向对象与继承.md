@@ -129,6 +129,8 @@ ES5中，还没有类的概念，而是通过函数来声明，到了ES6，有�
 
 更多 Class 的理解，请看阮一峰老师的 [ECMAScript 6 入门](http://es6.ruanyifeng.com/#docs/class)
 
+<img src='https://github.com/PDKSophia/blog.io/raw/master/image/bqb2.jpg'>
+
 ## 继承的实现
 下边就列举常用的几种继承方式，搞懂这几种，应该可以混过面试了，记住: *继承的本质就是原型链*
 
@@ -439,6 +441,8 @@ ES5 的继承，实质是先创造子类的实例对象this，然后再将父类
   Parent.call(this)
 
 ```
+
+<img src='https://github.com/PDKSophia/blog.io/raw/master/image/bqb3.jpg'>
 
 ### 最后来两个思考题
 ```javascript
