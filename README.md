@@ -59,7 +59,7 @@ blog.io : https://github.com/PDKSophia/blog.io
 ### JavaScript篇（不断更新）
 - [JS异步加载，defer和async的区别?](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E5%BC%82%E6%AD%A5%E5%8A%A0%E8%BD%BDjs%2C%20async%E5%92%8Cdefer.md)
 - [聊下操作符](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E8%81%8A%E4%B8%8B%E6%93%8D%E4%BD%9C%E7%AC%A6.md)
-- [原型与原型链](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E5%8E%9F%E5%9E%8B%E5%92%8C%E5%8E%9F%E5%9E%8B%E9%93%BE.md)
+- [原型与原型链](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E5%8E%9F%E5%9E%8B%E5%92%8C%E5%8E%9F%E5%9E%8B%E9%93%BE.md) ` · fix`
 - [闭包](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E9%97%AD%E5%8C%85.md)  ` · fix`
 - [谈谈Promise这个折磨人的小妖精](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-Promise%E8%BF%99%E4%B8%AA%E6%8A%98%E7%A3%A8%E4%BA%BA%E7%9A%84%E5%B0%8F%E5%A6%96%E7%B2%BE.md)
 - [async 和 await](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-async-%E5%92%8C-await.md)
@@ -78,6 +78,7 @@ blog.io : https://github.com/PDKSophia/blog.io
 - [匿名函数与闭包](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E9%97%AD%E5%8C%85.md#%E5%8C%BF%E5%90%8D%E5%87%BD%E6%95%B0%E4%B8%8E%E9%97%AD%E5%8C%85)  ` · new`
 - [JS-私有变量](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E7%A7%81%E6%9C%89%E5%8F%98%E9%87%8F.md)  ` · new`
 - [表单脚本](https://github.com/PDKSophia/read-booklist/blob/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1/play-card-9.md#%E8%A1%A8%E5%8D%95%E8%84%9A%E6%9C%AC)  ` · new`
+- [JS继承的实现 ES6的 Class 继承]()   ` · new`
 
 ### 浏览器篇（不断更新）
 - [事件机制及事件委托](https://github.com/PDKSophia/blog.io/blob/master/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%AF%87-%E4%BA%8B%E4%BB%B6%E6%9C%BA%E5%88%B6.md) ` · fix`
