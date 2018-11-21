@@ -78,7 +78,7 @@ blog.io : https://github.com/PDKSophia/blog.io
 - [匿名函数与闭包](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E9%97%AD%E5%8C%85.md#%E5%8C%BF%E5%90%8D%E5%87%BD%E6%95%B0%E4%B8%8E%E9%97%AD%E5%8C%85)  ` · new`
 - [JS-私有变量](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E7%A7%81%E6%9C%89%E5%8F%98%E9%87%8F.md)  ` · new`
 - [表单脚本](https://github.com/PDKSophia/read-booklist/blob/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1/play-card-9.md#%E8%A1%A8%E5%8D%95%E8%84%9A%E6%9C%AC)  ` · new`
-- [JS继承的实现 ES6的 Class 继承]()   ` · new`
+- [JS继承的实现 ES6的 Class 继承](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E4%B8%8E%E7%BB%A7%E6%89%BF.md)   ` · new`
 
 ### 浏览器篇（不断更新）
 - [事件机制及事件委托](https://github.com/PDKSophia/blog.io/blob/master/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%AF%87-%E4%BA%8B%E4%BB%B6%E6%9C%BA%E5%88%B6.md) ` · fix`
