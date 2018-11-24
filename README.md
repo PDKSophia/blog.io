@@ -79,6 +79,9 @@ blog.io : https://github.com/PDKSophia/blog.io
 - [JS-私有变量](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E7%A7%81%E6%9C%89%E5%8F%98%E9%87%8F.md)  ` · new`
 - [表单脚本](https://github.com/PDKSophia/read-booklist/blob/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1/play-card-9.md#%E8%A1%A8%E5%8D%95%E8%84%9A%E6%9C%AC)  ` · new`
 - [面向对象与继承，ES6 Class](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E4%B8%8E%E7%BB%A7%E6%89%BF.md)   ` · new`
+- [JS-高级技巧-惰性载入函数](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E6%83%B0%E6%80%A7%E8%BD%BD%E5%85%A5%E5%87%BD%E6%95%B0.md)  ` · new`
+- [JS-高级技巧-作用域安全的构造函数](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E4%BD%9C%E7%94%A8%E5%9F%9F%E5%AE%89%E5%85%A8%E7%9A%84%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0.md)  ` · new`
+- [函数绑定与柯里化函数，手动实现一个bind()函数](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E5%87%BD%E6%95%B0%E7%BB%91%E5%AE%9A%E4%B8%8E%E5%87%BD%E6%95%B0%E6%9F%AF%E9%87%8C%E5%8C%96.md)   ` · new`
 
 ### 浏览器篇（不断更新）
 - [事件机制及事件委托](https://github.com/PDKSophia/blog.io/blob/master/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%AF%87-%E4%BA%8B%E4%BB%B6%E6%9C%BA%E5%88%B6.md) ` · fix`
@@ -159,11 +162,11 @@ blog.io : https://github.com/PDKSophia/blog.io
 
 | 序号 | 数名 | 开始时间 | 结束时间 | 进度 | 状态 |
 | :------: | :------: | :------: | :------: | :------: |  :------: |
-| 1 | `《JavaScript高级程序设计 第3版》` |  2018.11.05 | 2018.11.15 | 48% | [跟读](https://github.com/PDKSophia/read-booklist/tree/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1) |
-| 2 | `《图解HTTP》` |  2018.11.12 | 2018.11.15 | 18% | [跟读](https://github.com/PDKSophia/read-booklist/blob/master/图解HTTP) |
-| 3 | `《计算机网络 第七版》` |  2018.11.16 | 2018.11.22 | 0% | 未读 |
-| 4 | `《ECMAScript 6 入门》` |  2018.11.26 | 2018.11.31 | 0% | 未读 |
-| 5 | `《JavaScript正则表达式》` |   暂定 | 暂定 | 0% | 未读 |
+| 1 | `《JavaScript高级程序设计 第3版》` |  2018.11.05 | 2018.11.24 | 88% | [跟读](https://github.com/PDKSophia/read-booklist/tree/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1) |
+| 2 | `《图解HTTP》` |  2018.11.12 | 2018.11.23 | 100% | [跟读](https://github.com/PDKSophia/read-booklist/blob/master/图解HTTP) |
+| 3 | `《计算机网络 第七版》` |  2018.11.25 | 2018.11.31 | 0% | 未读 |
+| 4 | `《ECMAScript 6 入门》` | 暂定 | 暂定 | 0% | 未读 |
+| 5 | `《JavaScript正则表达式》` | 暂定 | 暂定 | 0% | 未读 |
 | 6 | `《剑指 offer》` | 暂定 | 暂定 | 0% | 未读 |
 | 7 | `《算法图解》` | 暂定 | 暂定 | 0% | 未读 |
 | 8 | `《数据结构与算法 JavaScript描述》` |  暂定 | 暂定 | 0% | 未读 |
