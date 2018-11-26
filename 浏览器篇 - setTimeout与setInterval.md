@@ -100,3 +100,4 @@ setTimeout模拟setInterval，也可理解为链式的setTimeout
     setTimeout(arguments.callee, delay)
   }, delay)
 ```
+这个模式链式调用了 setTimeout()，每次函数执行的时候都会创建一个新的定时器。第二个 setTimeout() 调用使用了 `arguments.callee` 来获取对当前执行的函数的引用，并为其设置另外一 个定时器。这样做的好处是，在前一个定时器代码执行完之前，不会向队列插入新的定时器代码，确保不会有任何缺失的间隔。而且，它可以保证在下一次定时器代码执行之前，至少要等待指定的间隔，避 免了连续的运行。这个模式主要用于重复定时器
