@@ -17,6 +17,7 @@ tags:
   1. df -h // 查看服务器磁盘使用空间
 ```
 不出啥意外的话，你会看到这种玩意
+
 | Filesystem | Size | Used | Availd | Use% | Mounted on |
 | :------: | :------: | :------: | :------: | :------: |  :------: | 
 | udev | 414M | 0 | 414M | 0% | /dev |
@@ -53,6 +54,7 @@ tags:
   4. cd /home/ubuntu/.pm2
   5. sudo lsof | grep 'pm2.log'
 ```
+
 |  |  | | | |  | | | |
 | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... | 
@@ -69,11 +71,11 @@ __列表中有很多进程都在打开该文件，虽然文件删除了，但是
 ```
 这是操作前的结果
 
-<img src='https://github.com/PDKSophia/blog.io/raw/master/image/linux-1.jpg' width=450 height=320>
+<img src='https://github.com/PDKSophia/blog.io/raw/master/image/linux-1.jpg' width=550 height=200>
 
 这是操作后的结果
 
-<img src='https://github.com/PDKSophia/blog.io/raw/master/image/linux-1.jpg' width=450 height=320>
+<img src='https://github.com/PDKSophia/blog.io/raw/master/image/linux-1.jpg' width=550 height=200>
 
 #### 相关链接
 df与du不一致情况分析 : https://blog.csdn.net/carolzhang8406/article/details/7228248
