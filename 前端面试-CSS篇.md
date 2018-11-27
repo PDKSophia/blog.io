@@ -208,7 +208,7 @@ IE盒模型
     }
 ```
 
-方法三 ： `绝对定位`居中技术
+方法三 ： `绝对定位`居中技术，已知高度和宽度的元素解决方案
 
 我们经常用margin:0 auto;来实现水平居中，而一直认为margin:auto;不能实现垂直居中......其实，可以做得到。。。不过这里得确定内部元素的高度，可以用百分比，比较适合移动端。
 
@@ -241,8 +241,23 @@ IE盒模型
       margin-top: -25px;  /* 这里如果不加，就不会居中，会往下偏 height / 2 的距离 */
       text-align : center;
     }
+    
 ```
-方法五 ：`display: -webkit-box` 水平垂直居中
+方法五 ：`绝对定位`和`transform`, 未知宽高的情况下使用；
+```css
+  .box {
+    position: relative;
+    height: 300px;
+  }
+  
+  .box p.label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+```
+方法六 ：`display: -webkit-box` 水平垂直居中
 ```css
     .box {
       display: -webkit-box;
