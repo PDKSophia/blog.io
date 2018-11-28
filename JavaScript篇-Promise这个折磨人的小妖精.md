@@ -14,19 +14,19 @@ tags:
     // 假设我们要请求用户数据信息，它接收两个回调，successCallback 和 errCallback
 
     function getUserInfo (successCallback, errCallback) {
-        $.ajax({
-            url : 'xxx',
-            method : 'get',
-            data : {
-                user_id : '123'
-            },
-            success : function(res) {
-                successCallback(res)    // 请求成功，执行successCallback()回调
-            },
-            error : function(err) {
-                errCallback(err)        // 请求失败，执行errCallback()回调
-            }
-        })
+      $.ajax({
+        url: 'xxx',
+        method: 'get',
+        data: {
+          user_id: '123'
+        },
+        success: function(res) {
+          successCallback(res)    // 请求成功，执行successCallback()回调
+        },
+        error: function(err) {
+          errCallback(err)        // 请求失败，执行errCallback()回调
+        }
+      })
     }
 ```
 
@@ -37,18 +37,18 @@ tags:
 ```javascript
     // getUserInfo -> getConnectList -> getOneManConnect()
 
-    getUserInfo((res)=>{
-        getConnectList(res.user_id, (list)=>{
-            getOneManConnect(list.one_man_id, (message)=>{
-                console.log('这是我和某位老男人的聊天记录')
-            }, (msg_err)=>{
-                console.log('获取详情失败，别污蔑我，我不跟老男人聊天')
-            })
-        }, (list_err)=>{
-            console.log('获取列表失败，我都不跟别人聊天')
+    getUserInfo((res) => {
+      getConnectList(res.user_id, (list) => {
+        getOneManConnect(list.one_man_id, (message) => {
+          console.log('这是我和某位老男人的聊天记录')
+        }, (msg_err)=>{
+          console.log('获取详情失败，别污蔑我，我不跟老男人聊天')
         })
-    }, (user_err)=>{
-        console.log('获取用户个人信息失败')
+      }, (list_err) => {
+        console.log('获取列表失败，我都不跟别人聊天')
+      })
+    }, (user_err) => {
+      console.log('获取用户个人信息失败')
     })
 ```
 大兄弟，刺激不，三层嵌套，再多来几个嵌套，就是 “回调地狱” 了。这时候，promise来了。
@@ -65,41 +65,43 @@ tags:
 
 ```base
     1 : 只有异步操作的结果，可以决定当前是哪一种状态，任何其他操作都无法改变这个状态。
+
     2 : 一旦状态改变，就不会再变，任何时候都可以得到这个结果。
+
     3 : Promise对象的状态改变，只有两种可能：从pending变为fulfilled和从pending变为rejected
 ```
 
 ### 知乎形象例子来说明promise
 ```javascript
-// 定外卖就是一个Promise,Promise的意思就是承诺
-// 我们定完外卖，饭不会立即到我们手中
-// 这时候我们和商家就要达成一个承诺
-// 在未来，不管饭是做好了还是烧糊了，都会给我们一个答复
-function 定外卖(){
+  // 定外卖就是一个Promise,Promise的意思就是承诺
+  // 我们定完外卖，饭不会立即到我们手中
+  // 这时候我们和商家就要达成一个承诺
+  // 在未来，不管饭是做好了还是烧糊了，都会给我们一个答复
+  function 定外卖(){
     // Promise 接受两个参数
     // resolve: 异步事件成功时调用（菜烧好了）
     // reject: 异步事件失败时调用（菜烧糊了）
     return new Promise((resolve, reject) => {
-        let result = 做饭()
-	// 下面商家给出承诺，不管烧没烧好，都会告诉你
-	if (result == '菜烧好了') 
-	    // 商家给出了反馈
+      let result = 做饭()
+	  // 下面商家给出承诺，不管烧没烧好，都会告诉你
+	  if (result == '菜烧好了') 
+	  // 商家给出了反馈
 	    resolve('我们的外卖正在给您派送了')
-	else 
+	  else 
 	    reject('不好意思，我们菜烧糊了，您再等一会')
 	})
-}
+  }
 
-// 商家厨房做饭，模拟概率事件
-function 做饭() {
+  // 商家厨房做饭，模拟概率事件
+  function 做饭() {
     return Math.random() > 0.5 ? '菜烧好了' : '菜烧糊了'
-}
+  }
 
-// 你在家上饿了么定外卖
-// 有一半的概率会把你的饭烧糊了
-// 好在有承诺，他还是会告诉你
+  // 你在家上饿了么定外卖
+  // 有一半的概率会把你的饭烧糊了
+  // 好在有承诺，他还是会告诉你
 
-定外卖()
+  定外卖()
     // 菜烧好执行，返回'我们的外卖正在给您派送了'
     .then(res => console.log(res))
     // 菜烧糊了执行，返回'不好意思，我们菜烧糊了，您再等一会'
@@ -121,11 +123,11 @@ Promise 对象是一个构造函数，用来生成一个Promise实例。
     const promise = new Promise((resolve, reject) => {
         // some code 
 
-        if(/* 异步执行成功 */) {
-            resolve(res)
-        } else {
-            reject(error)
-        }
+      if(/* 异步执行成功 */) {
+        resolve(res)
+      } else {
+        reject(error)
+      }
     })
 ```
 ### then方法
@@ -134,16 +136,16 @@ Promise 有个.then()方法，then 方法中的回调在微任务队列中执行
 ```javascript
     // 执行 resolve  
     let promise = new Promise((resolve, reject) => {
-        console.log(1)
-        resolve(3)
+      console.log(1)
+      resolve(3)
     })
 
     console.log(2)
 
     promise.then((data)=>{
-        console.log(data)
+      console.log(data)
     }, (err)=>{
-        console.log(err)
+      console.log(err)
     })
 
     // 1
@@ -157,10 +159,10 @@ Promise 有个.then()方法，then 方法中的回调在微任务队列中执行
         reject()
     })
 
-    promise.then(()=>{
-        console.log(2)
-    }, ()=>{
-        console.log(3)
+    promise.then(() => {
+      console.log(2)
+    }, () => {
+      console.log(3)
     })
 
     // 1
@@ -170,15 +172,13 @@ Promise 有个.then()方法，then 方法中的回调在微任务队列中执行
 ### then方法
 [ 注意 ： then方法中的回调是异步的！！！]
 
-为什么上面第一个示例代码的结果是 1 -> 2 -> 3呢 ？传入Promise 中的执行函数是立即执行完的啊，为什么不是立即执行 then 中的回调呢？因为then 中的回调是异步执行，表示该回调是插入事件队列末尾，在当前的同步任务结束之后，下次事件循环开始时执行队列中的任务。
+为什么上面第一个示例代码的结果是 1 -> 2 -> 3呢 ？传入Promise 中的执行函数是立即执行完的啊，为什么不是立即执行 then 中的回调呢？__因为 then 中的回调是异步执行，表示该回调是插入事件队列末尾，在当前的同步任务结束之后，下次事件循环开始时执行队列中的任务__。
 
-Promise 的回调函数不是正常的异步任务，而是微任务（microtask）。它们的区别在于，正常任务追加到下一轮事件循环，微任务追加到本轮事件循环。这意味着，微任务的执行时间一定早于正常任务
+Promise 的回调函数不是正常的异步任务，而是 `微任务（microtask）`。它们的区别在于 : *正常任务追加到下一轮事件循环，微任务追加到本轮事件循环*。这意味着，微任务的执行时间一定早于正常任务
 
-```base
-then方法的返回值是一个新的GPromise对象，这就是为什么promise能够进行链式操作的原因。
+__then方法的返回值是一个新的GPromise对象，这就是为什么promise能够进行链式操作的原因__。
 
-then方法中的一个难点就是处理异步，通过setInterval来监听GPromise对象的状态改变，一旦改变，就是执行GPromise对应的the方法中相应回调函数。这样回调函数就能够插入事件队列末尾，异步执行。
-```
+> then方法中的一个难点就是处理异步，通过 `setInterval` 来监听 `GPromise` 对象的状态改变，一旦改变，就是执行GPromise对应的the方法中相应回调函数。这样回调函数就能够插入事件队列末尾，异步执行。
 
 ```javascript
     then有两个参数 : onFulfilled 和 onRejected
@@ -188,18 +188,19 @@ then方法中的一个难点就是处理异步，通过setInterval来监听GProm
     · onFulfilled,onRejected如果他们是函数，则必须分别在fulfilled，rejected后被调用，value或reason依次作为他们的第一个参数
 
     class Promise{
-        constructor(executor){...}
-        // then 方法 有两个参数onFulfilled onRejected
-        then(onFulfilled,onRejected) {
-            // 状态为fulfilled，执行onFulfilled，传入成功的值
-            if (this.state === 'fulfilled') {
-                onFulfilled(this.value);
-            };
-            // 状态为rejected，执行onRejected，传入失败的原因
-            if (this.state === 'rejected') {
-                onRejected(this.reason);
-            };
+      constructor(executor){...}
+      // then 方法 有两个参数onFulfilled onRejected
+      then(onFulfilled,onRejected) {
+        // 状态为 fulfilled ，执行 onFulfilled，传入成功的值
+        if (this.state === 'fulfilled') {
+          onFulfilled(this.value)
         }
+            
+        // 状态为 rejected ，执行 onRejected，传入失败的原因
+        if (this.state === 'rejected') {
+          onRejected(this.reason)
+        }
+      }
     }
 
 ```
@@ -211,76 +212,173 @@ then方法中的一个难点就是处理异步，通过setInterval来监听GProm
 
 ```javascript
     // 原来的代码
-    getUserInfo((res)=>{
-        getConnectList(res.user_id, (list)=>{
-            getOneManConnect(list.one_man_id, (message)=>{
-                console.log('这是我和某位老男人的聊天记录')
-            }, (msg_err)=>{
-                console.log('获取详情失败，别污蔑我，我不跟老男人聊天')
-            })
-        }, (list_err)=>{
-            console.log('获取列表失败，我都不跟别人聊天')
+    getUserInfo((res) => {
+      getConnectList(res.user_id, (list) => {
+        getOneManConnect(list.one_man_id, (message) => {
+          console.log('这是我和某位老男人的聊天记录')
+        }, (msg_err)=>{
+          console.log('获取详情失败，别污蔑我，我不跟老男人聊天')
         })
-    }, (user_err)=>{
-        console.log('获取用户个人信息失败')
+      }, (list_err) => {
+        console.log('获取列表失败，我都不跟别人聊天')
+      })
+    }, (user_err) => {
+      console.log('获取用户个人信息失败')
     })
 
     
     // Promise重写的代码
     function handleAjax (params) {
-        return new Promise((resolve, reject)=>{
-            $.ajax({
-                url : params.url,
-                type : params.type || 'get',
-                data : params.data || '',
-                success : function(data) {
-                    resolve(data)
-                },
-                error : function(error) {
-                    reject(error)
-                }
-            })
+      return new Promise((resolve, reject) => {
+        $.ajax({
+          url: params.url,
+          type: params.type || 'get',
+          data: params.data || '',
+          success: function(data) {
+            resolve(data)
+          },
+          error: function(error) {
+            reject(error)
+          }
         })
+      })
     }
 
     const promise = handleAjax({
-        url : 'xxxx/user'
+      url: 'xxxx/user'
     });
 
     promise.then((data1)=>{
-        console.log('获取个人信息成功')       // 获取个人信息成功
-        return handleAjax({
-            url : 'xxxx/user/connectlist',
-            data : data1.user_id
-        });
+      console.log('获取个人信息成功')       // 获取个人信息成功
+      return handleAjax({
+        url: 'xxxx/user/connectlist',
+        data: data1.user_id
+      })
     })
     .then((data2)=>{
-        console.log('获得聊天列表')
-        return handleAjax({
-            url : 'xxxx/user/connectlist/one_man',
-            data : data2.one_man_id
-        });
+      console.log('获得聊天列表')
+      return handleAjax({
+        url : 'xxxx/user/connectlist/one_man',
+        data : data2.one_man_id
+      })
     })
     .then((data3)=>{
-        console.log('获得跟某男人聊天')
+      console.log('获得跟某男人聊天')
     })
     .catch((err)=>{
-        console.log(err)
+      console.log(err)
     }) 
 ```
+
+### 敲重点, reject 和 catch 的区别 ?
+首先纠正一个误区 : 谁说 reject 是用来处理异常的了 , `reject` 是用来抛出异常的，`catch` 才是用来处理异常的, 类比传统的 try catch 写法，reject 就相当于 throw
+
+并且 `reject` 是 Promise 的方法，而 `catch` 是 Promise 实例的方法
+```javascript
+  let p = new Promise()
+  p.resolve() // 没有
+  p.reject() // 没有
+  p.then() // 有
+  p.catch() // 有
+
+  Promise.resolve() // 有
+  Promise.reject() // 有
+  Promise.then() // 没有
+  Promise.catch() // 没有
+```
+看下图片 ？
+
+<img src='https://github.com/PDKSophia/blog.io/raw/master/image/promise-1.png' >
+
+<img src='https://github.com/PDKSophia/blog.io/raw/master/image/promise2.png' >
+
+```javascript
+  resolve后的东西，一定会进入then的第一个回调，肯定不会进入catch
+  
+  var p0 = new Promise((resolve, reject) => {
+    console.log('有 resolve')
+    resolve('I am resolve')
+  })
+
+  p0.then(res => {
+    console.log('resolve的返回值: ', res)
+  }).catch(err => {
+    console.log('catch的返回值: ', err)
+  })
+
+  // 执行结果
+  VM367054:2 有 resolve
+  VM367054:11 reject的返回值: I am resolve 
+  
+
+  ----------------------
+
+
+  reject后的东西，一定会进入then中的第二个回调，如果then中没有写第二个回调，则进入catch，如果没有then，也可以直接进入catch
+
+  // 情况一，then中有第二个回调
+  var p1 = new Promise((resolve, reject) => {
+    console.log('没有 resolve')
+    reject('I am error')
+  })
+
+  p1.then(res => {
+    console.log('resolve的返回值: ', res)
+  }, error => {
+    console.log('reject的返回值: ', error)
+  }).catch(err => {
+    console.log('catch的返回值: ', err)
+  })
+
+  // 执行结果
+  VM367054:2 没有 resolve
+  VM367054:11 reject的返回值: I am error 
+
+
+
+  // 情况二，then中没有第二个回调
+  var p2 = new Promise((resolve, reject) => {
+    console.log('没有 resolve')
+    reject('I am error')
+  })
+
+  p2.then(res => {
+    console.log('resolve的返回值: ', res)
+  }).catch(err => {
+    console.log('catch的返回值: ', err)
+  })
+
+  // 执行结果
+  VM367054:2 没有 resolve
+  VM367054:11 catch的返回值: I am error 
+
+
+
+  // 情况二，没有then，直接进入catch
+  var p3 = new Promise((resolve, reject) => {
+    console.log('没有 resolve')
+    reject('I am error')
+  })
+
+  p3.catch(err => {
+    console.log('catch的返回值: ', err)
+  })
+  
+  // 执行结果
+  VM367054:2 没有 resolve
+  VM367054:11 catch的返回值: I am error 
+
+```
+
 ### 来自ES6的 Promise.prototype.then() 
-Promise 实例具有then方法，也就是说，then方法是定义在原型对象Promise.prototype上的。它的作用是为 Promise 实例添加状态改变时的回调函数。前面说过，then方法的第一个参数是resolved状态的回调函数，第二个参数（可选）是rejected状态的回调函数。
+Promise 实例具有then方法，也就是说，then方法是定义在原型对象Promise.prototype上的。它的作用是为 Promise 实例添加状态改变时的回调函数。前面说过，then方法的第一个参数是resolved状态的回调函数，第二个参数（可选）是rejected状态的回调函数。then方法返回的是一个新的Promise实例（注意，不是原来那个Promise实例）。因此可以采用链式写法，即then方法后面再调用另一个then方法。
 
-then方法返回的是一个新的Promise实例（注意，不是原来那个Promise实例）。因此可以采用链式写法，即then方法后面再调用另一个then方法。
-
-采用链式的then，可以指定一组按照次序调用的回调函数。这时，前一个回调函数，有可能返回的还是一个Promise对象（即有异步操作），这时后一个回调函数，就会等待该Promise对象的状态发生变化，才会被调用
+> 采用链式的then，可以指定一组按照次序调用的回调函数。这时，前一个回调函数，有可能返回的还是一个Promise对象（即有异步操作），这时后一个回调函数，就会等待该Promise对象的状态发生变化，才会被调用
 
 ### 来自ES6的 Promise.prototype.catch() 
-Promise.prototype.catch方法是.then(null, rejection)的别名，用于指定发生错误时的回调函数。Promise对象状态变为resolved，则会调用then方法指定的回调函数；如果异步操作抛出错误，状态就会变为rejected，就会调用catch方法指定的回调函数，处理这个错误。另外，then方法指定的回调函数，如果运行中抛出错误，也会被catch方法捕获。
+Promise.prototype.catch方法是.then(null, rejection)的别名，用于指定发生错误时的回调函数。Promise对象状态变为resolved，则会调用then方法指定的回调函数；如果异步操作抛出错误，状态就会变为rejected，就会调用catch方法指定的回调函数，处理这个错误。另外，then方法指定的回调函数，如果运行中抛出错误，也会被catch方法捕获。Promise 对象的错误具有“冒泡”性质，会一直向后传递，直到被捕获为止。也就是说，错误总是会被下一个catch语句捕获
 
-Promise 对象的错误具有“冒泡”性质，会一直向后传递，直到被捕获为止。也就是说，错误总是会被下一个catch语句捕获
-
-一般来说，不要在then方法里面定义 reject 状态的回调函数（即then的第二个参数），总是使用catch方法。
+> 一般来说，不要在then方法里面定义 reject 状态的回调函数（即then的第二个参数），总是使用catch方法。
 
 ### 来自ES6的 Promise.all()
 Promise.all方法用于将多个 Promise 实例，包装成一个新的 Promise 实例。
@@ -333,6 +431,8 @@ Promise.reject(reason)方法也会返回一个新的 Promise 实例，该实例�
 ## 相关链接
 个人博客 : http:/blog.pengdaokuan.cn:4001
 
+MDN Promise : https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise
+
 阮一峰 ES6 : http://es6.ruanyifeng.com/#docs/promise
 
 知乎例子 : https://zhuanlan.zhihu.com/p/29632791
@@ -341,3 +441,4 @@ Promise.reject(reason)方法也会返回一个新的 Promise 实例，该实例�
 
 来自segmentfault 的GEEK作者 : https://segmentfault.com/a/1190000011241512 
 
+其他来源 : https://segmentfault.com/q/1010000014040649
