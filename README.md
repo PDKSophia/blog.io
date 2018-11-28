@@ -50,7 +50,7 @@ blog.io : https://github.com/PDKSophia/blog.io
 - [块级元素和行内元素](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-CSS%E7%AF%87.md#%E5%9D%97%E7%BA%A7%E5%85%83%E7%B4%A0-%E5%92%8C-%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0)
 - [visibility : hidden 和 display : none 以及 opacity : 0](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-CSS%E7%AF%87.md#visibility--hidden-%E5%92%8C-display--none-%E4%BB%A5%E5%8F%8A-opacity--0)
 - [border: none 和 border: 0 的区别](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-CSS%E7%AF%87.md#border-none-%E5%92%8C-border-0-%E7%9A%84%E5%8C%BA%E5%88%AB)
-- [垂直居中的方式](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-CSS%E7%AF%87.md#%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E7%9A%84%E6%96%B9%E5%BC%8F)
+- [垂直居中的方式](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-CSS%E7%AF%87.md#%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E7%9A%84%E6%96%B9%E5%BC%8F)  ` · fix`
 - [面试题: CSS3 新特性](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-CSS%E7%AF%87.md#css3-%E6%96%B0%E7%89%B9%E6%80%A7)
 - [CSS优先级算法如何计算](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-CSS%E7%AF%87.md#css%E4%BC%98%E5%85%88%E7%BA%A7%E7%AE%97%E6%B3%95%E5%A6%82%E4%BD%95%E8%AE%A1%E7%AE%97)
 - [position属性的了解](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-CSS%E7%AF%87.md#position%E5%B1%9E%E6%80%A7%E7%9A%84%E4%BA%86%E8%A7%A3)
@@ -61,7 +61,7 @@ blog.io : https://github.com/PDKSophia/blog.io
 - [聊下操作符](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E8%81%8A%E4%B8%8B%E6%93%8D%E4%BD%9C%E7%AC%A6.md)
 - [原型与原型链](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E5%8E%9F%E5%9E%8B%E5%92%8C%E5%8E%9F%E5%9E%8B%E9%93%BE.md) ` · fix`
 - [闭包](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E9%97%AD%E5%8C%85.md)  ` · fix`
-- [谈谈Promise这个折磨人的小妖精](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-Promise%E8%BF%99%E4%B8%AA%E6%8A%98%E7%A3%A8%E4%BA%BA%E7%9A%84%E5%B0%8F%E5%A6%96%E7%B2%BE.md)
+- [谈谈Promise这个折磨人的小妖精](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-Promise%E8%BF%99%E4%B8%AA%E6%8A%98%E7%A3%A8%E4%BA%BA%E7%9A%84%E5%B0%8F%E5%A6%96%E7%B2%BE.md)  ` · fix`
 - [async 和 await](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-async-%E5%92%8C-await.md)
 - [垃圾回收机制](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6.md)
 - [0.1 + 0.2 != 0.3](https://github.com/PDKSophia/read-booklist/blob/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1/play-card-1.md#number-%E7%B1%BB%E5%9E%8B)

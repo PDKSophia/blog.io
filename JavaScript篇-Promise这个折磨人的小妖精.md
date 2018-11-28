@@ -271,6 +271,12 @@ __then方法的返回值是一个新的GPromise对象，这就是为什么promis
 ```
 
 ### 敲重点, reject 和 catch 的区别 ?
+看下图片 ？
+
+<img src='https://github.com/PDKSophia/blog.io/raw/master/image/promise-1.png' width='700' height='550'>
+
+<img src='https://github.com/PDKSophia/blog.io/raw/master/image/promise2.png' width='700' height='550'>
+
 首先纠正一个误区 : 谁说 reject 是用来处理异常的了 , `reject` 是用来抛出异常的，`catch` 才是用来处理异常的, 类比传统的 try catch 写法，reject 就相当于 throw
 
 并且 `reject` 是 Promise 的方法，而 `catch` 是 Promise 实例的方法
@@ -286,11 +292,6 @@ __then方法的返回值是一个新的GPromise对象，这就是为什么promis
   Promise.then() // 没有
   Promise.catch() // 没有
 ```
-看下图片 ？
-
-<img src='https://github.com/PDKSophia/blog.io/raw/master/image/promise-1.png' >
-
-<img src='https://github.com/PDKSophia/blog.io/raw/master/image/promise2.png' >
 
 ```javascript
   resolve后的东西，一定会进入then的第一个回调，肯定不会进入catch
