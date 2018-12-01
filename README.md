@@ -4,7 +4,7 @@
 
 <div align='center'>
 
-  <img src='https://github.com/PDKSophia/blog.io/raw/master/ReactImage/logo.png' width='220' height='150' />
+  <img src='https://github.com/PDKSophia/blog.io/raw/master/ReactImage/logo-two.png' width='220' height='150' />
   
 ![](https://img.shields.io/badge/Author-PDK-blue.svg)
 ![](https://img.shields.io/badge/Category-Interview-red.svg)
