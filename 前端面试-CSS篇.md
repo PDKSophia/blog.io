@@ -1,3 +1,22 @@
+<!-- GFM-TOC -->
+* [CSS](#CSS)
+    * [盒模型](#盒模型)
+    * [如何画一条0.5px的线?](#如何画一条0.5px的线?)
+    * [transition和animation的区别?](#transition和animation的区别?)
+    * [Flex布局](#Flex布局)
+    * [BFC](#BFC)
+    * [清除浮动的几种方式](#清除浮动的几种方式)
+    * [visibility:hidden和display:none以及opacity:0](#visibility:hidden和display:none以及opacity:0)
+    * [border:none和border:0的区别](#border:none和border:0的区别)
+    * [垂直居中的方式](#垂直居中的方式)
+    * [CSS3新特性](#CSS3新特性)
+    * [CSS优先级算法如何计算](#CSS优先级算法如何计算)
+    * [position属性的了解](#position属性的了解)
+    * [如果需要手动写动画，你认为最小时间间隔是多久，为什么](#如果需要手动写动画，你认为最小时间间隔是多久，为什么)
+<!-- GFM-TOC -->
+
+# CSS
+
 ## 盒模型
 
 > 有两种 : IE盒模型 和 W3C盒模型
@@ -22,7 +41,7 @@ IE盒模型
 
 -------
 
-## 如何画一条0.5px的线 ?
+## 如何画一条0.5px的线?
 
 `Chrome`把0.5px四舍五入变成了1px，而`firefox/safari`能够画出半个像素的边，并且`Chrome`会把小于0.5px的当成0，而`Firefox`会把不小于0.55px当成1px，`Safari`是把不小于0.75px当成1px，进一步在手机上观察IOS的Chrome会画出0.5px的边，而安卓(5.0)原生浏览器是不行的。所以直接设置0.5px不同浏览器的差异比较大
 
@@ -39,7 +58,7 @@ IE盒模型
 
 -------
 
-## transition和animation的区别 ?
+## transition和animation的区别?
 `animation`和`transition`大部分属性是相同的，他们都是随时间改变元素的属性值。
 
 他们的主要区别是transition需要触发一个事件才能改变属性，而animation不需要触发任何事件的情况下才会随时间改变属性值，并且transition为2帧，从from .... to，而animation可以一帧一帧的。
@@ -92,7 +111,7 @@ IE盒模型
 
 ------
 
-## BFC 
+## BFC
 > BFC : 块级格式化上下文，可以理解为是一种属性，这种属性影响着元素等定位以及其兄弟元素之间等相互作用。
 
 + BFC区域不会与float box 重叠
@@ -157,7 +176,7 @@ IE盒模型
 
 -------
 
-## visibility : hidden 和 display : none 以及 opacity : 0 
+## visibility:hidden和display:none以及opacity:0
 - `opacity : 0`，该元素隐藏起来了，但不会改变页面布局，并且，如果该元素已经绑定一些事件，如click事件，那么点击该区域，也能触发点击事件
 
 - `visibility : hidden`，该元素隐藏起来了，但不会改变页面布局，但是不会触发该元素已经绑定的事件
@@ -166,7 +185,7 @@ IE盒模型
 
 -----
 
-## border: none 和 border: 0 的区别
+## border:none和border:0的区别
 
 【 性能差异 】
 
@@ -269,7 +288,7 @@ IE盒模型
 
 -------
 
-## CSS3 新特性？
+## CSS3新特性
 面试中，面试官会问你，css3新加了哪些新特性呢？很显然这道题目是有陷阱的，你不可能将所有的特性一个不漏的说出来，就算你说出来，别人还认为你是背的了，这边我就大概说下我在开发中，用到的css3新特性
 
 `border-radius` 圆角

@@ -1,8 +1,20 @@
-## 前言
+| Ⅰ | Ⅱ | Ⅲ | Ⅳ | Ⅴ | VI | VII | VIII | IX | X | XI | 
+| :--------: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: |  :---------: | :---------: | :---------: |  
+| [HTML](#HTML) | [CSS](#CSS) | [JavaScript](#JavaScript) | [Vue](#Vue) | [React](#React) | [浏览器](#浏览器) | [计算机网络](#计算机网络) | [面向对象](#面向对象) | [算法](#算法) | [个人面经](#个人面经) | [后记](#后记) |
 
-![](https://img.shields.io/badge/MarkDown-.md-brightgreen.svg)
+<div align='center'>
+
+  <img src='https://github.com/PDKSophia/blog.io/raw/master/ReactImage/logo.png' width='220' height='150' />
+  
 ![](https://img.shields.io/badge/Author-PDK-blue.svg)
+![](https://img.shields.io/badge/Category-Interview-red.svg)
+![](https://img.shields.io/badge/license-MIT-yellowgreen.svg)
+![](https://img.shields.io/badge/Vue-2.5-yellowgreen.svg)
+![](https://img.shields.io/badge/React-16.3-green.svg)
 
+</div>
+
+## 前言
 秋招马上就开始了，很多大厂的秋招提前批已经打响，博主前两天也通过学长学姐们，内推了些大公司，简历一关应该都能过，所以得开始准备一下面试，得复习一哈，在这边的会记录我面试准备看的些书籍和知识点，如果有兴趣的小伙伴，可以看看哦
 
 ## 有很重要的话要说
@@ -15,6 +27,9 @@ github : https://github.com/PDKSophia
 掘金 : https://juejin.im/user/594ca8a35188250d892f4139
 
 微博 : [彭道寬](https://weibo.com/u/2971991985)
+
+主页 : http://www.pengdaokuan.cn
+
 
 ## 客官，点个赞?
 如果觉得对您有帮助的话，点个star再走？

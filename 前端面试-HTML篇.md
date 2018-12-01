@@ -1,6 +1,18 @@
-# HTML 篇
+<!-- GFM-TOC -->
+* [HTML](#HTML)
+    * [DOCTYPE作用?标准模式（严格模式）和兼容模式（混杂模式）有什么区别?](#DOCTYPE作用?标准模式（严格模式）和兼容模式（混杂模式）有什么区别?)
+    * [行内元素有哪些？块级元素有哪些？](#行内元素有哪些？块级元素有哪些？)
+    * [页面导入样式时,使用link和@import有什么区别?](#页面导入样式时,使用link和@import有什么区别?)
+    * [如何进行网站性能优化](#如何进行网站性能优化)
+    * [HTTP状态码](#HTTP状态码)
+    * [HTML语义化的理解](#HTML语义化的理解)
+    * [sessionStorage、localStorage、cookie、indexDB](#sessionStorage、localStorage、cookie、indexDB)
+    * [计算机网络体系结构](#计算机网络体系结构)
+<!-- GFM-TOC -->
 
-## DOCTYPE作用 ？ 标准模式（严格模式）和 兼容模式（混杂模式）有什么区别？
+# HTML
+
+## DOCTYPE作用?标准模式（严格模式）和兼容模式（混杂模式）有什么区别?
 
 ```javacript
   <!DOCTYPE>声明位于HTML文档中的第一行，处于 <html> 标签之前,告知浏览器解析器，需要用什么文档去解析这个文档，DOCTYPE不存在会导致文档以兼容模式去呈现
@@ -31,7 +43,7 @@
 
 ------
 
-## 页面导入样式时，使用 link 和 @import 有什么区别 ？
+## 页面导入样式时,使用link和@import有什么区别?
 ```javascript
   1 . link 是html方式，@import 是css方式
   
@@ -73,7 +85,7 @@
 
 -------
 
-## HTTP 状态码
+## HTTP状态码
 状态码的职责是当客户端向服务器发送请求时，描述返回的请求结果。借助状态码，用户可以知道服务器是否正常处理，还是出现了错误
 
 状态码如: 200 OK，是由3位数字和原因短语组成
@@ -137,7 +149,7 @@
 
 --------
 
-## sessionStorage 、localStorage 、 cookie、 indexDB
+## sessionStorage、localStorage、cookie、indexDB
 
 - cookie是网站为了标示用户身份而储存在用户本地终端上的数据，始终在同源的http请求中携带（即使不需要），记会在浏览器和服务器间来回传递
 
