@@ -1,13 +1,12 @@
 <!-- GFM-TOC -->
 * [HTML](#HTML)
-    * [DOCTYPE作用?标准模式（严格模式）和兼容模式（混杂模式）有什么区别?](#DOCTYPE作用?标准模式（严格模式）和兼容模式（混杂模式）有什么区别?)
-    * [行内元素有哪些？块级元素有哪些？](#行内元素有哪些？块级元素有哪些？)
-    * [页面导入样式时,使用link和@import有什么区别?](#页面导入样式时,使用link和@import有什么区别?)
+    * [DOCTYPE作用?标准模式（严格模式）和兼容模式（混杂模式）有什么区别?](#doctype作用标准模式严格模式和兼容模式混杂模式有什么区别)
+    * [行内元素有哪些？块级元素有哪些？](#行内元素有哪些块级元素有哪些)
+    * [页面导入样式时,使用link和@import有什么区别?](#页面导入样式时使用link和import有什么区别)
     * [如何进行网站性能优化](#如何进行网站性能优化)
     * [HTTP状态码](#HTTP状态码)
     * [HTML语义化的理解](#HTML语义化的理解)
-    * [sessionStorage、localStorage、cookie、indexDB](#sessionStorage、localStorage、cookie、indexDB)
-    * [计算机网络体系结构](#计算机网络体系结构)
+    * [sessionStorage、localStorage、cookie、indexDB](#sessionstoragelocalstoragecookieindexdb)
 <!-- GFM-TOC -->
 
 # HTML

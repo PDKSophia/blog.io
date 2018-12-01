@@ -1,18 +1,18 @@
 <!-- GFM-TOC -->
 * [CSS](#CSS)
     * [盒模型](#盒模型)
-    * [如何画一条0.5px的线?](#如何画一条0.5px的线?)
-    * [transition和animation的区别?](#transition和animation的区别?)
+    * [如何画一条0.5px的线?](#transition和animation的区别)
+    * [transition和animation的区别?](#transition和animation的区别)
     * [Flex布局](#Flex布局)
     * [BFC](#BFC)
     * [清除浮动的几种方式](#清除浮动的几种方式)
-    * [visibility:hidden和display:none以及opacity:0](#visibility:hidden和display:none以及opacity:0)
-    * [border:none和border:0的区别](#border:none和border:0的区别)
+    * [visibility:hidden和display:none以及opacity:0](#visibilityhidden和displaynone以及opacity0)
+    * [border:none和border:0的区别](#bordernone和border0的区别)
     * [垂直居中的方式](#垂直居中的方式)
     * [CSS3新特性](#CSS3新特性)
     * [CSS优先级算法如何计算](#CSS优先级算法如何计算)
     * [position属性的了解](#position属性的了解)
-    * [如果需要手动写动画，你认为最小时间间隔是多久，为什么](#如果需要手动写动画，你认为最小时间间隔是多久，为什么)
+    * [如果需要手动写动画，你认为最小时间间隔是多久，为什么](#如果需要手动写动画你认为最小时间间隔是多久为什么)
 <!-- GFM-TOC -->
 
 # CSS
