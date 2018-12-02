@@ -99,22 +99,22 @@ blog.io : https://github.com/PDKSophia/blog.io
 - [函数绑定与柯里化函数，手动实现一个bind()函数](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E5%87%BD%E6%95%B0%E7%BB%91%E5%AE%9A%E4%B8%8E%E5%87%BD%E6%95%B0%E6%9F%AF%E9%87%8C%E5%8C%96.md)   ` · new`
 
 ### 浏览器
-- [事件机制及事件委托](https://github.com/PDKSophia/blog.io/blob/master/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%AF%87-%E4%BA%8B%E4%BB%B6%E6%9C%BA%E5%88%B6.md) ` · fix`
-- [来聊聊五毛钱话题-跨域问题](https://github.com/PDKSophia/blog.io/blob/master/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%AF%87-%E6%9D%A5%E8%81%8A%E8%81%8A%E4%BA%94%E6%AF%9B%E9%92%B1%E7%9A%84%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98.md)
-- [浏览器渲染页面原理及流程](https://github.com/PDKSophia/blog.io/blob/master/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%AF%87-%E6%B5%8F%E8%A7%88%E5%99%A8%E6%B8%B2%E6%9F%93%E5%8E%9F%E7%90%86%E5%8F%8A%E6%B5%81%E7%A8%8B.md)
-- [Event Loop](https://github.com/PDKSophia/blog.io/blob/master/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%AF%87-Event-Loop.md)
-- [setTimeout和setInterval的小秘密](https://github.com/PDKSophia/blog.io/blob/master/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%AF%87%20-%20setTimeout%E4%B8%8EsetInterval.md) ` · new`
+- [事件机制及事件委托](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-%E6%B5%8F%E8%A7%88%E5%99%A8%E7%AF%87.md#%E4%BA%8B%E4%BB%B6%E6%9C%BA%E5%88%B6) ` · fix`
+- [来聊聊五毛钱话题-跨域问题](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-%E6%B5%8F%E8%A7%88%E5%99%A8%E7%AF%87.md#%E4%BB%80%E4%B9%88%E6%98%AF%E8%B7%A8%E5%9F%9F)
+- [浏览器渲染页面原理及流程](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-%E6%B5%8F%E8%A7%88%E5%99%A8%E7%AF%87.md#%E6%B5%8F%E8%A7%88%E5%99%A8%E6%B8%B2%E6%9F%93%E9%A1%B5%E9%9D%A2%E5%8E%9F%E7%90%86%E5%8F%8A%E6%B5%81%E7%A8%8B)
+- [Event Loop](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-%E6%B5%8F%E8%A7%88%E5%99%A8%E7%AF%87.md#event-loop)
+- [setTimeout和setInterval的小秘密](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-%E6%B5%8F%E8%A7%88%E5%99%A8%E7%AF%87.md#settimeout%E4%B8%8Esetinterval) ` · new`
 
 ### 性能及协作
 - [懒加载和预加载](https://github.com/PDKSophia/blog.io/blob/master/%E6%80%A7%E8%83%BD%E5%8F%8A%E5%8D%8F%E4%BD%9C%E7%AF%87-%E6%87%92%E5%8A%A0%E8%BD%BD%E5%92%8C%E9%A2%84%E5%8A%A0%E8%BD%BD.md)
 - [Git的团队协作](https://github.com/PDKSophia/blog.io/blob/master/%E6%80%A7%E8%83%BD%E5%8F%8A%E5%8D%8F%E4%BD%9C%E7%AF%87-Git%E7%9A%84%E5%9B%A2%E9%98%9F%E5%8D%8F%E4%BD%9C.md)
 
 ### 计算机网络
-- [从输入 URL 到页面加载完成的过程](https://github.com/PDKSophia/blog.io/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87-%E4%BB%8E%E8%BE%93%E5%85%A5URL%E5%88%B0%E9%A1%B5%E9%9D%A2%E5%8A%A0%E8%BD%BD%E5%AE%8C%E6%88%90%E8%BF%87%E7%A8%8B.md)
-- [XSS和CSRF攻击及其他安全漏洞](https://github.com/PDKSophia/blog.io/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87-XSS%E5%92%8CCSRF%E7%9A%84%E6%94%BB%E5%87%BB.md)  ` · fix`
-- [HTTP 和 HTTPS 的区别](https://github.com/PDKSophia/blog.io/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87-HTTP%E5%92%8CHTTPS%E7%9A%84%E5%8C%BA%E5%88%AB.md) ` · fix`
-- [HTTP1.0 和 HTTP1.1 以及 HTTP2.0的区别](https://github.com/PDKSophia/blog.io/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87-HTTP1.0%20%E3%80%81HTTP1.1%20%E5%92%8C%20HTTP2.0%E7%9A%84%E5%8C%BA%E5%88%AB.md)
-- [TCP三次握手和四次挥手](https://github.com/PDKSophia/blog.io/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87-TCP%E7%9A%84%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%92%8C%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B.md)
+- [从输入 URL 到页面加载完成的过程](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87.md#%E4%BB%8E%E8%BE%93%E5%85%A5url%E5%88%B0%E9%A1%B5%E9%9D%A2%E5%8A%A0%E8%BD%BD%E5%AE%8C%E6%88%90%E7%9A%84%E8%BF%87%E7%A8%8B)
+- [针对Web的攻击技术XSS与CSRF](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87.md#%E9%92%88%E5%AF%B9Web%E7%9A%84%E6%94%BB%E5%87%BB%E6%8A%80%E6%9C%AFXSS%E4%B8%8ECSRF)  ` · fix`
+- [HTTP 和 HTTPS 的区别](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87.md#HTTP%E5%92%8CHTTPS%E7%9A%84%E5%8C%BA%E5%88%AB) ` · fix`
+- [HTTP1.0 和 HTTP1.1 以及 HTTP2.0的区别](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87.md#http10http11%E5%92%8Chttp20%E7%9A%84%E5%8C%BA%E5%88%AB)
+- [TCP三次握手和四次挥手](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87.md#TCP%E7%9A%84%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%92%8C%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B)
 
 ### Vue
 - [Vue生命周期的理解](https://github.com/PDKSophia/blog.io/blob/master/Vue%E7%AF%87-Vue%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.md)
