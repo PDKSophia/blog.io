@@ -28,7 +28,7 @@ github : https://github.com/PDKSophia
 
 微博 : [彭道寬](https://weibo.com/u/2971991985)
 
-主页 : http://www.pengdaokuan.cn
+主页 : https://www.pengdaokuan.cn
 
 
 ## 客官，点个赞?
@@ -134,16 +134,11 @@ blog.io : https://github.com/PDKSophia/blog.io
 - [二叉树](https://github.com/PDKSophia/blog.io/blob/master/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E6%A0%91%E7%9A%84%E7%90%86%E8%A7%A3.md)
 
 ### 算法
-<ul>
-    <li>解析URL Params 对象</li>
-    <li>trim 实现去除字符串首尾指定字符</li>
-    <li>判断一个字符串是否是回文?</li>
-    <li>去掉一组整型数组重复的值</li>
-    <li>统计一个字符串出现最多的字母和出现的次数</li>
-    <li>最大子序和</li>
-    <li>冒泡排序</li>
-    <li>插入排序</li>
-</ul>
+- [leetcode top 100 easy](https://github.com/PDKSophia/leetcode-js-study)
+
+- 常见的面试题
+
+- 《剑指 offer》面试题
 
 ### 个人面经
 <ul>
