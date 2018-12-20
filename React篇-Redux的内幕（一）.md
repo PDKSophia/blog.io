@@ -11,31 +11,31 @@
 博主在面试的过程中，面试官问 : “看你简历，Vue和React都使用过，你能说一下 [Vue和React的区别嘛？](https://github.com/PDKSophia/blog.io/blob/master/React%E7%AF%87-React%E5%92%8CVue%E7%9A%84%E5%8C%BA%E5%88%AB.md)”, 然后吧唧吧唧说了一下，于是！血案发生了，当我答道Vuex和Redux的时候，面试官问了一句，为什么Redux总是要返回一个新的 `state ` ？返回旧的 `state` 为什么不行 ？面试结果不用说，GG了。
 
 ## 重振旗鼓
-过了大半个月，自己总结面试经验的时候，把Redux的源码看了一遍，ojbk，看的晕头转向，然后去github上看了一些大哥们的解读，再自己总结一哈，写个专栏，用于自己以后的复习
+过了大半个月，自己总结面试经验的时候，把Redux的源码看了一遍，ojbk，看的晕头转向，然后去github上看了一些大哥们的解读，再自己总结一哈，写个专栏，用于自己以后的复习
 
 ## 基础了解
 
-### Redux是什么？
+#### Redux是什么？
 Redux 是 JavaScript 状态容器，提供可预测化的状态管理方案, 官网里是这么介绍的 : 
 ```javascript
   // Redux is a predictable state container for JavaScript apps.
 ```
 
-### 那么它能做什么？
+#### 那么它能做什么？
 ```javascript
   // It helps you write applications that behave consistently, run in different environments (client, server, and native) and are easy to test.
   // On top of that, it provides a great developer experience, such as live code editing combined with a time traveling debugger.
 ```
 
-### 三大原则
+#### 三大原则
 - 单一数据源 : 整个应用的 `state` 都存储在一颗 state tree 中，并且只存在与唯一一个 store 中
 
 - state 是只读的 : 唯一改变 state 的方法只能通过触发 `action`，然后通过 action 的 `type` 进而分发 dispatch 。不能直接改变应用的状态
 
-- 状态修改均由纯函数完成 : 为了描述 action 如何改变 state tree，需要编写 `reducers`
+- 状态修改均由纯函数完成 : 为了描述 action 如何改变 state tree，需要编写 `reducers`
 
 ## 修修边幅
-这里我们先来了解一下store、middleware、action、reducer等知识
+这里我们先来了解一下store、middleware、action、reducer等知识
 
 ### store
 这里的 `store` 是由 Redux 提供的 createStore(reducers, preloadedState, enhancer) 方法生成。从函数签名看出，要想生成 store，必须要传入 reducers，同时也可以传入第二个可选参数初始化状态(preloadedState)。第三个参数一般为中间件 `applyMiddleware(thunkMiddleware)`，看看代码，比较直观
