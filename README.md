@@ -108,7 +108,7 @@ blog.io : https://github.com/PDKSophia/blog.io
 ### 性能及协作
 - [懒加载和预加载](https://github.com/PDKSophia/blog.io/blob/master/%E6%80%A7%E8%83%BD%E5%8F%8A%E5%8D%8F%E4%BD%9C%E7%AF%87-%E6%87%92%E5%8A%A0%E8%BD%BD%E5%92%8C%E9%A2%84%E5%8A%A0%E8%BD%BD.md)
 - [Git的团队协作](https://github.com/PDKSophia/blog.io/blob/master/%E6%80%A7%E8%83%BD%E5%8F%8A%E5%8D%8F%E4%BD%9C%E7%AF%87-Git%E7%9A%84%E5%9B%A2%E9%98%9F%E5%8D%8F%E4%BD%9C.md)
-- [前端监控及前端埋点]()
+- [前端监控及前端埋点]()  ` · new`
 
 ### 计算机网络
 - [从输入 URL 到页面加载完成的过程](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87.md#%E4%BB%8E%E8%BE%93%E5%85%A5url%E5%88%B0%E9%A1%B5%E9%9D%A2%E5%8A%A0%E8%BD%BD%E5%AE%8C%E6%88%90%E7%9A%84%E8%BF%87%E7%A8%8B)
@@ -126,8 +126,9 @@ blog.io : https://github.com/PDKSophia/blog.io
 ### React
 - [从源码看React的生命周期](https://github.com/PDKSophia/blog.io/blob/master/React%E7%AF%87-%E4%BB%8E%E6%BA%90%E7%A0%81%E7%9C%8BReact%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.md)
 - [今天的考核题目: 你知道Vue和React的区别吗?](https://github.com/PDKSophia/blog.io/blob/master/React%E7%AF%87-React%E5%92%8CVue%E7%9A%84%E5%8C%BA%E5%88%AB.md)
-- [Vue和React中key的作用吗]()
-- [Redux的源码理解]()
+- [Vue和React中key的作用吗](https://github.com/PDKSophia/blog.io/blob/master/React%E7%AF%87-%E5%85%B3%E4%BA%8EVue%E5%92%8CReact%E4%B8%ADkey%E7%9A%84%E4%BD%9C%E7%94%A8.md)  ` · new`
+- [Redux的内幕（一）]()   ` · new`
+- [Redux的内幕（二）]()   ` · writing`
 
 ### 数据结构
 - [栈](https://github.com/PDKSophia/blog.io/blob/master/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E6%A0%88.md)
