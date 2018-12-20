@@ -108,6 +108,7 @@ blog.io : https://github.com/PDKSophia/blog.io
 ### 性能及协作
 - [懒加载和预加载](https://github.com/PDKSophia/blog.io/blob/master/%E6%80%A7%E8%83%BD%E5%8F%8A%E5%8D%8F%E4%BD%9C%E7%AF%87-%E6%87%92%E5%8A%A0%E8%BD%BD%E5%92%8C%E9%A2%84%E5%8A%A0%E8%BD%BD.md)
 - [Git的团队协作](https://github.com/PDKSophia/blog.io/blob/master/%E6%80%A7%E8%83%BD%E5%8F%8A%E5%8D%8F%E4%BD%9C%E7%AF%87-Git%E7%9A%84%E5%9B%A2%E9%98%9F%E5%8D%8F%E4%BD%9C.md)
+- [前端监控及前端埋点]()
 
 ### 计算机网络
 - [从输入 URL 到页面加载完成的过程](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87.md#%E4%BB%8E%E8%BE%93%E5%85%A5url%E5%88%B0%E9%A1%B5%E9%9D%A2%E5%8A%A0%E8%BD%BD%E5%AE%8C%E6%88%90%E7%9A%84%E8%BF%87%E7%A8%8B)
@@ -126,6 +127,7 @@ blog.io : https://github.com/PDKSophia/blog.io
 - [从源码看React的生命周期](https://github.com/PDKSophia/blog.io/blob/master/React%E7%AF%87-%E4%BB%8E%E6%BA%90%E7%A0%81%E7%9C%8BReact%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.md)
 - [今天的考核题目: 你知道Vue和React的区别吗?](https://github.com/PDKSophia/blog.io/blob/master/React%E7%AF%87-React%E5%92%8CVue%E7%9A%84%E5%8C%BA%E5%88%AB.md)
 - [Vue和React中key的作用吗]()
+- [Redux的源码理解]()
 
 ### 数据结构
 - [栈](https://github.com/PDKSophia/blog.io/blob/master/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E6%A0%88.md)
@@ -166,34 +168,6 @@ blog.io : https://github.com/PDKSophia/blog.io
 
 ![image](https://github.com/PDKSophia/ONE_WORD/raw/master/images/g2.gif)
 
-### 立个里程碑
-
-[十一月书单 ～ 十二月书单](https://github.com/PDKSophia/read-booklist)
-
-| 序号 | 数名 | 开始时间 | 结束时间 | 进度 | 状态 |
-| :------: | :------: | :------: | :------: | :------: |  :------: |
-| 1 | `《JavaScript高级程序设计 第3版》` |  2018.11.05 | 2018.11.24 | 88% | [跟读](https://github.com/PDKSophia/read-booklist/tree/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1) |
-| 2 | `《图解HTTP》` |  2018.11.12 | 2018.11.23 | 100% | [跟读](https://github.com/PDKSophia/read-booklist/blob/master/图解HTTP) |
-| 3 | `《计算机网络 第七版》` |  2018.11.25 | 2018.11.31 | 0% | 未读 |
-| 4 | `《ECMAScript 6 入门》` | 暂定 | 暂定 | 0% | 未读 |
-| 5 | `《JavaScript正则表达式》` | 暂定 | 暂定 | 0% | 未读 |
-| 6 | `《剑指 offer》` | 暂定 | 暂定 | 0% | 未读 |
-| 7 | `《算法图解》` | 暂定 | 暂定 | 0% | 未读 |
-| 8 | `《数据结构与算法 JavaScript描述》` |  暂定 | 暂定 | 0% | 未读 |
-| 9 | `《JavaScript设计模式与开发实践》` |  暂定 | 暂定 | 0% | 未读 |
-| 10 | `《计算机是怎样跑起来的》` |  暂定 | 暂定 | 0% | 未读 |
-| 11 | `《编程之法：面试和算法心得》` |  暂定 | 暂定 | 0% | 未读 |
-| 12 | `《程序员修炼之道——从小工到专家》` |  暂定 | 暂定 | 0% | 未读 |
-| 13 | `《大型网站技术架构》` |  暂定 | 暂定 | 0% | 未读 |
-| 14 | `《编程珠玑》` |  暂定 | 暂定 | 0% | 未读 |
-| 15 | `《硅谷之火》` |  暂定 | 暂定 | 0% | 未读 |
-| 16 | `《白帽子讲Web安全》` |  暂定 | 暂定 | 0% | 未读 |
-| 17 | `《程序员的英语》` |  暂定 | 暂定 | 0% | 未读 |
-| 18 | `《了不起到Node.js》` |  暂定 | 暂定 | 0% | 未读 |
-| 19 | `《黑客与画家》` |  暂定 | 暂定 | 0% | 未读 |
-| 20 | `《丑陋的中国人》` |  暂定 | 暂定 | 0% | 未读 |
-
------------
 
 ### 给个支持？
 客官，如果你觉得我写的还阔以，打个赏？
