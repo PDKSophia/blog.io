@@ -3,7 +3,7 @@
 ### 什么是key？
 `React` 中的key属性，它是一个特殊的属性, 其实不只是`React`，`Vue`中在执行列表渲染时也会要求给每个组件添加上key这个属性。
 
-怎么解释这个 `key` 这个玩意呢？这就要扯到 [虚拟DOM的 Diff 算法]()了，通过一套虚拟DOM，使得我们不直接操作DOM，而只需要操作数据就能够重新渲染页面。而隐藏在背后的原理便是其高效的[Diff算法]()。
+怎么解释这个 `key` 这个玩意呢？这就要扯到 [虚拟DOM的 Diff 算法]()了，通过一套虚拟DOM，使得我们不直接操作DOM，而只需要操作数据就能够重新渲染页面。而隐藏在背后的原理便是其高效的[Diff算法]()。
 
 vue和react的虚拟DOM的Diff算法大致相同，其核心是基于两个简单的假设：
 
@@ -20,7 +20,7 @@ vue和react的虚拟DOM的Diff算法大致相同，其核心是基于两个简�
 看到这里，你应该知道了吧，没错，这个唯一区分的id其实就是本文的重点 —— `key`
 
 ### key的作用
-以 React 举例，react的作者之一Paul O’Shannessy有提到：
+以 React 举例，react的作者之一Paul O’Shannessy有提到：
 ```javascript
 Key is not really about performance, it’s more about identity (which in turn leads to better performance). Randomly assigned and changing values do not form an identity
 ```
@@ -58,7 +58,7 @@ Key is not really about performance, it’s more about identity (which in turn l
     )
   }
 ```
-上面代码在dom渲染挂载后，用户列表只有董事长和总经理两个用户，技术总监并没有展示处理，主要是因为react根据key认为总经理和技术总监是同一个组件，导致第一个被渲染，后续的会被丢弃掉。
+上面代码在dom渲染挂载后，用户列表只有董事长和总经理两个用户，技术总监并没有展示处理，主要是因为react根据key认为总经理和技术总监是同一个组件，导致第一个被渲染，后续的会被丢弃掉。
 
 这样，有了key属性后，就可以与组件建立了一种对应关系，react根据key来决定是销毁重新创建组件还是更新组件。
 
