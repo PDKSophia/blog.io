@@ -69,13 +69,13 @@ redux 中最核心的 API 就是 —— `createStore`， 通过 createStore 方�
 又比如，点击 button 后，需要先去服务端请求数据，只有等数据返回后，才能重新渲染 view，此时我们希望 dispatch 或 reducer 拥有异步请求的功能。再比如，需要异步请求数据返回后，打印一条日志，再请求数据，再打印日志，再渲染。
 
 <div align='center'>
-  <!-- <img src='./ReactImage/redux1.png' alt='' width=700 /> -->
+  <img src='https://github.com/PDKSophia/blog.io/raw/master/ReactImage/redux1.png' alt='' width=700 />
 </div>
 
 面对多样的业务场景，单纯地修改 dispatch 或 reducer 的代码显然不具有普适性，Redux 借鉴了 Node.js Koa 里 middleware 的思想，Redux 中 reducer 更关心的是数据的转化逻辑，所以 __middleware 就是为了增强 dispatch 而出现的。__
 
 <div align='center'>
-  <!-- <img src='./ReactImage/redux2.png' alt='' width=700 /> -->
+  <img src='https://github.com/PDKSophia/blog.io/raw/master/ReactImage/redux2.png' alt='' width=700 />
 </div>
 
 ### Action

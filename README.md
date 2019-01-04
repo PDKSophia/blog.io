@@ -1,6 +1,6 @@
 | Ⅰ | Ⅱ | Ⅲ | Ⅳ | Ⅴ | VI | VII | VIII | IX | X | XI | 
 | :--------: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: |  :---------: | :---------: | :---------: |  
-| [HTML](#HTML) | [CSS](#CSS) | [JavaScript](#JavaScript) | [Vue](#Vue) | [React](#React) | [浏览器](#浏览器) | [计算机网络](#计算机网络) | [数据结构](#数据结构) | [算法](#算法) | [个人面经](#个人面经) | [后记](#后记) |
+| [HTML](#HTML) | [CSS](#CSS) | [JavaScript](#JavaScript) | [Vue](#Vue) | [React](#React) | [浏览器](#浏览器) | [计算机网络](#计算机网络) | [数据结构](#数据结构) | [算法](#算法) | [个人面经](#个人面经) | [工作笔记](#工作笔记) |
 
 <div align='center'>
 
@@ -139,6 +139,10 @@ blog.io : https://github.com/PDKSophia/blog.io
 ### 算法
 - [leetcode top 100 easy](https://github.com/PDKSophia/leetcode-js-study)
 
+### 工作笔记
+- [Service Worker的了解]()
+- [前端监控及前端埋点]()
+
 - 常见的面试题
 
 - 《剑指 offer》面试题
@@ -169,9 +173,4 @@ blog.io : https://github.com/PDKSophia/blog.io
 
 ![image](https://github.com/PDKSophia/ONE_WORD/raw/master/images/g2.gif)
 
-
-### 给个支持？
-客官，如果你觉得我写的还阔以，打个赏？
-
-<img src='https://github.com/PDKSophia/blog.io/raw/master/image/agree.jpeg' width=250 height=250>
 
