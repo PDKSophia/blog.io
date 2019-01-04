@@ -1,5 +1,0 @@
-- [Vue 篇](./README.md)J
-  - [Vue 生命周期的理解]()
-  - [Vue 的双向数据绑定原理是什么]()
-  - [Vue 中的 computed 和 methods 有什么区别]()
-  - [Vue 之 nextTick 与 Watcher 以及 Dep 的蓝色生死恋]()

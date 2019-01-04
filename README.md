@@ -48,7 +48,7 @@ blog.io : https://github.com/PDKSophia/blog.io
 
 微博: https://weibo.com/u/2971991985
 
-### HTML
+### 🐷 HTML
 
 - [DOCTYPE 作用 ？ 标准模式（严格模式）和 兼容模式（混杂模式）有什么区别？](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-HTML%E7%AF%87.md#doctype%E4%BD%9C%E7%94%A8--%E6%A0%87%E5%87%86%E6%A8%A1%E5%BC%8F%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F%E5%92%8C-%E5%85%BC%E5%AE%B9%E6%A8%A1%E5%BC%8F%E6%B7%B7%E6%9D%82%E6%A8%A1%E5%BC%8F%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB)
 - [行内元素有哪些？块级元素有哪些？](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-HTML%E7%AF%87.md#%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0%E6%9C%89%E5%93%AA%E4%BA%9B%E5%9D%97%E7%BA%A7%E5%85%83%E7%B4%A0%E6%9C%89%E5%93%AA%E4%BA%9B)
@@ -58,7 +58,7 @@ blog.io : https://github.com/PDKSophia/blog.io
 - [HTML 语义化的理解](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-HTML%E7%AF%87.md#html%E8%AF%AD%E4%B9%89%E5%8C%96%E7%9A%84%E7%90%86%E8%A7%A3)
 - [sessionStorage 、localStorage 、 cookie、 indexDB](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-HTML%E7%AF%87.md#sessionstorage-localstorage--cookie-indexdb)
 
-### CSS
+### 🐒 CSS
 
 - [盒模型](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-CSS%E7%AF%87.md#%E7%9B%92%E6%A8%A1%E5%9E%8B)
 - [如何画一条 0.5px 的线](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-CSS%E7%AF%87.md#%E5%A6%82%E4%BD%95%E7%94%BB%E4%B8%80%E6%9D%A105px%E7%9A%84%E7%BA%BF-)
@@ -75,35 +75,10 @@ blog.io : https://github.com/PDKSophia/blog.io
 - [position 属性的了解](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-CSS%E7%AF%87.md#position%E5%B1%9E%E6%80%A7%E7%9A%84%E4%BA%86%E8%A7%A3)
 - [如果需要手动写动画，你认为最小时间间隔是多久，为什么](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-CSS%E7%AF%87.md#%E5%A6%82%E6%9E%9C%E9%9C%80%E8%A6%81%E6%89%8B%E5%8A%A8%E5%86%99%E5%8A%A8%E7%94%BB%E4%BD%A0%E8%AE%A4%E4%B8%BA%E6%9C%80%E5%B0%8F%E6%97%B6%E9%97%B4%E9%97%B4%E9%9A%94%E6%98%AF%E5%A4%9A%E4%B9%85%E4%B8%BA%E4%BB%80%E4%B9%88)
 
-### JavaScript
+### 🐼 JavaScript
+原型与原型链、闭包、Promise、垃圾回收机制、深浅拷贝、...
 
-- [JS 异步加载，defer 和 async 的区别?](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E5%BC%82%E6%AD%A5%E5%8A%A0%E8%BD%BDjs%2C%20async%E5%92%8Cdefer.md)
-- [聊下操作符](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E8%81%8A%E4%B8%8B%E6%93%8D%E4%BD%9C%E7%AC%A6.md)
-- [原型与原型链](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E5%8E%9F%E5%9E%8B%E5%92%8C%E5%8E%9F%E5%9E%8B%E9%93%BE.md) `· fix`
-- [闭包](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E9%97%AD%E5%8C%85.md) `· fix`
-- [谈谈 Promise 这个折磨人的小妖精](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-Promise%E8%BF%99%E4%B8%AA%E6%8A%98%E7%A3%A8%E4%BA%BA%E7%9A%84%E5%B0%8F%E5%A6%96%E7%B2%BE.md) `· fix`
-- [async 和 await](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-async-%E5%92%8C-await.md)
-- [垃圾回收机制](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6.md)
-- [0.1 + 0.2 != 0.3](https://github.com/PDKSophia/read-booklist/blob/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1/play-card-1.md#number-%E7%B1%BB%E5%9E%8B)
-- [深拷贝和浅拷贝](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E6%B7%B1%E6%8B%B7%E8%B4%9D%E5%92%8C%E6%B5%85%E6%8B%B7%E8%B4%9D.md)
-- [防抖和节流](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E9%98%B2%E6%8A%96%E5%92%8C%E8%8A%82%E6%B5%81.md)
-- [聊下 Ajax 原理](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E8%81%8A%E4%B8%8BAjax%E7%9A%84%E5%8E%9F%E7%90%86.md)
-- [call 与 apply 终极大 boss](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-apply%E5%92%8Ccall.md)
-- [前端模块化](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96.md)
-- [执行环境及作用域](https://github.com/PDKSophia/read-booklist/blob/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1/play-card-1.md#%E6%89%A7%E8%A1%8C%E7%8E%AF%E5%A2%83%E5%8F%8A%E4%BD%9C%E7%94%A8%E5%9F%9F) `· new`
-- [函数声明及函数表达式](https://github.com/PDKSophia/read-booklist/blob/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1/play-card-2.md#%E5%87%BD%E6%95%B0%E5%A3%B0%E6%98%8E%E4%B8%8E%E5%87%BD%E6%95%B0%E8%A1%A8%E8%BE%BE%E5%BC%8F) `· new`
-- [函数内部属性](https://github.com/PDKSophia/read-booklist/blob/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1/play-card-2.md#%E5%87%BD%E6%95%B0%E5%86%85%E9%83%A8%E5%B1%9E%E6%80%A7) `· new`
-- [数据属性于访问器属性](https://github.com/PDKSophia/read-booklist/blob/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1/play-card-3.md#%E6%95%B0%E6%8D%AE%E5%B1%9E%E6%80%A7) `· new`
-- [闯关 BOSS-JS 的继承](https://github.com/PDKSophia/read-booklist/blob/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1/play-card-3.md#%E7%BB%A7%E6%89%BF) `· new`
-- [匿名函数与闭包](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E9%97%AD%E5%8C%85.md#%E5%8C%BF%E5%90%8D%E5%87%BD%E6%95%B0%E4%B8%8E%E9%97%AD%E5%8C%85) `· new`
-- [JS-私有变量](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E7%A7%81%E6%9C%89%E5%8F%98%E9%87%8F.md) `· new`
-- [表单脚本](https://github.com/PDKSophia/read-booklist/blob/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1/play-card-9.md#%E8%A1%A8%E5%8D%95%E8%84%9A%E6%9C%AC) `· new`
-- [面向对象与继承，ES6 Class](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E4%B8%8E%E7%BB%A7%E6%89%BF.md) `· new`
-- [JS-高级技巧-惰性载入函数](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E6%83%B0%E6%80%A7%E8%BD%BD%E5%85%A5%E5%87%BD%E6%95%B0.md) `· new`
-- [JS-高级技巧-作用域安全的构造函数](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E4%BD%9C%E7%94%A8%E5%9F%9F%E5%AE%89%E5%85%A8%E7%9A%84%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0.md) `· new`
-- [函数绑定与柯里化函数，手动实现一个 bind()函数](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AF%87-%E5%87%BD%E6%95%B0%E7%BB%91%E5%AE%9A%E4%B8%8E%E5%87%BD%E6%95%B0%E6%9F%AF%E9%87%8C%E5%8C%96.md) `· new`
-
-### 浏览器
+### 🐑 浏览器
 
 - [事件机制及事件委托](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-%E6%B5%8F%E8%A7%88%E5%99%A8%E7%AF%87.md#%E4%BA%8B%E4%BB%B6%E6%9C%BA%E5%88%B6) `· fix`
 - [来聊聊五毛钱话题-跨域问题](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-%E6%B5%8F%E8%A7%88%E5%99%A8%E7%AF%87.md#%E4%BB%80%E4%B9%88%E6%98%AF%E8%B7%A8%E5%9F%9F)
@@ -111,12 +86,12 @@ blog.io : https://github.com/PDKSophia/blog.io
 - [Event Loop](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-%E6%B5%8F%E8%A7%88%E5%99%A8%E7%AF%87.md#event-loop)
 - [setTimeout 和 setInterval 的小秘密](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-%E6%B5%8F%E8%A7%88%E5%99%A8%E7%AF%87.md#settimeout%E4%B8%8Esetinterval) `· new`
 
-### 性能及协作
+### 🐂 性能及协作
 
 - [懒加载和预加载](https://github.com/PDKSophia/blog.io/blob/master/%E6%80%A7%E8%83%BD%E5%8F%8A%E5%8D%8F%E4%BD%9C%E7%AF%87-%E6%87%92%E5%8A%A0%E8%BD%BD%E5%92%8C%E9%A2%84%E5%8A%A0%E8%BD%BD.md)
 - [Git 的团队协作](https://github.com/PDKSophia/blog.io/blob/master/%E6%80%A7%E8%83%BD%E5%8F%8A%E5%8D%8F%E4%BD%9C%E7%AF%87-Git%E7%9A%84%E5%9B%A2%E9%98%9F%E5%8D%8F%E4%BD%9C.md)
 
-### 计算机网络
+### 🐯 计算机网络
 
 - [从输入 URL 到页面加载完成的过程](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87.md#%E4%BB%8E%E8%BE%93%E5%85%A5url%E5%88%B0%E9%A1%B5%E9%9D%A2%E5%8A%A0%E8%BD%BD%E5%AE%8C%E6%88%90%E7%9A%84%E8%BF%87%E7%A8%8B)
 - [针对 Web 的攻击技术 XSS 与 CSRF](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87.md#%E9%92%88%E5%AF%B9Web%E7%9A%84%E6%94%BB%E5%87%BB%E6%8A%80%E6%9C%AFXSS%E4%B8%8ECSRF) `· fix`
@@ -124,14 +99,14 @@ blog.io : https://github.com/PDKSophia/blog.io
 - [HTTP1.0 和 HTTP1.1 以及 HTTP2.0 的区别](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87.md#http10http11%E5%92%8Chttp20%E7%9A%84%E5%8C%BA%E5%88%AB)
 - [TCP 三次握手和四次挥手](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87.md#TCP%E7%9A%84%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%92%8C%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B)
 
-### Vue
+### 🦁️ Vue
 
 - [Vue 生命周期的理解](https://github.com/PDKSophia/blog.io/blob/master/Vue%E7%AF%87-Vue%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.md)
 - [Vue 的双向数据绑定原理是什么](https://github.com/PDKSophia/blog.io/blob/master/Vue%E7%AF%87-%E6%95%B0%E6%8D%AE%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A%E5%8E%9F%E7%90%86.md) `· fix`
 - [Vue 中的 computed 和 methods 有什么区别](https://github.com/PDKSophia/blog.io/blob/master/Vue%E7%AF%87-Vue%E4%B8%AD%E7%9A%84computed%E5%92%8Cmethods%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB.md)
 - [Vue 之 nextTick 与 Watcher 以及 Dep 的蓝色生死恋](https://github.com/PDKSophia/blog.io/blob/master/Vue%E7%AF%87-nextTick%E4%B8%8Ewatcher%E4%BB%A5%E5%8F%8ADep%E7%9A%84%E8%93%9D%E8%89%B2%E7%94%9F%E6%AD%BB%E6%81%8B.md) `· new`
 
-### React
+### 🐱 React
 
 - [从源码看 React 的生命周期](https://github.com/PDKSophia/blog.io/blob/master/React%E7%AF%87-%E4%BB%8E%E6%BA%90%E7%A0%81%E7%9C%8BReact%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.md)
 - [今天的考核题目: 你知道 Vue 和 React 的区别吗?](https://github.com/PDKSophia/blog.io/blob/master/React%E7%AF%87-React%E5%92%8CVue%E7%9A%84%E5%8C%BA%E5%88%AB.md)
@@ -139,14 +114,14 @@ blog.io : https://github.com/PDKSophia/blog.io
 - [Redux 的内幕（一）](https://github.com/PDKSophia/blog.io/blob/master/React%E7%AF%87-Redux%E7%9A%84%E5%86%85%E5%B9%95%EF%BC%88%E4%B8%80%EF%BC%89.md) `· new`
 - [Redux 的内幕（二）]() `· writing`
 
-### 数据结构
+### 🐶 数据结构
 
 - [栈](https://github.com/PDKSophia/blog.io/blob/master/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E6%A0%88.md)
 - [队列](https://github.com/PDKSophia/blog.io/blob/master/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E9%98%9F%E5%88%97.md)
 - [链表](https://github.com/PDKSophia/blog.io/blob/master/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E7%BA%BF%E6%80%A7%E8%A1%A8.md)
 - [二叉树](https://github.com/PDKSophia/blog.io/blob/master/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E6%A0%91%E7%9A%84%E7%90%86%E8%A7%A3.md)
 
-### 算法
+### 🦉 算法
 
 - [leetcode top 100 easy](https://github.com/PDKSophia/leetcode-js-study)
 
@@ -154,12 +129,12 @@ blog.io : https://github.com/PDKSophia/blog.io
 
 - 《剑指 offer》面试题
 
-### 工作笔记
+### 🌲 工作笔记
 
 - [Service Worker 的了解](https://github.com/PDKSophia/blog.io/blob/master/%E5%B7%A5%E4%BD%9C%E7%AF%87-ServiceWorker%E7%9A%84%E4%BA%86%E8%A7%A3.md)
 - [前端监控及前端埋点](https://github.com/PDKSophia/blog.io/blob/master/%E5%B7%A5%E4%BD%9C%E7%AF%87-%E5%89%8D%E7%AB%AF%E7%9B%91%E6%8E%A7%E5%8F%8A%E5%89%8D%E7%AB%AF%E5%9F%8B%E7%82%B9.md)
 
-### 个人面经
+### 🐊 个人面经
 
 <ul>
     <li>七牛云一面总结(2018.04)</li>
