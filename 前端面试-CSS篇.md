@@ -19,9 +19,9 @@
 
 ## 盒模型
 
-> 有两种 : IE盒模型 和 W3C盒模型
+> 有两种 : 标准盒模型 和 IE盒模型 
 
-W3C盒模型
+标准盒模型
 
 <img src="https://images2017.cnblogs.com/blog/1265396/201711/1265396-20171119143703656-1332857321.png">
 
@@ -31,9 +31,9 @@ IE盒模型
 
 这两种盒子模型最主要的区别就是 `width` 的包含范围
 
-- W3C盒子模型 : width = content
+- 标准盒模型 : width = content
 
-- IE盒子模型 : width = content + padding + border
+- IE盒模型 : width = content + padding + border
 
 如何设置这两种模型 ?
 - `标准模型`:  box-sizing:content-box;
@@ -63,14 +63,14 @@ IE盒模型
 
 他们的主要区别是transition需要触发一个事件才能改变属性，而animation不需要触发任何事件的情况下才会随时间改变属性值，并且transition为2帧，从from .... to，而animation可以一帧一帧的。
 
-`animation` 制作动画必须用关键帧声明一个动画，而且在animation调用关键帧声明的动画。
+并且 `transition` 关注的是CSS property的变化，而 `animation` 作用于元素本身而不是样式属性，可以使用`关键帧`的概念，应该说可以实现更自由的动画效果。`animation` 制作动画必须用关键帧声明一个动画，而且在animation调用关键帧声明的动画。
 
 什么是关键帧 ?
 
 `@keyframes`就是关键帧，而且需要加`webkit`前缀，比如 ： 
 
 ```css
-    /* 当鼠标悬浮在button class为login的按钮时，触发changeColor动画 */
+    /* 当鼠标悬浮在button class为login的按钮时，触发changeColor动画 */
     
     button.login:hover {
         -webkit-animation: 1s changeColor;
@@ -90,10 +90,20 @@ IE盒模型
 
     /* 上面代码中的0% 100%的百分号都不能省略，0%可以由from代替，100%可以由to代替。 */
 ```
+
+知乎上有个答案这么说的 : 
+
+```
+Transition 强调过渡，Transition ＋ Transform ＝ 两个关键帧的Animation
+Animation 强调流程与控制，Duration ＋ TransformLib ＋ Control ＝ 多个关键帧的Animation
+
+```
+甚至于，我们可以说 : **transition是Animation的一个子集，即一个Animation是由多个transition组合而成的。**
+
 -------
 
 ## Flex布局
-弹性布局，一般就是用于居中啊，然后模拟bootstrap的栅格分列等 ....
+弹性布局，一般就是用于居中啊，然后模拟bootstrap的栅格分列等 ....
 
 六大属性
 
