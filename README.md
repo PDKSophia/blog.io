@@ -76,7 +76,31 @@ blog.io : https://github.com/PDKSophia/blog.io
 - [如果需要手动写动画，你认为最小时间间隔是多久，为什么](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-CSS%E7%AF%87.md#%E5%A6%82%E6%9E%9C%E9%9C%80%E8%A6%81%E6%89%8B%E5%8A%A8%E5%86%99%E5%8A%A8%E7%94%BB%E4%BD%A0%E8%AE%A4%E4%B8%BA%E6%9C%80%E5%B0%8F%E6%97%B6%E9%97%B4%E9%97%B4%E9%9A%94%E6%98%AF%E5%A4%9A%E4%B9%85%E4%B8%BA%E4%BB%80%E4%B9%88)
 
 ### 🐼 JavaScript
-原型与原型链、闭包、Promise、垃圾回收机制、深浅拷贝、...
+
+- [JS 异步加载，defer 和 async 的区别?](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-异步加载js%2C%20async和defer.md)
+- [闭包](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-闭包.md)
+- [原型与原型链](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-原型和原型链.md)
+- [聊下操作符](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-聊下操作符.md)
+- [谈谈 Promise 这个折磨人的小妖精](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-Promise这个折磨人的小妖精.md)
+- [async 和 await](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-async-和-await.md)
+- [垃圾回收机制](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-垃圾回收机制.md)
+- [0.1 + 0.2 != 0.3]()
+- [深拷贝和浅拷贝](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-深拷贝和浅拷贝.md)
+- [防抖和节流](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-防抖和节流.md)
+- [聊下 Ajax 原理](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-聊下Ajax的原理.md)
+- [call 与 apply 终极大 boss](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-apply和call.md)
+- [执行环境及作用域](https://github.com/PDKSophia/read-booklist/blob/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1/play-card-1.md#%E6%89%A7%E8%A1%8C%E7%8E%AF%E5%A2%83%E5%8F%8A%E4%BD%9C%E7%94%A8%E5%9F%9F)
+- [前端模块化](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-前端模块化.md)
+- [函数声明及函数表达式](https://github.com/PDKSophia/read-booklist/blob/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1/play-card-2.md#%E5%87%BD%E6%95%B0%E5%A3%B0%E6%98%8E%E4%B8%8E%E5%87%BD%E6%95%B0%E8%A1%A8%E8%BE%BE%E5%BC%8F)
+- [函数内部属性](https://github.com/PDKSophia/read-booklist/blob/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1/play-card-2.md#%E5%87%BD%E6%95%B0%E5%86%85%E9%83%A8%E5%B1%9E%E6%80%A7)
+- [数据属性于访问器属性](https://github.com/PDKSophia/read-booklist/blob/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1/play-card-3.md#%E6%95%B0%E6%8D%AE%E5%B1%9E%E6%80%A7)
+- [闯关 BOS 之 JS 的继承](https://github.com/PDKSophia/read-booklist/blob/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1/play-card-3.md#%E7%BB%A7%E6%89%BF)
+- [JS-私有变量](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-私有变量.md)
+- [表单脚本](https://github.com/PDKSophia/read-booklist/blob/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1/play-card-9.md#%E8%A1%A8%E5%8D%95%E8%84%9A%E6%9C%AC)
+- [面向对象与继承，ES6 Class](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-面向对象与继承.md)
+- [JS-高级技巧-惰性载入函数](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-惰性载入函数.md)
+- [JS-高级技巧-作用域安全的构造函数](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-作用域安全的构造函数.md)
+- [函数绑定与柯里化函数，手动实现一个 bind()函数](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-函数绑定与函数柯里化.md)
 
 ### 🐑 浏览器
 
@@ -127,6 +151,8 @@ blog.io : https://github.com/PDKSophia/blog.io
 
 - 常见的面试题
 
+- BFS 和 DFS
+
 - 《剑指 offer》面试题
 
 ### 🌲 工作笔记
@@ -136,7 +162,9 @@ blog.io : https://github.com/PDKSophia/blog.io
 
 ### 🐊 个人面经
 
-<ul>
+敬请等待 ⌛️ ...
+
+<!-- <ul>
     <li>七牛云一面总结(2018.04)</li>
     <li>京东一面总结(2018.04)</li>
     <li>百词斩实习面试总结？(2018.05)</li>
@@ -151,7 +179,7 @@ blog.io : https://github.com/PDKSophia/blog.io
     <li>小鹅通一面到拿offer总结(2018.10.23)</li>
     <li>...</li>
     <li>...</li>
-</ul>
+</ul> -->
 
 ---
 
