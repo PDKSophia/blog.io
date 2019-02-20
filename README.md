@@ -149,16 +149,17 @@ blog.io : https://github.com/PDKSophia/blog.io
 
 - [leetcode top 100 easy](https://github.com/PDKSophia/leetcode-js-study)
 
-- 常见的面试题
+- [常见的面试题](https://github.com/PDKSophia/blog.io/blob/master/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/%E5%B8%B8%E8%A7%81%E7%9A%84%E9%9D%A2%E8%AF%95%E9%A2%98.md)
 
-- BFS 和 DFS
+- [BFS 和 DFS](https://github.com/PDKSophia/blog.io/blob/master/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/BFS%E5%92%8CDFS.md)
 
 - 《剑指 offer》面试题
 
 ### 🌲 工作笔记
 
-- [Service Worker 的了解](https://github.com/PDKSophia/blog.io/blob/master/%E5%B7%A5%E4%BD%9C%E7%AF%87-ServiceWorker%E7%9A%84%E4%BA%86%E8%A7%A3.md)
-- [前端监控及前端埋点](https://github.com/PDKSophia/blog.io/blob/master/%E5%B7%A5%E4%BD%9C%E7%AF%87-%E5%89%8D%E7%AB%AF%E7%9B%91%E6%8E%A7%E5%8F%8A%E5%89%8D%E7%AB%AF%E5%9F%8B%E7%82%B9.md)
+- [Service Worker 的了解](https://github.com/PDKSophia/blog.io/blob/master/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/%E5%B7%A5%E4%BD%9C%E7%AF%87-ServiceWorker%E7%9A%84%E4%BA%86%E8%A7%A3.md)
+
+- [前端监控及前端埋点](https://github.com/PDKSophia/blog.io/blob/master/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/%E5%B7%A5%E4%BD%9C%E7%AF%87-%E5%89%8D%E7%AB%AF%E7%9B%91%E6%8E%A7%E5%8F%8A%E5%89%8D%E7%AB%AF%E5%9F%8B%E7%82%B9.md)
 
 ### 🐊 个人面经
 
@@ -186,5 +187,3 @@ blog.io : https://github.com/PDKSophia/blog.io
 ### 吐槽一下
 
 认真的准备和复习了一个月，才发现，自己有多么的菜，好多东西都不会，又不能靠脸吃饭，哎，还是好好学习吧，<strong>我累了!!!</strong>
-
-![image](https://github.com/PDKSophia/ONE_WORD/raw/master/images/g2.gif)
