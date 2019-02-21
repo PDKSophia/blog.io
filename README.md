@@ -101,6 +101,7 @@ blog.io : https://github.com/PDKSophia/blog.io
 - [JS-高级技巧-惰性载入函数](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-惰性载入函数.md)
 - [JS-高级技巧-作用域安全的构造函数](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-作用域安全的构造函数.md)
 - [函数绑定与柯里化函数，手动实现一个 bind()函数](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-函数绑定与函数柯里化.md)
+- [let和const及var的理解](https://github.com/chenjigeng/blog/blob/master/%E6%88%91%E5%AF%B9let%E5%92%8Cconst%E7%90%86%E8%A7%A3.md)
 
 ### 🐑 浏览器
 
@@ -114,6 +115,7 @@ blog.io : https://github.com/PDKSophia/blog.io
 
 - [懒加载和预加载](https://github.com/PDKSophia/blog.io/blob/master/%E6%80%A7%E8%83%BD%E5%8F%8A%E5%8D%8F%E4%BD%9C%E7%AF%87-%E6%87%92%E5%8A%A0%E8%BD%BD%E5%92%8C%E9%A2%84%E5%8A%A0%E8%BD%BD.md)
 - [Git 的团队协作](https://github.com/PDKSophia/blog.io/blob/master/%E6%80%A7%E8%83%BD%E5%8F%8A%E5%8D%8F%E4%BD%9C%E7%AF%87-Git%E7%9A%84%E5%9B%A2%E9%98%9F%E5%8D%8F%E4%BD%9C.md)
+- [前后端分离](https://segmentfault.com/a/1190000009329474?_ea=2038402)
 
 ### 🐯 计算机网络
 
@@ -122,6 +124,8 @@ blog.io : https://github.com/PDKSophia/blog.io
 - [HTTP 和 HTTPS 的区别](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87.md#HTTP%E5%92%8CHTTPS%E7%9A%84%E5%8C%BA%E5%88%AB) `· fix`
 - [HTTP1.0 和 HTTP1.1 以及 HTTP2.0 的区别](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87.md#http10http11%E5%92%8Chttp20%E7%9A%84%E5%8C%BA%E5%88%AB)
 - [TCP 三次握手和四次挥手](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87.md#TCP%E7%9A%84%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%92%8C%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B)
+- [TCP和UDP的区别]()
+- [Session和Cookie的区别](https://juejin.im/post/5b7c1f4d6fb9a019f221ca14)
 
 ### 🦁️ Vue
 
