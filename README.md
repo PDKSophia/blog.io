@@ -132,11 +132,11 @@ blog.io : https://github.com/PDKSophia/blog.io
 
 ### 🐱 React
 
-- [从源码看 React 的生命周期](https://github.com/PDKSophia/blog.io/blob/master/React%E7%AF%87-%E4%BB%8E%E6%BA%90%E7%A0%81%E7%9C%8BReact%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.md)
-- [今天的考核题目: 你知道 Vue 和 React 的区别吗?](https://github.com/PDKSophia/blog.io/blob/master/React%E7%AF%87-React%E5%92%8CVue%E7%9A%84%E5%8C%BA%E5%88%AB.md)
-- [Vue 和 React 中 key 的作用吗](https://github.com/PDKSophia/blog.io/blob/master/React%E7%AF%87-%E5%85%B3%E4%BA%8EVue%E5%92%8CReact%E4%B8%ADkey%E7%9A%84%E4%BD%9C%E7%94%A8.md) `· new`
-- [Redux 的内幕（一）](https://github.com/PDKSophia/blog.io/blob/master/React%E7%AF%87-Redux%E7%9A%84%E5%86%85%E5%B9%95%EF%BC%88%E4%B8%80%EF%BC%89.md) `· new`
-- [Redux 的内幕（二）]() `· writing`
+- [从源码看 React 的生命周期](https://github.com/PDKSophia/blog.io/blob/master/React%E7%AC%94%E8%AE%B0/React%E7%AF%87-%E4%BB%8E%E6%BA%90%E7%A0%81%E7%9C%8BReact%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.md)
+- [今天的考核题目: 你知道 Vue 和 React 的区别吗?](https://github.com/PDKSophia/blog.io/blob/master/React%E7%AC%94%E8%AE%B0/React%E7%AF%87-React%E5%92%8CVue%E7%9A%84%E5%8C%BA%E5%88%AB.md)
+- [Vue 和 React 中 key 的作用吗](https://github.com/PDKSophia/blog.io/blob/master/React%E7%AC%94%E8%AE%B0/React%E7%AF%87-%E5%85%B3%E4%BA%8EVue%E5%92%8CReact%E4%B8%ADkey%E7%9A%84%E4%BD%9C%E7%94%A8.md) `· new`
+- [Redux 的内幕（一）](https://github.com/PDKSophia/blog.io/blob/master/React%E7%AC%94%E8%AE%B0/React%E7%AF%87-Redux%E7%9A%84%E5%86%85%E5%B9%95%EF%BC%88%E4%B8%80%EF%BC%89.md) `· new`
+- [Redux 的内幕（二）](https://github.com/PDKSophia/blog.io/blob/master/React%E7%AC%94%E8%AE%B0/React%E7%AF%87-Redux%E7%9A%84%E5%86%85%E5%B9%95%EF%BC%88%E4%BA%8C%EF%BC%89.md) `· new`
 
 ### 🐶 数据结构
 
