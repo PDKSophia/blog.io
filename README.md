@@ -102,6 +102,7 @@ blog.io : https://github.com/PDKSophia/blog.io
 - [JS-高级技巧-作用域安全的构造函数](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-作用域安全的构造函数.md)
 - [函数绑定与柯里化函数，手动实现一个 bind()函数](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-函数绑定与函数柯里化.md)
 - [let和const及var的理解](https://github.com/chenjigeng/blog/blob/master/%E6%88%91%E5%AF%B9let%E5%92%8Cconst%E7%90%86%E8%A7%A3.md)
+- [arguments.callee](https://zhidao.baidu.com/question/263697314329750005.html)
 
 ### 🐑 浏览器
 
