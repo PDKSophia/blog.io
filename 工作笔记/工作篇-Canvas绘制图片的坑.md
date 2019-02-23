@@ -1,6 +1,6 @@
 ## 先说说需求
 
-是这样的，现在有个需求，就是原价 149，A 通过 B 发的图片，扫码进入，即可享受 129 元的优惠价，原本后端那边提供的是 : `getUserName` 和 `getInviteImage` 这两个接口，第一个接口是返回用户名，第二个接口是返回一张图片 (也就是要发给好友的邀请图片)，这样我只要显示这图片就好了嘛，为什么扯到 `Canvas` ？
+是这样的，现在有个需求，就是原价 149，A 通过 B 发的图片，扫码进入，即可享受 129 元的优惠价，原本后端那边提供的是 `getUserName` 和 `getInviteImage` 这两个接口，第一个接口是返回用户名，第二个接口是返回一张图片 (也就是要发给好友的邀请图片)，这样我只要显示这图片就好了嘛，为什么扯到 `Canvas` ？
 
 ## 幸福美满
 
@@ -48,9 +48,9 @@ img.onload = function() {
 
 ```javascript
 var canvas = this.refs.CoverInvite
-var dpr = window.devicePixelRatio || 1
-canvas.width = canvas.width * 2 // 这里我没采用getBoundingClientRect后的width
-canvas.height = canvas.height * 2 // 这里我没采用getBoundingClientRect后的height
+var dpr = window.devicePixelRatio || 1 // 获取手机缩放比
+canvas.width = canvas.width * dpr // 这里我没采用getBoundingClientRect后的width
+canvas.height = canvas.height * dpr // 这里我没采用getBoundingClientRect后的height
 var ctx = canvas.getContext('2d')
 ctx.scale(dpr, dpr)
 
@@ -63,7 +63,7 @@ img.onload = function() {
 }
 ```
 
-棒 👍，清晰度解决了，但是用户那边看到的是个图片，当然，可以通过 canvas-to-image 这个第三方的插件实现，但是我们 leader 奉行的是能不引入第三方包就不用！于是去查了一下，是的，Canvas 存在一个方法: [`toDataURL`](<(https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLCanvasElement/toDataURL#Example:_Dynamically_change_images)>)，返回一个包含图片展示的 data URI
+棒 👍!!! 清晰度解决了，但是用户那边看到的是个图片，当然，可以通过 canvas-to-image 这个第三方的插件实现，但 ! 我们奉行的是能不引入第三方包就不用！于是去查了一下，是的，Canvas 存在一个方法: [`toDataURL`](<(https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLCanvasElement/toDataURL#Example:_Dynamically_change_images)>)，返回一个包含图片展示的 data URI
 
 ```javascript
 img.onload = function() {
@@ -84,11 +84,11 @@ ok，到此算结束了，可是模拟机上 OK，真机上图片不显示，后
 
 #### 步骤二
 
-于是我把这个图片 url 放入到了代码，通过 Canvas.toDataURL() 去转成 base64 地址之后，模拟机正常，真机显示失败。但将转过后的 base64 地址，放入到转换工具，确实可以还原图片
+于是我把这个图片 url (http://xxx.com/test.png) 放入到了代码中 ，通过 Canvas.toDataURL() 去转成 base64 地址之后，模拟机正常，真机显示失败。但将转过后的 base64 地址，放入到转换工具，确实可以还原图片
 
 #### 步骤三
 
-思考会不会是 Canvas.toDataURL() 接口的问题，google 搜了一下，发现好像是真机上边，base64 地址是空的，于是，我把 `var base64Img = Canvas.toDataURL()`，通过`<p>{base64Img}</p>`打印出来，发现确实在模拟机上，base64Img 有值，而在真机上为空
+思考会不会是 Canvas.toDataURL() 接口的问题，google 搜了一下，发现好像是真机上边，base64 地址是空的，于是，我把 `var base64Img = Canvas.toDataURL()`，通过`<p>{base64Img}</p>`打印出来，发现确实在模拟机上，base64Img 有值，而在真机上为空, ( 估计是我代码逻辑问题？但是模拟机console.log存在值，而真机并不存在值 )
 
 #### 步骤四
 
@@ -96,11 +96,11 @@ ok，到此算结束了，可是模拟机上 OK，真机上图片不显示，后
 
 #### 步骤五
 
-会不会是 canvas 绘制图片的问题？于是就先同 canvas 绘制了两个字，然后试一下，发现它的 base64 可以反解出来，可以正常显示
+会不会是 canvas 绘制图片的问题？先看看，绘制字体，然后 `toDataURL()` 检查是否真的是绘制图片的问题，于是就先通过 canvas 绘制了两个字，将 base64 显示在 img 上，可以显示，并且它的 base64 通过转换工具可以反解出来，且可以正常显示
 
 #### 步骤六
 
-会不会是微信那边限制域的问题？通过 var img = new Image() ，然后加上了`img.setAttribute('crossOrigin', 'anonymous')`属性，并在显示页面的`<img crossOrigin='anonymous' src=''>`中添加了 `crossOrigin` 属性，ok，这时候发现，模拟机和真机是可以正常显示 base64 的
+会不会是微信那边限制域的问题？通过 var img = new Image() ，然后加上了`img.setAttribute('crossOrigin', 'anonymous')`属性，并在显示页面的`<img crossOrigin='anonymous' src=''>`中添加了 `crossOrigin` 属性，ok，这时候发现，模拟机和真机上已经可以正常显示 base64
 
 #### 步骤七
 
