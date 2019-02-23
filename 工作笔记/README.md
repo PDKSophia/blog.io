@@ -1,3 +1,4 @@
-- [数据结构篇](./README.md)
+- [工作篇](./README.md)
   - [Service Worker 的了解](./工作篇-ServiceWorker的了解.md)
   - [前端监控及前端埋点](./工作篇-前端监控及前端埋点.md)
+  - [Canvas 绘制图片的坑](./工作篇-Canvas绘制图片的坑.md)
