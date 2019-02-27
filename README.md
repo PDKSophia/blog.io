@@ -22,31 +22,29 @@
 
 所有的内容都是结合自己平常复习面试以及面试官提问，还有看《面试图谱》进行的归纳总结。下边我会给出友情链接，同时，如果觉得哪个地方写错误导大家的，麻烦邮件私一下我，我会进行修改更正，最重要的是，如有转载，请注明原出处！！！并且邮箱告知一声！谢谢！毕竟我总结写的也不容易，辛苦各位。
 
-邮箱 : 1063137960@qq.com
-
-github : https://github.com/PDKSophia
-
-掘金 : https://juejin.im/user/594ca8a35188250d892f4139
-
-微博 : [彭道寬](https://weibo.com/u/2971991985)
-
-主页 : https://www.pengdaokuan.cn
-
 ## 客官，点个赞?
 
 如果觉得对您有帮助的话，点个 star 再走？
 
-## 博客地址
+## 相关地址
+
+github : https://github.com/PDKSophia
 
 书单 : https://github.com/PDKSophia/read-booklist
 
-博客: http://blog.pengdaokuan.cn:4001
+博客: https://github.com/PDKSophia/blog.io
 
 掘金: https://juejin.im/user/594ca8a35188250d892f4139/posts
 
-blog.io : https://github.com/PDKSophia/blog.io
-
 微博: https://weibo.com/u/2971991985
+
+邮箱 : 1063137960@qq.com
+
+主页 : https://www.pengdaokuan.cn
+
+## 看本书？
+
+书中自有颜如玉，这里是我目前读的一些个人书单，也可以说是书籍的搬运工，所有的都是我从书记录下来的知识点(个人认为的重点)，如果你有好的书籍推荐，也可以在 issues 中提一下，共同分享，一同进步 ❤️ 书单地址 : [阿宽的图书馆](https://github.com/PDKSophia/read-booklist)
 
 ### 🐷 HTML
 
