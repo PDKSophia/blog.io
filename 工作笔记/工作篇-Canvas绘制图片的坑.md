@@ -88,7 +88,7 @@ ok，到此算结束了，可是模拟机上 OK，真机上图片不显示，后
 
 #### 步骤三
 
-思考会不会是 Canvas.toDataURL() 接口的问题，google 搜了一下，发现好像是真机上边，base64 地址是空的，于是，我把 `var base64Img = Canvas.toDataURL()`，通过`<p>{base64Img}</p>`打印出来，发现确实在模拟机上，base64Img 有值，而在真机上为空, ( 估计是我代码逻辑问题？但是模拟机console.log存在值，而真机并不存在值 )
+思考会不会是 Canvas.toDataURL() 接口的问题，google 搜了一下，发现好像是真机上边，base64 地址是空的，于是，我把 `var base64Img = Canvas.toDataURL()`，通过`<p>{base64Img}</p>`打印出来，发现确实在模拟机上，base64Img 有值，而在真机上为空, ( 估计是我代码逻辑问题？但是模拟机 console.log 存在值，而真机并不存在值 )
 
 #### 步骤四
 
@@ -131,3 +131,5 @@ ok，到此算结束了，可是模拟机上 OK，真机上图片不显示，后
 - [Canvas 最佳实践（性能篇）](http://taobaofed.org/blog/2016/02/22/canvas-performance/)
 
 - [提高 HTML5 画布性能](https://www.html5rocks.com/zh/tutorials/canvas/performance/)
+
+- [启用了 CORS 的图片, img crossOrigin](https://developer.mozilla.org/zh-CN/docs/Web/HTML/CORS_enabled_image)

@@ -1,10 +1,10 @@
-|       Ⅰ       |      Ⅱ      |             Ⅲ             |      Ⅳ      |        Ⅴ        |        VI         |            VII            |         VIII          |      IX       |           X           |          XI           |
-| :-----------: | :---------: | :-----------------------: | :---------: | :-------------: | :---------------: | :-----------------------: | :-------------------: | :-----------: | :-------------------: | :-------------------: |
-| [HTML](#HTML) | [CSS](#CSS) | [JavaScript](#JavaScript) | [Vue](#Vue) | [React](#React) | [浏览器](#浏览器) | [计算机网络](#计算机网络) | [数据结构](#数据结构) | [算法](#算法) | [个人面经](#个人面经) | [工作笔记](#工作笔记) |
+|       Ⅰ        |      Ⅱ       |             Ⅲ              |      Ⅳ       |        Ⅴ         |         VI         |            VII             |         VIII          |       IX       |           X           |           XI           |
+| :------------: | :----------: | :------------------------: | :----------: | :--------------: | :----------------: | :------------------------: | :-------------------: | :------------: | :-------------------: | :--------------------: |
+| [HTML](#-html) | [CSS](#-css) | [JavaScript](#-javascript) | [Vue](#-vue) | [React](#-react) | [浏览器](#-浏览器) | [计算机网络](#-计算机网络) | [数据结构](#数据结构) | [算法](#-算法) | [个人面经](#个人面经) | [工作笔记](#-工作笔记) |
 
 <div align='center'>
 
-  <img src='https://github.com/PDKSophia/blog.io/raw/master/ReactImage/logo-one.png' width='250' height='180' />
+  <img src='https://github.com/PDKSophia/blog.io/raw/master/ReactImage/logo-one.png' width='250' height='200' />
   
 ![](https://img.shields.io/badge/Author-PDK-blue.svg)
 ![](https://img.shields.io/badge/Category-Interview-red.svg)
@@ -77,6 +77,7 @@ blog.io : https://github.com/PDKSophia/blog.io
 
 ### 🐼 JavaScript
 
+- [📕JavaScript 高级程序设计第三版红皮书总结](https://github.com/PDKSophia/read-booklist/tree/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1) `· new`
 - [JS 异步加载，defer 和 async 的区别?](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-异步加载js%2C%20async和defer.md)
 - [闭包](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-闭包.md)
 - [原型与原型链](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-原型和原型链.md)
@@ -120,6 +121,8 @@ blog.io : https://github.com/PDKSophia/blog.io
 
 ### 🐯 计算机网络
 
+- [💗 计算机网络整本书复习精华](https://github.com/PDKSophia/read-booklist/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/NetWork.md) `· new`
+- [🔥 图解 HTTP](https://github.com/PDKSophia/read-booklist/tree/master/%E5%9B%BE%E8%A7%A3HTTP) `· new`
 - [从输入 URL 到页面加载完成的过程](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87.md#%E4%BB%8E%E8%BE%93%E5%85%A5url%E5%88%B0%E9%A1%B5%E9%9D%A2%E5%8A%A0%E8%BD%BD%E5%AE%8C%E6%88%90%E7%9A%84%E8%BF%87%E7%A8%8B)
 - [针对 Web 的攻击技术 XSS 与 CSRF](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87.md#%E9%92%88%E5%AF%B9Web%E7%9A%84%E6%94%BB%E5%87%BB%E6%8A%80%E6%9C%AFXSS%E4%B8%8ECSRF) `· fix`
 - [HTTP 和 HTTPS 的区别](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87.md#HTTP%E5%92%8CHTTPS%E7%9A%84%E5%8C%BA%E5%88%AB) `· fix`
