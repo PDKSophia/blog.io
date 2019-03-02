@@ -116,6 +116,8 @@ github : https://github.com/PDKSophia
 - [懒加载和预加载](https://github.com/PDKSophia/blog.io/blob/master/%E6%80%A7%E8%83%BD%E5%8F%8A%E5%8D%8F%E4%BD%9C%E7%AF%87-%E6%87%92%E5%8A%A0%E8%BD%BD%E5%92%8C%E9%A2%84%E5%8A%A0%E8%BD%BD.md)
 - [Git 的团队协作](https://github.com/PDKSophia/blog.io/blob/master/%E6%80%A7%E8%83%BD%E5%8F%8A%E5%8D%8F%E4%BD%9C%E7%AF%87-Git%E7%9A%84%E5%9B%A2%E9%98%9F%E5%8D%8F%E4%BD%9C.md)
 - [前后端分离](https://segmentfault.com/a/1190000009329474?_ea=2038402)
+- [git pull 和 git fetch 区别]()`· new`
+- [git rebase 和 git merge 区别]()`· new`
 
 ### 🐯 计算机网络
 
