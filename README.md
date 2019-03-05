@@ -128,7 +128,7 @@ github : https://github.com/PDKSophia
 - [HTTP 和 HTTPS 的区别](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87.md#HTTP%E5%92%8CHTTPS%E7%9A%84%E5%8C%BA%E5%88%AB) `· fix`
 - [HTTP1.0 和 HTTP1.1 以及 HTTP2.0 的区别](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87.md#http10http11%E5%92%8Chttp20%E7%9A%84%E5%8C%BA%E5%88%AB)
 - [TCP 三次握手和四次挥手](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87.md#TCP%E7%9A%84%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%92%8C%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B)
-- [TCP 和 UDP 的区别](https://zhuanlan.zhihu.com/p/24860273)
+- [TCP 和 UDP 的区别](https://blog.51cto.com/feinibuke/340272?source=drt)
 - [Session 和 Cookie 的区别](https://juejin.im/post/5b7c1f4d6fb9a019f221ca14)
 
 ### 🦁️ Vue
