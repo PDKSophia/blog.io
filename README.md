@@ -137,7 +137,7 @@ github : https://github.com/PDKSophia
 - [Vue 的双向数据绑定原理是什么](https://github.com/PDKSophia/blog.io/blob/master/Vue%E7%AC%94%E8%AE%B0/Vue%E7%AF%87-%E6%95%B0%E6%8D%AE%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A%E5%8E%9F%E7%90%86.md) `· fix`
 - [Vue 中的 computed 和 methods 有什么区别](https://github.com/PDKSophia/blog.io/blob/master/Vue%E7%AC%94%E8%AE%B0/Vue%E7%AF%87-Vue%E4%B8%AD%E7%9A%84computed%E5%92%8Cmethods%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB.md)
 - [Vue 之 nextTick 与 Watcher 以及 Dep 的蓝色生死恋](https://github.com/PDKSophia/blog.io/blob/master/Vue%E7%AC%94%E8%AE%B0/Vue%E7%AF%87-nextTick%E4%B8%8Ewatcher%E4%BB%A5%E5%8F%8ADep%E7%9A%84%E8%93%9D%E8%89%B2%E7%94%9F%E6%AD%BB%E6%81%8B.md) `· new`
-- [Vue 篇-看个五毛钱的 diff 算法]() `· new`
+- [Vue 篇-看个五毛钱的 diff 算法](<https://github.com/answershuto/learnVue/blob/master/docs/VirtualDOM%E4%B8%8Ediff(Vue%E5%AE%9E%E7%8E%B0).MarkDown>) `· new`
 
 ### 🐱 React
 
@@ -162,7 +162,7 @@ github : https://github.com/PDKSophia
 
 - [常见的面试题](https://github.com/PDKSophia/blog.io/blob/master/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/%E5%B8%B8%E8%A7%81%E7%9A%84%E9%9D%A2%E8%AF%95%E9%A2%98.md)
 
-- 《剑指 offer》面试题
+- [《剑指 offer》面试题](https://github.com/PDKSophia/blog.io/tree/master/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/%E5%89%91%E6%8C%87offer%E9%83%A8%E5%88%86%E7%AE%97%E6%B3%95)
 
 ### 🌲 工作笔记
 

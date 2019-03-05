@@ -3,4 +3,4 @@
   - [Vue 的双向数据绑定原理是什么](./Vue篇-数据双向绑定原理.md)
   - [Vue 中的 computed 和 methods 有什么区别](./Vue篇-Vue中的computed和methods有什么区别.md)
   - [Vue 之 nextTick 与 Watcher 以及 Dep 的蓝色生死恋](./Vue篇-nextTick与watcher以及Dep的蓝色生死恋.md)
-- [Vue 的 diff 算法](./Vue篇-看个五毛钱的diff算法.md)
+  - [Vue 的 diff 算法](./Vue篇-看个五毛钱的diff算法.md)

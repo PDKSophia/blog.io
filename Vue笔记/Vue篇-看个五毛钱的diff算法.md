@@ -161,3 +161,13 @@ return function patch(oldVnode, vnode, hydrating, removeOnly) {
   }
 }
 ```
+
+---
+
+### 相关链接
+
+- [解析 Vue2.0 的 diff 算法](https://github.com/aooy/blog/issues/2)
+
+- [源码 patch.js](https://github.com/vuejs/vue/blob/dev/src/core/vdom/patch.js)
+
+- [染陌 - diff 算法](<https://github.com/answershuto/learnVue/blob/master/docs/VirtualDOM%E4%B8%8Ediff(Vue%E5%AE%9E%E7%8E%B0).MarkDown>)
