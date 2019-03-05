@@ -137,6 +137,7 @@ github : https://github.com/PDKSophia
 - [Vue 的双向数据绑定原理是什么](https://github.com/PDKSophia/blog.io/blob/master/Vue%E7%AC%94%E8%AE%B0/Vue%E7%AF%87-%E6%95%B0%E6%8D%AE%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A%E5%8E%9F%E7%90%86.md) `· fix`
 - [Vue 中的 computed 和 methods 有什么区别](https://github.com/PDKSophia/blog.io/blob/master/Vue%E7%AC%94%E8%AE%B0/Vue%E7%AF%87-Vue%E4%B8%AD%E7%9A%84computed%E5%92%8Cmethods%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB.md)
 - [Vue 之 nextTick 与 Watcher 以及 Dep 的蓝色生死恋](https://github.com/PDKSophia/blog.io/blob/master/Vue%E7%AC%94%E8%AE%B0/Vue%E7%AF%87-nextTick%E4%B8%8Ewatcher%E4%BB%A5%E5%8F%8ADep%E7%9A%84%E8%93%9D%E8%89%B2%E7%94%9F%E6%AD%BB%E6%81%8B.md) `· new`
+- [Vue 篇-看个五毛钱的 diff 算法]() `· new`
 
 ### 🐱 React
 
@@ -169,7 +170,13 @@ github : https://github.com/PDKSophia
 
 - [前端监控及前端埋点](https://github.com/PDKSophia/blog.io/blob/master/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/%E5%B7%A5%E4%BD%9C%E7%AF%87-%E5%89%8D%E7%AB%AF%E7%9B%91%E6%8E%A7%E5%8F%8A%E5%89%8D%E7%AB%AF%E5%9F%8B%E7%82%B9.md)
 
-- [Canvas 绘制图片的坑](https://github.com/PDKSophia/blog.io/blob/master/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/%E5%B7%A5%E4%BD%9C%E7%AF%87-Canvas%E7%BB%98%E5%88%B6%E5%9B%BE%E7%89%87%E7%9A%84%E5%9D%91.md)
+- [Canvas 绘制图片的坑](https://github.com/PDKSophia/blog.io/blob/master/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/%E5%B7%A5%E4%BD%9C%E7%AF%87-Canvas%E7%BB%98%E5%88%B6%E5%9B%BE%E7%89%87%E7%9A%84%E5%9D%91.md)`· new`
+
+- [不同机型对字体大小的兼容]()`· new`
+
+- [Taro 基于 React 实现小程序的优化]()`· new`
+
+- [sessionStorage 的数据在同一个网站上是否共享?]()`· new`
 
 ### 🐊 个人面经
 
