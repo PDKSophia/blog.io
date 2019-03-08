@@ -14,8 +14,6 @@
 
 - [堆排序](./堆排序.md)
 
-- [系统自带的排序](./系统自带的排序.md)
-
 ## 相关链接
 
 - [深入学习排序算法](https://blog.csdn.net/dreamer2020/article/details/8740244)
