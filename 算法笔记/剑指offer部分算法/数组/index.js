@@ -78,7 +78,7 @@
 //   }
 //   if (n === 1) {
 //     return 1
-//   }
+//   }1
 //   return fibonaci(n - 1) + fibonaci(n - 2)
 // }
 
@@ -111,13 +111,72 @@
 // }
 // console.log(numberOf1(5))
 
-function numberOf1(n) {
-  var count = 0
-  while (n) {
-    ++count
-    n = (n - 1) & n
-    console.log('@@@', n)
-  }
-  return count
-}
-console.log(numberOf1(15))
+// function numberOf1(n) {
+//   var count = 0
+//   while (n) {
+//     ++count
+//     n = (n - 1) & n
+//     console.log('@@@', n)
+//   }
+//   return count
+// }
+// console.log(numberOf1(15))
+
+// function jsonp(params) {
+//   return new Promise((resovle, reject) => {
+//     // 初始化url
+//     let dataString = params.url.indexOf('?') === -1 ? '?' : '&'
+//     let url = `${params.url}${dataString}callback=${params.callback}`
+
+//     // 是否有数据
+//     if (params.data) {
+//       for (let key in params.data) {
+//         url += `&${key}=${params.data[key]}`
+//       }
+//     }
+
+//     // 动态生成script
+//     let jsNode = document.createElement('script')
+//     jsNode.src = url
+
+//     // 触发
+//     window[params.callback] = result => {
+//       delete window[params.callback]
+//       document.body.removeChild(jsNode)
+//       if (result) {
+//         resovle(result)
+//       } else {
+//         reject('error')
+//       }
+//     }
+
+//     // js加载错误情况
+//     jsNode.addEventListener(
+//       'error',
+//       () => {
+//         delete window[params.callback]
+//         document.body.removeChild(jsNode)
+//         reject('js加载错误情况')
+//       },
+//       false
+//     )
+
+//     document.body.appendChild(jsNode)
+//   })
+// }
+
+// let params = {
+//   url: 'http://192.168.0.103:8081/jsonp',
+//   data: {
+//     a: '1',
+//     b: '2'
+//   },
+//   callback: callback
+// }
+// jsonp(params)
+//   .then(res => {
+//     console.log(res)
+//   })
+//   .catch(err => {
+//     console.log(err)
+//   })
