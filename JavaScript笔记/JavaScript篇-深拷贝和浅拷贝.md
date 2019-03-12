@@ -1,21 +1,19 @@
----
-title: JavaScript篇-深拷贝和浅拷贝
-date: 2018-10-08 15:28:10
-tags:
----
 ## 深拷贝和浅拷贝的问题
+
 ```javascript
-    let obj1 = {
-        age : 18
-    }
-    
-    let obj2 = obj1
-    obj1.age = 19
-    console.log(obj2.age)   // 19
+let obj1 = {
+  age: 18
+}
+
+let obj2 = obj1
+obj1.age = 19
+console.log(obj2.age) // 19
 ```
-我们可以看到，当我们把一个变量赋值一个对象，那么两者的值会同一个引用，改变obj1，也同时会改变ob，但是在实际开发中，我们并不希望这样子，这时候就需要通过浅拷贝来解决这个问题
+
+我们可以看到，当我们把一个变量赋值一个对象，那么两者的值会同一个引用，改变 obj1，也同时会改变 ob，但是在实际开发中，我们并不希望这样子，这时候就需要通过浅拷贝来解决这个问题
 
 ### 浅拷贝 ( Object.assign() )
+
 ```javascript
     通过 Object.assign() 来解决这个问题
 
@@ -27,9 +25,11 @@ tags:
     obj1.age = 19
     console.log(obj2.age)   // 18
 ```
-浅拷贝只能解决第一层问题，但如果obj1里还有个bank是个对象，里面还有值呢？那么又回到了之前说的，两者共享相同的引用。所以这里使用深拷贝
+
+浅拷贝只能解决第一层问题，但如果 obj1 里还有个 bank 是个对象，里面还有值呢？那么又回到了之前说的，两者共享相同的引用。所以这里使用深拷贝
 
 ### 深拷贝 ( JSON.pares(JSON.stringify(object)) )
+
 ```javascript
     通过 JSON.pares(JSON.stringify(object)) 来解决这个问题
 
@@ -52,6 +52,7 @@ tags:
     当然如果你的数据中含有以上三种情况下，可以使用 lodash 的深拷贝函数。(自行百度)
 
 ```
+
 ```javascript
     在遇到函数或者 undefined 的时候，该对象也不能正常的序列化
 
@@ -64,4 +65,46 @@ tags:
     let res = JSON.parse(JSON.stringify(obj))   // {school: 'HNUST'}
 
     // 该方法会忽略掉函数和 undefined ，所以序列化后就只有school
+```
+
+### 你能不能用代码实现拷贝？
+
+```javascript
+function deepClone(data) {
+  let type = Object.prototype.toString.call(data)
+  let obj
+  if (type === '[object Array]') {
+    obj = []
+  } else if (type === '[object Object]') {
+    obj = {}
+  } else {
+    return data
+  }
+
+  if (type === '[object Array]') {
+    for (let i = 0; i < data.length; i++) {
+      obj.push(deepClone(data[i]))
+    }
+  } else if (type === '[object Object]') {
+    for (let key in data) {
+      obj[key] = deepClone(data[key])
+    }
+  }
+  return obj
+}
+
+var data = {
+  name: '跑得快',
+  age: 20,
+  school: {
+    name: '湖南科技大学',
+    major: '软件工程',
+    class: {
+      id: 2,
+      student: [1, 2, 3, 4, 6]
+    }
+  }
+}
+
+console.log(deepClone(data))
 ```
