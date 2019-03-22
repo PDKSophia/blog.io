@@ -1,4 +1,5 @@
 - [工作篇](./README.md)
+  - [Node 在 redis 中缓存 session 遇到的坑](./工作篇-Node在redis中缓存session遇到的坑.md)
   - [Service Worker 的了解](./工作篇-ServiceWorker的了解.md)
   - [前端监控及前端埋点](./工作篇-前端监控及前端埋点.md)
   - [Canvas 绘制图片的坑](./工作篇-Canvas绘制图片的坑.md)
