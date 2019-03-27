@@ -1,4 +1,4 @@
-# Node 中如何通过 redis 缓存 session 信息
+# Node 中通过 redis 缓存 session 信息遇到的坑
 
 ## 前戏得做好
 
@@ -120,7 +120,7 @@ async function retrieveCode(req, payload) {
 
 > 内心 OS : 😁 真开心，一点难度都没有嘛，冲冲冲！💪
 
-呵，是我年轻了，没错，上边的`session`中确实是缓存了 `email_code`，但是在下一个请求中，死活就是获取不到 session 缓存的 `email_code`
+不到 1 分钟，真香，呵，是我年轻了，没错，上边的`session`中确实是缓存了 `email_code`，但是在下一个请求中，死活就是获取不到 session 缓存的 `email_code`
 
 ```javascript
 /**
@@ -215,7 +215,9 @@ async function retrieveToken(req) {
 }
 ```
 
-**百思不得其解，然后百度的那些二三十篇文章，卧槽，😠 怎么都长的一模一样，千篇一律，底部就都挂这 `原文链接`、`友情链接`，大哥们，你们这样真的好吗？？？**
+### 累觉不爱
+
+百思不得其解，然后百度的那些二三十篇文章，卧槽，😠 怎么都长的一模一样，千篇一律，底部就都挂着 `原文链接`、`友情链接`，**大哥们，你们这样真的好吗？？？**
 
 <img src='https://github.com/PDKSophia/blog.io/raw/master/image/pic_3.jpeg'>
 
@@ -272,6 +274,10 @@ ok，稳住，此路不通，我换条路走，我又去 issues 搜一下，有�
 
 ## 从一个坑跳到另一个坑
 
+看懂的老铁双击 666，不皮了，我哭了，这次我真的哭了，我换个思路换种做法去做吧，介于 session 没持久化的玩意，我决定，采用 redis 了. (一开始不用是真的懒...当然也是因为不会...)
+
+## 从一个坑跳到另一个坑
+
 redis，对我一个前端来说，又是一趟浑水，没事，百度嘛，反正只要简单使用就好了，嗯，从安装到登陆，再到 node 中引用 `redis`、`connet-redis`，一顿操作猛如虎，接下来就是真枪实弹了
 
 ```javascript
@@ -289,7 +295,7 @@ app.use(
     secret: 'ticket2019',
     resave: false,
     rolling: true,
-    saveUninitialized: true,
+    saveUninitialized: true, // 眼熟这个属性
     cookie: {
       maxAge: 60000,
       secure: true // 眼熟这个属性
@@ -318,7 +324,7 @@ redis-cli
 
 ```
 
-哟，还真的是存了呀，可是为什么会有两个 session？？？(我真不知道为什么两个...)，并不是说两个请求两个 session，而是我就单单触发了 `retrieveCode()` 这个方法进行缓存 code，你问我为什么两个，臣妾真的不知道为什么啊！！！TMD(暴躁 ing)，这又是什么鬼
+哟，还真的是存了呀，可是为什么会有两个 session？？？(我真不知道为什么两个...)，并不是说两个请求两个 session，而是我就单单触发了 `retrieveCode()` 这个方法进行缓存 code，然后 redis 就两个 session, 你问我为什么两个，臣妾真的不知道为什么啊！！！TMD(暴躁 ing)，这又是什么鬼
 
 <img src='https://github.com/PDKSophia/blog.io/raw/master/image/pic_2.jpg'>
 
@@ -347,7 +353,7 @@ store.generate = function(req) {
 }
 ```
 
-猜测，是不是每次它都给我生成了一个新的 sessionID，照目前我遇到的情况来看，好像是这样的，然后继续去找问题答案，在 issues 看到了这么一个问题，[generating new sessions with an asynchronous store](https://github.com/expressjs/session/issues/52) ,  嗯，了解，继续找... 然后我发现这么一个 issue ！！！⚠️ 这是一个重大发现！！ [Cookies disabled results in loss of session (no workaround via Header)](https://github.com/expressjs/session/issues/185), 没错，翻译过来就是 : 禁用 cookies 结果就是使得 session 丢失，进去，看看什么情况
+猜测，是不是每次它都给我生成了一个新的 sessionID，照目前我遇到的情况来看，好像是这样的，然后继续去找问题答案，在 issues 看到了这么一个问题，[generating new sessions with an asynchronous store](https://github.com/expressjs/session/issues/52) , 嗯，了解，继续找... 然后我发现这么一个 issue ！！！⚠️ 这是一个重大发现！！ [Cookies disabled results in loss of session (no workaround via Header)](https://github.com/expressjs/session/issues/185), 没错，翻译过来就是 : 禁用 cookies 结果就是使得 session 丢失，进去，看看什么情况
 
 然后看到了这么一个 comment，是这么说的:
 
