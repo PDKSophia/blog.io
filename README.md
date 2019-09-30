@@ -40,7 +40,6 @@ github : https://github.com/PDKSophia
 
 邮箱 : 1063137960@qq.com
 
-
 ## 看本书？
 
 书中自有颜如玉，这里是我目前读的一些个人书单，也可以说是书籍的搬运工，所有的都是我从书记录下来的知识点(个人认为的重点)，如果你有好的书籍推荐，也可以在 issues 中提一下，共同分享，一同进步 ❤️ 书单地址 : [阿宽的图书馆](https://github.com/PDKSophia/read-booklist)
@@ -73,7 +72,8 @@ github : https://github.com/PDKSophia
 - [如果需要手动写动画，你认为最小时间间隔是多久，为什么](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-CSS%E7%AF%87.md#%E5%A6%82%E6%9E%9C%E9%9C%80%E8%A6%81%E6%89%8B%E5%8A%A8%E5%86%99%E5%8A%A8%E7%94%BB%E4%BD%A0%E8%AE%A4%E4%B8%BA%E6%9C%80%E5%B0%8F%E6%97%B6%E9%97%B4%E9%97%B4%E9%9A%94%E6%98%AF%E5%A4%9A%E4%B9%85%E4%B8%BA%E4%BB%80%E4%B9%88)
 
 ### 🐼 JavaScript
-- [💯JavaScript设计模式的学习](https://github.com/PDKSophia/DesignPatternsToJS)  `[ 💥update on 2019-09-30 ]`
+
+- [💯JavaScript 设计模式的学习](https://github.com/PDKSophia/DesignPatternsToJS) `[ 💥update on 2019-09-30 ]`
 
 - [📕JavaScript 高级程序设计第三版红皮书总结](https://github.com/PDKSophia/read-booklist/tree/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1) `[ 💥 update on 2019-09-30 ]`
 - [JS 异步加载，defer 和 async 的区别?](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-异步加载js%2C%20async和defer.md)
@@ -184,7 +184,9 @@ github : https://github.com/PDKSophia
 
 - [Node 在 redis 中缓存 session 遇到的坑]() `· new`
 
-- [移动端遇到过的坑](https://github.com/PDKSophia/blog.io/blob/master/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/%E5%B7%A5%E4%BD%9C%E7%AF%87-%E7%A7%BB%E5%8A%A8%E7%AB%AF%E8%B8%A9%E8%BF%87%E7%9A%84%E5%9D%91.md)   `[ 💥update on 2019-09-29 ]`
+- [移动端遇到过的坑](https://github.com/PDKSophia/blog.io/blob/master/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/%E5%B7%A5%E4%BD%9C%E7%AF%87-%E7%A7%BB%E5%8A%A8%E7%AB%AF%E8%B8%A9%E8%BF%87%E7%9A%84%E5%9D%91.md) `[ 💥update on 2019-09-29 ]`
+
+- [前端渣渣对 requestAPI 的不断重构之路]() `[ 💥update on 2019-09-30 ]`
 
 ### 🐊 个人面经
 
