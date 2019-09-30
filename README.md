@@ -184,7 +184,7 @@ github : https://github.com/PDKSophia
 
 - [Node 在 redis 中缓存 session 遇到的坑]() `· new`
 
-- [移动端遇到过的坑](https://github.com/PDKSophia/blog.io/blob/master/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/%E5%B7%A5%E4%BD%9C%E7%AF%87-%E7%A7%BB%E5%8A%A8%E7%AB%AF%E8%B8%A9%E8%BF%87%E7%9A%84%E5%9D%91.md) `· new`
+- [移动端遇到过的坑](https://github.com/PDKSophia/blog.io/blob/master/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/%E5%B7%A5%E4%BD%9C%E7%AF%87-%E7%A7%BB%E5%8A%A8%E7%AB%AF%E8%B8%A9%E8%BF%87%E7%9A%84%E5%9D%91.md)   `[ 💥update on 2019-09-29 ]`
 
 ### 🐊 个人面经
 
