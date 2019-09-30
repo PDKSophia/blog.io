@@ -44,6 +44,14 @@ github : https://github.com/PDKSophia
 
 书中自有颜如玉，这里是我目前读的一些个人书单，也可以说是书籍的搬运工，所有的都是我从书记录下来的知识点(个人认为的重点)，如果你有好的书籍推荐，也可以在 issues 中提一下，共同分享，一同进步 ❤️ 书单地址 : [阿宽的图书馆](https://github.com/PDKSophia/read-booklist)
 
+## 💥 最新文章
+
+- [💯JavaScript 设计模式的学习](https://github.com/PDKSophia/DesignPatternsToJS) `[ 💥update on 2019-09-30 ]`
+
+- [前端渣渣对 requestAPI 的不断重构之路](https://github.com/PDKSophia/blog.io/blob/master/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/%E5%B7%A5%E4%BD%9C%E7%AF%87-%E5%89%8D%E7%AB%AF%E6%B8%A3%E6%B8%A3%E5%AF%B9requestAPI%E7%9A%84%E4%B8%8D%E6%96%AD%E9%87%8D%E6%9E%84%E4%B9%8B%E8%B7%AF.md) `[ 💥update on 2019-09-30 ]`
+
+- [移动端遇到过的坑](https://github.com/PDKSophia/blog.io/blob/master/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/%E5%B7%A5%E4%BD%9C%E7%AF%87-%E7%A7%BB%E5%8A%A8%E7%AB%AF%E8%B8%A9%E8%BF%87%E7%9A%84%E5%9D%91.md) `[ 💥update on 2019-09-29 ]`
+
 ### 🐷 HTML
 
 - [DOCTYPE 作用 ？ 标准模式（严格模式）和 兼容模式（混杂模式）有什么区别？](https://github.com/PDKSophia/blog.io/blob/master/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95-HTML%E7%AF%87.md#doctype%E4%BD%9C%E7%94%A8--%E6%A0%87%E5%87%86%E6%A8%A1%E5%BC%8F%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F%E5%92%8C-%E5%85%BC%E5%AE%B9%E6%A8%A1%E5%BC%8F%E6%B7%B7%E6%9D%82%E6%A8%A1%E5%BC%8F%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB)
@@ -73,9 +81,10 @@ github : https://github.com/PDKSophia
 
 ### 🐼 JavaScript
 
-- [💯JavaScript 设计模式的学习](https://github.com/PDKSophia/DesignPatternsToJS) `[ 💥update on 2019-09-30 ]`
+- [📕JavaScript 高级程序设计第三版红皮书总结](https://github.com/PDKSophia/read-booklist/tree/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1)
 
-- [📕JavaScript 高级程序设计第三版红皮书总结](https://github.com/PDKSophia/read-booklist/tree/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1) `[ 💥 update on 2019-09-30 ]`
+- [💯JavaScript 设计模式的学习](https://github.com/PDKSophia/DesignPatternsToJS)
+
 - [JS 异步加载，defer 和 async 的区别?](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-异步加载js%2C%20async和defer.md)
 - [闭包](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-闭包.md)
 - [原型与原型链](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-原型和原型链.md)
@@ -184,9 +193,9 @@ github : https://github.com/PDKSophia
 
 - [Node 在 redis 中缓存 session 遇到的坑]() `· new`
 
-- [移动端遇到过的坑](https://github.com/PDKSophia/blog.io/blob/master/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/%E5%B7%A5%E4%BD%9C%E7%AF%87-%E7%A7%BB%E5%8A%A8%E7%AB%AF%E8%B8%A9%E8%BF%87%E7%9A%84%E5%9D%91.md) `[ 💥update on 2019-09-29 ]`
+- [移动端遇到过的坑](https://github.com/PDKSophia/blog.io/blob/master/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/%E5%B7%A5%E4%BD%9C%E7%AF%87-%E7%A7%BB%E5%8A%A8%E7%AB%AF%E8%B8%A9%E8%BF%87%E7%9A%84%E5%9D%91.md)
 
-- [前端渣渣对 requestAPI 的不断重构之路]() `[ 💥update on 2019-09-30 ]`
+- [前端渣渣对 requestAPI 的不断重构之路](https://github.com/PDKSophia/blog.io/blob/master/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/%E5%B7%A5%E4%BD%9C%E7%AF%87-%E5%89%8D%E7%AB%AF%E6%B8%A3%E6%B8%A3%E5%AF%B9requestAPI%E7%9A%84%E4%B8%8D%E6%96%AD%E9%87%8D%E6%9E%84%E4%B9%8B%E8%B7%AF.md)
 
 ### 🐊 个人面经
 
