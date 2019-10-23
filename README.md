@@ -46,6 +46,8 @@ github : https://github.com/PDKSophia
 
 ## 💥 最新文章
 
+- [前端渣渣对 DNS 的正确认知](https://github.com/PDKSophia/blog.io/blob/master/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/%E5%B7%A5%E4%BD%9C%E7%AF%87-%E5%89%8D%E7%AB%AF%E6%B8%A3%E6%B8%A3%E5%AF%B9DNS%E7%9A%84%E6%AD%A3%E7%A1%AE%E8%AE%A4%E7%9F%A5.md) `[ 💥update on 2019-10-23 ]`
+
 - [💯JavaScript 设计模式的学习](https://github.com/PDKSophia/DesignPatternsToJS) `[ 💥update on 2019-09-30 ]`
 
 - [前端渣渣对 requestAPI 的不断重构之路](https://github.com/PDKSophia/blog.io/blob/master/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/%E5%B7%A5%E4%BD%9C%E7%AF%87-%E5%89%8D%E7%AB%AF%E6%B8%A3%E6%B8%A3%E5%AF%B9requestAPI%E7%9A%84%E4%B8%8D%E6%96%AD%E9%87%8D%E6%9E%84%E4%B9%8B%E8%B7%AF.md) `[ 💥update on 2019-09-30 ]`
