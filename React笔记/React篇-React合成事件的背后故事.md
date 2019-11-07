@@ -1,16 +1,20 @@
-# 前言
+# 温馨提示
 
 > 📢 文章首发博客: [阿宽的博客](https://github.com/PDKSophia/blog.io)
 
-最近在做一个功能，然后`"不小心"`踩到了 **React 合成事件** 的坑，这就很不舒服了，所以去看了 [React 官网合成事件](https://zh-hans.reactjs.org/docs/events.html) 的解释，这不看不知道，一看吓一跳...
+> 💕 温馨提示: 下边是对 React 合成事件的源码阅读，全文有点长，但是！如果你真的想知道这**不为人知的背后内幕**，那一定要耐心看下去！
+
+## 前言
+
+最近在做一个功能，然后`不小心`踩到了 **React 合成事件** 的坑，好奇心的驱使，去看了 [React 官网合成事件](https://zh-hans.reactjs.org/docs/events.html) 的解释，这不看不知道，一看吓一跳...
 
 **SyntheticEvent**是个什么鬼？咋冒出来了个**事件池**？
 
 我就一个简单的需求功能，为什么能扯出这些鬼玩意？？
 
-我们先简单的来看一看我的需求功能是个啥???你就知道为什么我不想去看这个合成事件了....
+我们先简单的来看一看我的需求功能是个啥???
 
-<img src="https://user-gold-cdn.xitu.io/2019/11/6/16e410655f54c5f3?w=500&h=310&f=jpeg&s=12648" alt="" width=250 />
+<img src="https://user-gold-cdn.xitu.io/2019/11/6/16e410655f54c5f3?w=500&h=310&f=jpeg&s=12648" alt="" width=200 />
 
 ## 导火线
 
@@ -23,21 +27,17 @@ class FuckEvent extends React.PureComponent {
   state = {
     showBox: false
   }
-
   componentDidMount() {
     document.body.addEventListener('click', this.handleClickBody, false)
   }
-
   componentWillUnmount() {
     document.body.removeEventListener('click', this.handleClickBody, false)
   }
-
   handleClickBody = () => {
     this.setState({
       showBox: false
     })
   }
-
   handleClickButton = () => {
     this.setState({
       showBox: true
@@ -60,7 +60,7 @@ class FuckEvent extends React.PureComponent {
 
 很简单嘛，很开心的点击了弹窗区域....
 
-于是...我没了...点击弹窗区域，弹窗也被关闭了。。。what ?????? 难道冒泡没有用 ?
+于是...**我没了**...点击弹窗区域，弹窗也被关闭了。。。what the f\*\*k ?????? 难道冒泡没有用 ?
 
 带着这个问题，我走上了`不归之路`...
 
@@ -80,7 +80,7 @@ class FuckEvent extends React.PureComponent {
 
 React 实现了一个**合成事件层**，就是这个事件层，把 IE 和 W3C 标准之间的兼容问题给消除了。
 
-那么问题来了，什么是合成事件与原生事件????
+**📌 那么问题来了，什么是合成事件与原生事件????**
 
 - 原生事件: 在 `componentDidMount生命周期`里边进行`addEventListener`绑定的事件
 
@@ -134,7 +134,7 @@ React 自己实现了这么一套事件机制，它在 DOM 事件体系基础上
 
 - React 通过队列的形式，从触发的组件向父组件回溯，然后调用他们 JSX 中定义的 callback
 
-- React 有一套自己的合成事件 SyntheticEvent，不是原生的，这个可以自己去看官网
+- React 有一套自己的合成事件 `SyntheticEvent`，不是原生的，这个可以自己去看官网
 
 - React 通过对象池的形式管理合成事件对象的创建和销毁，减少了垃圾的生成和新对象内存的分配，提高了性能
 
@@ -199,10 +199,10 @@ React 自己实现了这么一套事件机制，它在 DOM 事件体系基础上
 
 看会上边的框架图，我们得先知道一下这些都是个啥玩意，直接看名称，也能够知道 :
 
-- ReactEventListener：负责事件的注册。
-- ReactEventEmitter：负责事件的分发。
-- EventPluginHub：负责事件的存储及分发。
-- Plugin：根据不同的事件类型构造不同的合成事件。
+- [ ] ReactEventListener：负责事件的注册。
+- [ ] ReactEventEmitter：负责事件的分发。
+- [ ] EventPluginHub：负责事件的存储及分发。
+- [ ] Plugin：根据不同的事件类型构造不同的合成事件。
 
 👇 下面我们来一步一步的看它是怎么工作的
 
@@ -297,7 +297,7 @@ function enqueuePutListener(inst, registrationName, listener, transaction) {
 }
 ```
 
-看到没，这个 `enqueuePutListener()` 就只干了两个事情 :
+💢 看到没，这个 `enqueuePutListener()` 就只干了两个事情 :
 
 - 通过调用 `listenTo` 把事件注册到 document 上 (这就是前边说的 React 上注册的事件最终会绑定在`document`这个 DOM 上)
 
@@ -886,11 +886,11 @@ export function executeDispatchesInOrder(event) {
 
 还有...
 
-## 写不动了
+## 后续
 
 <img src="https://user-gold-cdn.xitu.io/2019/11/6/16e4111418133f98?w=225&h=225&f=jpeg&s=7635" alt="" width=250 />
 
-TMD，写不动了，接下来大家自行去看源码吧，从中午看踩坑，然后通过 `event.nativeEvent.stopImmediatePropagation` 解决问题之后，就开始翻阅相关博客文章，去看源码，我炸了，中午 2 点到晚上 10 点，都在看这玩意，我已经吐了，OMG
+没有后续了，写不动了，接下来大家自行去看源码吧，从中午看踩坑，然后通过 `event.nativeEvent.stopImmediatePropagation` 解决问题之后，就开始翻阅相关博客文章，去看源码，我炸了，中午 2 点到晚上 10 点，都在看这玩意，我已经吐了，OMG
 
 ## 相关连接
 

@@ -4,3 +4,4 @@
   - [Vue 和 React 中 key 的作用吗](./React篇-关于Vue和React中key的作用.md)
   - [Redux 的内幕（一）](./React篇-Redux的内幕（一）.md)
   - [Redux 的内幕（二）](./React篇-Redux的内幕（二）.md)
+  - [React 合成事件的背后故事](./React篇-React合成事件的背后故事.md)

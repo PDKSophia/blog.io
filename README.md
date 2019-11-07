@@ -44,15 +44,27 @@ github : https://github.com/PDKSophia
 
 书中自有颜如玉，这里是我目前读的一些个人书单，也可以说是书籍的搬运工，所有的都是我从书记录下来的知识点(个人认为的重点)，如果你有好的书籍推荐，也可以在 issues 中提一下，共同分享，一同进步 ❤️ 书单地址 : [阿宽的图书馆](https://github.com/PDKSophia/read-booklist)
 
-## 💥 最新文章
+## ⏳ 最新文章
 
-- [前端渣渣对 DNS 的正确认知](https://github.com/PDKSophia/blog.io/blob/master/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/%E5%B7%A5%E4%BD%9C%E7%AF%87-%E5%89%8D%E7%AB%AF%E6%B8%A3%E6%B8%A3%E5%AF%B9DNS%E7%9A%84%E6%AD%A3%E7%A1%AE%E8%AE%A4%E7%9F%A5.md) `[ 💥update on 2019-10-23 ]`
+- [React 合成事件的背后故事]() `[📌 update on 2019-11-07 ]`
 
-- [💯JavaScript 设计模式的学习](https://github.com/PDKSophia/DesignPatternsToJS) `[ 💥update on 2019-09-30 ]`
+- [前端渣渣对 DNS 的正确认知](https://github.com/PDKSophia/blog.io/blob/master/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/%E5%B7%A5%E4%BD%9C%E7%AF%87-%E5%89%8D%E7%AB%AF%E6%B8%A3%E6%B8%A3%E5%AF%B9DNS%E7%9A%84%E6%AD%A3%E7%A1%AE%E8%AE%A4%E7%9F%A5.md) `[📌 update on 2019-10-23 ]`
 
-- [前端渣渣对 requestAPI 的不断重构之路](https://github.com/PDKSophia/blog.io/blob/master/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/%E5%B7%A5%E4%BD%9C%E7%AF%87-%E5%89%8D%E7%AB%AF%E6%B8%A3%E6%B8%A3%E5%AF%B9requestAPI%E7%9A%84%E4%B8%8D%E6%96%AD%E9%87%8D%E6%9E%84%E4%B9%8B%E8%B7%AF.md) `[ 💥update on 2019-09-30 ]`
+- [💯JavaScript 设计模式的学习](https://github.com/PDKSophia/DesignPatternsToJS) `[📌 update on 2019-09-30 ]`
 
-- [移动端遇到过的坑](https://github.com/PDKSophia/blog.io/blob/master/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/%E5%B7%A5%E4%BD%9C%E7%AF%87-%E7%A7%BB%E5%8A%A8%E7%AB%AF%E8%B8%A9%E8%BF%87%E7%9A%84%E5%9D%91.md) `[ 💥update on 2019-09-29 ]`
+- [前端渣渣对 requestAPI 的不断重构之路](https://github.com/PDKSophia/blog.io/blob/master/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/%E5%B7%A5%E4%BD%9C%E7%AF%87-%E5%89%8D%E7%AB%AF%E6%B8%A3%E6%B8%A3%E5%AF%B9requestAPI%E7%9A%84%E4%B8%8D%E6%96%AD%E9%87%8D%E6%9E%84%E4%B9%8B%E8%B7%AF.md) `[ 📌 update on 2019-09-30 ]`
+
+- [移动端遇到过的坑](https://github.com/PDKSophia/blog.io/blob/master/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/%E5%B7%A5%E4%BD%9C%E7%AF%87-%E7%A7%BB%E5%8A%A8%E7%AB%AF%E8%B8%A9%E8%BF%87%E7%9A%84%E5%9D%91.md) `[ 📌 update on 2019-09-29 ]`
+
+## 💕 热门文章
+
+- [手把手教你自己写一个 npm 包](https://github.com/PDKSophia/blog.io/blob/master/%E5%85%B6%E4%BB%96%E7%AC%94%E8%AE%B0/%E5%85%B6%E4%BB%96%E7%AF%87-%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E8%87%AA%E5%B7%B1%E5%86%99%E4%B8%80%E4%B8%AAnpm%E5%8C%85.md)
+
+- [Canvas 绘制图片的坑](https://github.com/PDKSophia/blog.io/blob/master/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/%E5%B7%A5%E4%BD%9C%E7%AF%87-Canvas%E7%BB%98%E5%88%B6%E5%9B%BE%E7%89%87%E7%9A%84%E5%9D%91.md)
+
+- [原型和原型链](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AC%94%E8%AE%B0/JavaScript%E7%AF%87-%E5%8E%9F%E5%9E%8B%E5%92%8C%E5%8E%9F%E5%9E%8B%E9%93%BE.md)
+
+- [面向对象与继承](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AC%94%E8%AE%B0/JavaScript%E7%AF%87-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E4%B8%8E%E7%BB%A7%E6%89%BF.md)
 
 ### 🐷 HTML
 
@@ -88,18 +100,18 @@ github : https://github.com/PDKSophia
 - [💯JavaScript 设计模式的学习](https://github.com/PDKSophia/DesignPatternsToJS)
 
 - [JS 异步加载，defer 和 async 的区别?](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-异步加载js%2C%20async和defer.md)
-- [闭包](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-闭包.md)
-- [原型与原型链](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-原型和原型链.md)
+- [闭包](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-闭包.md) `· hot`
+- [原型与原型链](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-原型和原型链.md) `· hot`
 - [聊下操作符](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-聊下操作符.md)
-- [谈谈 Promise 这个折磨人的小妖精](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-Promise这个折磨人的小妖精.md)
+- [谈谈 Promise 这个折磨人的小妖精](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-Promise这个折磨人的小妖精.md) `· hot`
 - [async 和 await](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-async-和-await.md)
 - [垃圾回收机制](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-垃圾回收机制.md)
 - [0.1 + 0.2 != 0.3]()
 - [深拷贝和浅拷贝](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-深拷贝和浅拷贝.md)
 - [防抖和节流](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-防抖和节流.md)
 - [聊下 Ajax 原理](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-聊下Ajax的原理.md)
-- [call 与 apply 终极大 boss](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-apply和call.md)
-- [执行环境及作用域](https://github.com/PDKSophia/read-booklist/blob/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1/play-card-1.md#%E6%89%A7%E8%A1%8C%E7%8E%AF%E5%A2%83%E5%8F%8A%E4%BD%9C%E7%94%A8%E5%9F%9F)
+- [call 与 apply 终极大 boss](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-apply和call.md) `· hot`
+- [执行环境及作用域](https://github.com/PDKSophia/read-booklist/blob/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1/play-card-1.md#%E6%89%A7%E8%A1%8C%E7%8E%AF%E5%A2%83%E5%8F%8A%E4%BD%9C%E7%94%A8%E5%9F%9F) `· hot`
 - [前端模块化](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-前端模块化.md)
 - [函数声明及函数表达式](https://github.com/PDKSophia/read-booklist/blob/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1/play-card-2.md#%E5%87%BD%E6%95%B0%E5%A3%B0%E6%98%8E%E4%B8%8E%E5%87%BD%E6%95%B0%E8%A1%A8%E8%BE%BE%E5%BC%8F)
 - [函数内部属性](https://github.com/PDKSophia/read-booklist/blob/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1/play-card-2.md#%E5%87%BD%E6%95%B0%E5%86%85%E9%83%A8%E5%B1%9E%E6%80%A7)
@@ -107,10 +119,10 @@ github : https://github.com/PDKSophia
 - [闯关 BOS 之 JS 的继承](https://github.com/PDKSophia/read-booklist/blob/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1/play-card-3.md#%E7%BB%A7%E6%89%BF)
 - [JS-私有变量](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-私有变量.md)
 - [表单脚本](https://github.com/PDKSophia/read-booklist/blob/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1/play-card-9.md#%E8%A1%A8%E5%8D%95%E8%84%9A%E6%9C%AC)
-- [面向对象与继承，ES6 Class](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-面向对象与继承.md)
+- [面向对象与继承，ES6 Class](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-面向对象与继承.md) `· hot`
 - [JS-高级技巧-惰性载入函数](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-惰性载入函数.md)
 - [JS-高级技巧-作用域安全的构造函数](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-作用域安全的构造函数.md)
-- [函数绑定与柯里化函数，手动实现一个 bind()函数](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-函数绑定与函数柯里化.md)
+- [函数绑定与柯里化函数，手动实现一个 bind()函数](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-函数绑定与函数柯里化.md) `· hot`
 - [let 和 const 及 var 的理解](https://github.com/chenjigeng/blog/blob/master/%E6%88%91%E5%AF%B9let%E5%92%8Cconst%E7%90%86%E8%A7%A3.md)
 - [arguments.callee](https://zhidao.baidu.com/question/263697314329750005.html)
 
@@ -157,6 +169,7 @@ github : https://github.com/PDKSophia
 - [Vue 和 React 中 key 的作用吗](https://github.com/PDKSophia/blog.io/blob/master/React%E7%AC%94%E8%AE%B0/React%E7%AF%87-%E5%85%B3%E4%BA%8EVue%E5%92%8CReact%E4%B8%ADkey%E7%9A%84%E4%BD%9C%E7%94%A8.md) `· new`
 - [Redux 的内幕（一）](https://github.com/PDKSophia/blog.io/blob/master/React%E7%AC%94%E8%AE%B0/React%E7%AF%87-Redux%E7%9A%84%E5%86%85%E5%B9%95%EF%BC%88%E4%B8%80%EF%BC%89.md) `· new`
 - [Redux 的内幕（二）](https://github.com/PDKSophia/blog.io/blob/master/React%E7%AC%94%E8%AE%B0/React%E7%AF%87-Redux%E7%9A%84%E5%86%85%E5%B9%95%EF%BC%88%E4%BA%8C%EF%BC%89.md) `· new`
+- [React 合成事件的背后故事]() `· new`
 
 ### 🐶 数据结构
 
@@ -222,7 +235,7 @@ github : https://github.com/PDKSophia
 
 ---
 
-### 🍓书单打卡
+### 🍓 书单打卡
 
 👉 下边是 `2019-2020` 年度的书单，很抱歉，立下的 Flag 没能做到，因为前段时间忙于毕业设计，毕业旅行，已经其他事情耽搁，现已经毕业入职工作，更没时间读书了，但是，不学习怎么能行，所以现在重新拾回书单，感兴趣的可以一起学习哈，如果有好的书籍推荐，可以提 `issues`
 
@@ -230,32 +243,32 @@ github : https://github.com/PDKSophia
 
 > 📢 书单里的书是自己列的，有些书只是挂起，但还没时间读，同时，在读书中，可能会跑去读其他不在此书单中的书，也就是会阶段性的更新书单 ~
 
-| Serial number |                  BookName                   | Estimated StartTime | Estimated EndTime |                        Status                         |
-| :-----------: | :-----------------------------------------: | :-----------------: | :---------------: | :---------------------------------------------------: |
-|       1       |     《JavaScript 高级程序设计 第 3 版》     |    📆 2018-11-05    |   📆 2018-11-26   |   ![](https://img.shields.io/badge/FINISH-blue.svg)   |
-|       2       |                《图解 HTTP》                |    📆 2018-11-12    |   📆 2019-11-24   |   ![](https://img.shields.io/badge/FINISH-blue.svg)   |
-|       3       |            《计算机网络 第七版》            |    📆 2018-12-02    |   📆 2019-01-03   | ![](https://img.shields.io/badge/NOT_UPDATE-orange.svg)  |
-|       4       | 《了不起的 NodeJS》搭配《Node.js 开发指南》 |    📆 2018-12-22    |   📆 2019-03-04   | ![](https://img.shields.io/badge/NOT_UPDATE-orange.svg)  |
-|       5       |             《深入浅出 React》              |    📆 2019-01-15    |   📆 2019-01-22   | ![](https://img.shields.io/badge/NOT_UPDATE-orange.svg)  |
-|       6       |      《JavaScript 设计模式与开发实践》      |    📆 2019-11-04    |   📆 2019-11-11   | ![](https://img.shields.io/badge/READING-yellow.svg) |
-|       7       |                《CSS 世界》                 |    📆 2019-11-12    |   📆 2019-11-17   | ![](https://img.shields.io/badge/UNREAD-inactive.svg) |
-|       8       |            《网络是怎样连接的》             |    📆 2019-11-18    |   📆 2019-11-27   | ![](https://img.shields.io/badge/UNREAD-inactive.svg) |
-|       9       |            《ECMAScript 6 入门》            |     ⏳Tentative     |    ⏳Tentative    | ![](https://img.shields.io/badge/UNREAD-inactive.svg) |
-|      10       |          《JavaScript 正则表达式》          |     ⏳Tentative     |    ⏳Tentative    | ![](https://img.shields.io/badge/UNREAD-inactive.svg) |
-|      11       |               《剑指 offer》                |     ⏳Tentative     |    ⏳Tentative    | ![](https://img.shields.io/badge/UNREAD-inactive.svg) |
-|      12       |                《算法图解》                 |     ⏳Tentative     |    ⏳Tentative    | ![](https://img.shields.io/badge/UNREAD-inactive.svg) |
-|      13       |     《数据结构与算法 JavaScript 描述》      |     ⏳Tentative     |    ⏳Tentative    | ![](https://img.shields.io/badge/UNREAD-inactive.svg) |
-|      14       |          《计算机是怎样跑起来的》           |     ⏳Tentative     |    ⏳Tentative    | ![](https://img.shields.io/badge/UNREAD-inactive.svg) |
-|      15       |        《编程之法：面试和算法心得》         |     ⏳Tentative     |    ⏳Tentative    | ![](https://img.shields.io/badge/UNREAD-inactive.svg) |
-|      16       |            《大型网站技术架构》             |     ⏳Tentative     |    ⏳Tentative    | ![](https://img.shields.io/badge/UNREAD-inactive.svg) |
-|      17       |                《编程珠玑》                 |     ⏳Tentative     |    ⏳Tentative    | ![](https://img.shields.io/badge/UNREAD-inactive.svg) |
-|      18       |                《硅谷之火》                 |     ⏳Tentative     |    ⏳Tentative    | ![](https://img.shields.io/badge/UNREAD-inactive.svg) |
-|      19       |            《白帽子讲 Web 安全》            |     ⏳Tentative     |    ⏳Tentative    | ![](https://img.shields.io/badge/UNREAD-inactive.svg) |
-|      20       |              《程序员的英语》               |     ⏳Tentative     |    ⏳Tentative    | ![](https://img.shields.io/badge/UNREAD-inactive.svg) |
-|      21       |            《了不起到 Node.js》             |     ⏳Tentative     |    ⏳Tentative    | ![](https://img.shields.io/badge/UNREAD-inactive.svg) |
-|      22       |               《黑客与画家》                |     ⏳Tentative     |    ⏳Tentative    | ![](https://img.shields.io/badge/UNREAD-inactive.svg) |
-|      23       |              《丑陋的中国人》               |     ⏳Tentative     |    ⏳Tentative    | ![](https://img.shields.io/badge/UNREAD-inactive.svg) |
-|      24       |      《程序员修炼之道——从小工到专家》       |     ⏳Tentative     |    ⏳Tentative    | ![](https://img.shields.io/badge/UNREAD-inactive.svg) |
+| Serial number |                  BookName                   | Estimated StartTime | Estimated EndTime |                         Status                          |
+| :-----------: | :-----------------------------------------: | :-----------------: | :---------------: | :-----------------------------------------------------: |
+|       1       |     《JavaScript 高级程序设计 第 3 版》     |    📆 2018-11-05    |   📆 2018-11-26   |    ![](https://img.shields.io/badge/FINISH-blue.svg)    |
+|       2       |                《图解 HTTP》                |    📆 2018-11-12    |   📆 2019-11-24   |    ![](https://img.shields.io/badge/FINISH-blue.svg)    |
+|       3       |            《计算机网络 第七版》            |    📆 2018-12-02    |   📆 2019-01-03   | ![](https://img.shields.io/badge/NOT_UPDATE-orange.svg) |
+|       4       | 《了不起的 NodeJS》搭配《Node.js 开发指南》 |    📆 2018-12-22    |   📆 2019-03-04   | ![](https://img.shields.io/badge/NOT_UPDATE-orange.svg) |
+|       5       |             《深入浅出 React》              |    📆 2019-01-15    |   📆 2019-01-22   | ![](https://img.shields.io/badge/NOT_UPDATE-orange.svg) |
+|       6       |      《JavaScript 设计模式与开发实践》      |    📆 2019-11-04    |   📆 2019-11-11   |  ![](https://img.shields.io/badge/READING-yellow.svg)   |
+|       7       |                《CSS 世界》                 |    📆 2019-11-12    |   📆 2019-11-17   |  ![](https://img.shields.io/badge/UNREAD-inactive.svg)  |
+|       8       |            《网络是怎样连接的》             |    📆 2019-11-18    |   📆 2019-11-27   |  ![](https://img.shields.io/badge/UNREAD-inactive.svg)  |
+|       9       |            《ECMAScript 6 入门》            |     ⏳Tentative     |    ⏳Tentative    |  ![](https://img.shields.io/badge/UNREAD-inactive.svg)  |
+|      10       |          《JavaScript 正则表达式》          |     ⏳Tentative     |    ⏳Tentative    |  ![](https://img.shields.io/badge/UNREAD-inactive.svg)  |
+|      11       |               《剑指 offer》                |     ⏳Tentative     |    ⏳Tentative    |  ![](https://img.shields.io/badge/UNREAD-inactive.svg)  |
+|      12       |                《算法图解》                 |     ⏳Tentative     |    ⏳Tentative    |  ![](https://img.shields.io/badge/UNREAD-inactive.svg)  |
+|      13       |     《数据结构与算法 JavaScript 描述》      |     ⏳Tentative     |    ⏳Tentative    |  ![](https://img.shields.io/badge/UNREAD-inactive.svg)  |
+|      14       |          《计算机是怎样跑起来的》           |     ⏳Tentative     |    ⏳Tentative    |  ![](https://img.shields.io/badge/UNREAD-inactive.svg)  |
+|      15       |        《编程之法：面试和算法心得》         |     ⏳Tentative     |    ⏳Tentative    |  ![](https://img.shields.io/badge/UNREAD-inactive.svg)  |
+|      16       |            《大型网站技术架构》             |     ⏳Tentative     |    ⏳Tentative    |  ![](https://img.shields.io/badge/UNREAD-inactive.svg)  |
+|      17       |                《编程珠玑》                 |     ⏳Tentative     |    ⏳Tentative    |  ![](https://img.shields.io/badge/UNREAD-inactive.svg)  |
+|      18       |                《硅谷之火》                 |     ⏳Tentative     |    ⏳Tentative    |  ![](https://img.shields.io/badge/UNREAD-inactive.svg)  |
+|      19       |            《白帽子讲 Web 安全》            |     ⏳Tentative     |    ⏳Tentative    |  ![](https://img.shields.io/badge/UNREAD-inactive.svg)  |
+|      20       |              《程序员的英语》               |     ⏳Tentative     |    ⏳Tentative    |  ![](https://img.shields.io/badge/UNREAD-inactive.svg)  |
+|      21       |            《了不起到 Node.js》             |     ⏳Tentative     |    ⏳Tentative    |  ![](https://img.shields.io/badge/UNREAD-inactive.svg)  |
+|      22       |               《黑客与画家》                |     ⏳Tentative     |    ⏳Tentative    |  ![](https://img.shields.io/badge/UNREAD-inactive.svg)  |
+|      23       |              《丑陋的中国人》               |     ⏳Tentative     |    ⏳Tentative    |  ![](https://img.shields.io/badge/UNREAD-inactive.svg)  |
+|      24       |      《程序员修炼之道——从小工到专家》       |     ⏳Tentative     |    ⏳Tentative    |  ![](https://img.shields.io/badge/UNREAD-inactive.svg)  |
 
 ### 吐槽一下
 
