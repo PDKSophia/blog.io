@@ -46,7 +46,7 @@ github : https://github.com/PDKSophia
 
 ## ⏳ 最新文章
 
-- [React 合成事件的背后故事]() `[📌 update on 2019-11-07 ]`
+- [React 合成事件的背后故事](https://github.com/PDKSophia/blog.io/blob/master/React%E7%AC%94%E8%AE%B0/React%E7%AF%87-React%E5%90%88%E6%88%90%E4%BA%8B%E4%BB%B6%E7%9A%84%E8%83%8C%E5%90%8E%E6%95%85%E4%BA%8B.md) `[📌 update on 2019-11-07 ]`
 
 - [前端渣渣对 DNS 的正确认知](https://github.com/PDKSophia/blog.io/blob/master/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/%E5%B7%A5%E4%BD%9C%E7%AF%87-%E5%89%8D%E7%AB%AF%E6%B8%A3%E6%B8%A3%E5%AF%B9DNS%E7%9A%84%E6%AD%A3%E7%A1%AE%E8%AE%A4%E7%9F%A5.md) `[📌 update on 2019-10-23 ]`
 
@@ -169,7 +169,7 @@ github : https://github.com/PDKSophia
 - [Vue 和 React 中 key 的作用吗](https://github.com/PDKSophia/blog.io/blob/master/React%E7%AC%94%E8%AE%B0/React%E7%AF%87-%E5%85%B3%E4%BA%8EVue%E5%92%8CReact%E4%B8%ADkey%E7%9A%84%E4%BD%9C%E7%94%A8.md) `· new`
 - [Redux 的内幕（一）](https://github.com/PDKSophia/blog.io/blob/master/React%E7%AC%94%E8%AE%B0/React%E7%AF%87-Redux%E7%9A%84%E5%86%85%E5%B9%95%EF%BC%88%E4%B8%80%EF%BC%89.md) `· new`
 - [Redux 的内幕（二）](https://github.com/PDKSophia/blog.io/blob/master/React%E7%AC%94%E8%AE%B0/React%E7%AF%87-Redux%E7%9A%84%E5%86%85%E5%B9%95%EF%BC%88%E4%BA%8C%EF%BC%89.md) `· new`
-- [React 合成事件的背后故事]() `· new`
+- [React 合成事件的背后故事](https://github.com/PDKSophia/blog.io/blob/master/React%E7%AC%94%E8%AE%B0/React%E7%AF%87-React%E5%90%88%E6%88%90%E4%BA%8B%E4%BB%B6%E7%9A%84%E8%83%8C%E5%90%8E%E6%95%85%E4%BA%8B.md) `· new`
 
 ### 🐶 数据结构
 
@@ -210,7 +210,9 @@ github : https://github.com/PDKSophia
 
 - [移动端遇到过的坑](https://github.com/PDKSophia/blog.io/blob/master/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/%E5%B7%A5%E4%BD%9C%E7%AF%87-%E7%A7%BB%E5%8A%A8%E7%AB%AF%E8%B8%A9%E8%BF%87%E7%9A%84%E5%9D%91.md)
 
-- [前端渣渣对 requestAPI 的不断重构之路](https://github.com/PDKSophia/blog.io/blob/master/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/%E5%B7%A5%E4%BD%9C%E7%AF%87-%E5%89%8D%E7%AB%AF%E6%B8%A3%E6%B8%A3%E5%AF%B9requestAPI%E7%9A%84%E4%B8%8D%E6%96%AD%E9%87%8D%E6%9E%84%E4%B9%8B%E8%B7%AF.md)
+- [前端渣渣对 requestAPI 的不断重构之路](https://github.com/PDKSophia/blog.io/blob/master/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/%E5%B7%A5%E4%BD%9C%E7%AF%87-%E5%89%8D%E7%AB%AF%E6%B8%A3%E6%B8%A3%E5%AF%B9requestAPI%E7%9A%84%E4%B8%8D%E6%96%AD%E9%87%8D%E6%9E%84%E4%B9%8B%E8%B7%AF.md) `· new`
+
+- [前端渣渣对 DNS 的正确认知](https://github.com/PDKSophia/blog.io/blob/master/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/%E5%B7%A5%E4%BD%9C%E7%AF%87-%E5%89%8D%E7%AB%AF%E6%B8%A3%E6%B8%A3%E5%AF%B9DNS%E7%9A%84%E6%AD%A3%E7%A1%AE%E8%AE%A4%E7%9F%A5.md) `· new`
 
 ### 🐊 个人面经
 
@@ -237,7 +239,7 @@ github : https://github.com/PDKSophia
 
 ### 🍓 书单打卡
 
-👉 下边是 `2019-2020` 年度的书单，很抱歉，立下的 Flag 没能做到，因为前段时间忙于毕业设计，毕业旅行，已经其他事情耽搁，现已经毕业入职工作，更没时间读书了，但是，不学习怎么能行，所以现在重新拾回书单，感兴趣的可以一起学习哈，如果有好的书籍推荐，可以提 `issues`
+下边是 `2019-2020` 年度的书单，很抱歉，立下的 Flag 没能做到，因为前段时间忙于毕业设计，毕业旅行，已经其他事情耽搁，现已经毕业入职工作，更没时间读书了，但是，不学习怎么能行，所以现在重新拾回书单，感兴趣的可以一起学习哈，如果有好的书籍推荐，可以提 `issues`
 
 🎯 书单地址 : [阿宽的书单](https://github.com/PDKSophia/read-booklist)
 
