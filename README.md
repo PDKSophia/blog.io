@@ -46,6 +46,8 @@ github : https://github.com/PDKSophia
 
 ## ⏳ 最新文章
 
+- [JavaScript设计模式（一）](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AC%94%E8%AE%B0/JavaScript%E7%AF%87-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%88%E4%B8%80%EF%BC%89.md) `[📌 update on 2019-11-15 ]`
+
 - [React 合成事件的背后故事](https://github.com/PDKSophia/blog.io/blob/master/React%E7%AC%94%E8%AE%B0/React%E7%AF%87-React%E5%90%88%E6%88%90%E4%BA%8B%E4%BB%B6%E7%9A%84%E8%83%8C%E5%90%8E%E6%95%85%E4%BA%8B.md) `[📌 update on 2019-11-07 ]`
 
 - [前端渣渣对 DNS 的正确认知](https://github.com/PDKSophia/blog.io/blob/master/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/%E5%B7%A5%E4%BD%9C%E7%AF%87-%E5%89%8D%E7%AB%AF%E6%B8%A3%E6%B8%A3%E5%AF%B9DNS%E7%9A%84%E6%AD%A3%E7%A1%AE%E8%AE%A4%E7%9F%A5.md) `[📌 update on 2019-10-23 ]`
@@ -97,7 +99,7 @@ github : https://github.com/PDKSophia
 
 - [📕JavaScript 高级程序设计第三版红皮书总结](https://github.com/PDKSophia/read-booklist/tree/master/JavaScript%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%AE%BE%E8%AE%A1)
 
-- [💯JavaScript 设计模式的学习](https://github.com/PDKSophia/DesignPatternsToJS)
+- [🎨JavaScript 设计模式的学习](https://github.com/PDKSophia/DesignPatternsToJS)
 
 - [JS 异步加载，defer 和 async 的区别?](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-异步加载js%2C%20async和defer.md)
 - [闭包](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-闭包.md) `· hot`
@@ -125,6 +127,8 @@ github : https://github.com/PDKSophia
 - [函数绑定与柯里化函数，手动实现一个 bind()函数](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-函数绑定与函数柯里化.md) `· hot`
 - [let 和 const 及 var 的理解](https://github.com/chenjigeng/blog/blob/master/%E6%88%91%E5%AF%B9let%E5%92%8Cconst%E7%90%86%E8%A7%A3.md)
 - [arguments.callee](https://zhidao.baidu.com/question/263697314329750005.html)
+- [JavaScript设计模式（一）](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AC%94%E8%AE%B0/JavaScript%E7%AF%87-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%88%E4%B8%80%EF%BC%89.md) `· new`
+
 
 ### 🐑 浏览器
 
