@@ -46,6 +46,8 @@ github : https://github.com/PDKSophia
 
 ## ⏳ 最新文章
 
+- [JS下载图片和PDF及DOC等资源文件且兼容IE和Edge](https://github.com/PDKSophia/blog.io/blob/master/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/%E5%B7%A5%E4%BD%9C%E7%AF%87-JS%E4%B8%8B%E8%BD%BD%E5%9B%BE%E7%89%87%E5%92%8CPDF%E5%8F%8ADOC%E7%AD%89%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E4%B8%94%E5%85%BC%E5%AE%B9IE%E5%92%8CEdge.md)  `[📌 update on 2020-03-02 ]`
+
 - [JavaScript设计模式（一）](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AC%94%E8%AE%B0/JavaScript%E7%AF%87-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%88%E4%B8%80%EF%BC%89.md) `[📌 update on 2019-11-15 ]`
 
 - [React 合成事件的背后故事](https://github.com/PDKSophia/blog.io/blob/master/React%E7%AC%94%E8%AE%B0/React%E7%AF%87-React%E5%90%88%E6%88%90%E4%BA%8B%E4%BB%B6%E7%9A%84%E8%83%8C%E5%90%8E%E6%95%85%E4%BA%8B.md) `[📌 update on 2019-11-07 ]`
