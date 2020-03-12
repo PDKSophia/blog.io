@@ -16,7 +16,7 @@
 
 ## 前言
 
-秋招马上就开始了，很多大厂的秋招提前批已经打响，博主前两天也通过学长学姐们，内推了些大公司，简历一关应该都能过，所以得开始准备一下面试，得复习一哈，在这边的会记录我面试准备看的些书籍和知识点，如果有兴趣的小伙伴，可以看看哦
+秋招马上就开始了，很多大厂的秋招提前批已经打响，博主前两天也通过学长学姐们，内推了些大公司，简历一关应该都能过，所以得开始准备一下面试，得复习一哈，在这边的会记录我面试准备看的些书籍和知识点，如果有兴趣的小伙伴，可以看看哦，如果你觉得 OK ~ 点个 star ?
 
 ## 有很重要的话要说
 
@@ -24,7 +24,7 @@
 
 ## 客官，点个赞?
 
-如果觉得对您有帮助的话，点个 star 再走？
+⭐ 如果觉得对您有帮助的话，点个 star 再走？
 
 ## 相关地址
 
@@ -46,9 +46,11 @@ github : https://github.com/PDKSophia
 
 ## ⏳ 最新文章
 
-- [JS下载图片和PDF及DOC等资源文件且兼容IE和Edge](https://github.com/PDKSophia/blog.io/blob/master/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/%E5%B7%A5%E4%BD%9C%E7%AF%87-JS%E4%B8%8B%E8%BD%BD%E5%9B%BE%E7%89%87%E5%92%8CPDF%E5%8F%8ADOC%E7%AD%89%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E4%B8%94%E5%85%BC%E5%AE%B9IE%E5%92%8CEdge.md)  `[📌 update on 2020-03-02 ]`
+- [记一次 React 中跳转页面 IE 兼容问题]() `[📌 update on 2020-03-10 ]`
 
-- [JavaScript设计模式（一）](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AC%94%E8%AE%B0/JavaScript%E7%AF%87-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%88%E4%B8%80%EF%BC%89.md) `[📌 update on 2019-11-15 ]`
+- [JS 下载图片和 PDF 及 DOC 等资源文件且兼容 IE 和 Edge](https://github.com/PDKSophia/blog.io/blob/master/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/%E5%B7%A5%E4%BD%9C%E7%AF%87-JS%E4%B8%8B%E8%BD%BD%E5%9B%BE%E7%89%87%E5%92%8CPDF%E5%8F%8ADOC%E7%AD%89%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E4%B8%94%E5%85%BC%E5%AE%B9IE%E5%92%8CEdge.md) `[📌 update on 2020-03-02 ]`
+
+- [JavaScript 设计模式（一）](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AC%94%E8%AE%B0/JavaScript%E7%AF%87-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%88%E4%B8%80%EF%BC%89.md) `[📌 update on 2019-11-15 ]`
 
 - [React 合成事件的背后故事](https://github.com/PDKSophia/blog.io/blob/master/React%E7%AC%94%E8%AE%B0/React%E7%AF%87-React%E5%90%88%E6%88%90%E4%BA%8B%E4%BB%B6%E7%9A%84%E8%83%8C%E5%90%8E%E6%95%85%E4%BA%8B.md) `[📌 update on 2019-11-07 ]`
 
@@ -129,8 +131,7 @@ github : https://github.com/PDKSophia
 - [函数绑定与柯里化函数，手动实现一个 bind()函数](https://github.com/PDKSophia/blog.io/blob/master/JavaScript笔记/JavaScript篇-函数绑定与函数柯里化.md) `· hot`
 - [let 和 const 及 var 的理解](https://github.com/chenjigeng/blog/blob/master/%E6%88%91%E5%AF%B9let%E5%92%8Cconst%E7%90%86%E8%A7%A3.md)
 - [arguments.callee](https://zhidao.baidu.com/question/263697314329750005.html)
-- [JavaScript设计模式（一）](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AC%94%E8%AE%B0/JavaScript%E7%AF%87-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%88%E4%B8%80%EF%BC%89.md) `· new`
-
+- [JavaScript 设计模式（一）](https://github.com/PDKSophia/blog.io/blob/master/JavaScript%E7%AC%94%E8%AE%B0/JavaScript%E7%AF%87-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%88%E4%B8%80%EF%BC%89.md) `· new`
 
 ### 🐑 浏览器
 

@@ -10,3 +10,4 @@
   - [前端渣渣对 requestAPI 的不断重构之路](./工作篇-前端渣渣对requestAPI的不断重构之路.md)
   - [前端渣渣对 DNS 的正确认知](./工作篇-前端渣渣对DNS的正确认知.md)
   - [JS 下载图片和 PDF 及 DOC 等资源文件且兼容 IE 和 Edge](./工作篇-JS下载图片和PDF及DOC等资源文件且兼容IE和Edge.md)
+  - [记一次 React 中跳转页面 IE 兼容问题](./工作篇-记一次React中跳转页面IE兼容问题.md)
