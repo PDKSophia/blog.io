@@ -46,7 +46,9 @@ github : https://github.com/PDKSophia
 
 ## ⏳ 最新文章
 
-- [记一次 React 中跳转页面 IE 兼容问题](https://github.com/PDKSophia/blog.io/blob/master/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/%E5%B7%A5%E4%BD%9C%E7%AF%87-%E8%AE%B0%E4%B8%80%E6%AC%A1React%E4%B8%AD%E8%B7%B3%E8%BD%AC%E9%A1%B5%E9%9D%A2IE%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98.md) `[📌 update on 2020-03-10 ]`
+- [前端渣渣使用react hooks进行重构的新认识](https://github.com/PDKSophia/blog.io/blob/master/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/%E5%B7%A5%E4%BD%9C%E7%AF%87-%E5%89%8D%E7%AB%AF%E6%B8%A3%E6%B8%A3%E4%BD%BF%E7%94%A8react_hooks%E8%BF%9B%E8%A1%8C%E9%87%8D%E6%9E%84%E7%9A%84%E6%96%B0%E8%AE%A4%E8%AF%86.md) `[📌 update on 2020-03-21 ]`
+
+- [前端渣渣记一次排查万恶之源IE兼容性的问题](https://github.com/PDKSophia/blog.io/blob/master/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/%E5%B7%A5%E4%BD%9C%E7%AF%87-%E5%89%8D%E7%AB%AF%E6%B8%A3%E6%B8%A3%E8%AE%B0%E4%B8%80%E6%AC%A1%E6%8E%92%E6%9F%A5%E4%B8%87%E6%81%B6%E4%B9%8B%E6%BA%90IE%E5%85%BC%E5%AE%B9%E6%80%A7%E7%9A%84%E9%97%AE%E9%A2%98.md) `[📌 update on 2020-03-10 ]`
 
 - [JS 下载图片和 PDF 及 DOC 等资源文件且兼容 IE 和 Edge](https://github.com/PDKSophia/blog.io/blob/master/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/%E5%B7%A5%E4%BD%9C%E7%AF%87-JS%E4%B8%8B%E8%BD%BD%E5%9B%BE%E7%89%87%E5%92%8CPDF%E5%8F%8ADOC%E7%AD%89%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E4%B8%94%E5%85%BC%E5%AE%B9IE%E5%92%8CEdge.md) `[📌 update on 2020-03-02 ]`
 
