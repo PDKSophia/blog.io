@@ -26,23 +26,23 @@
 class FuckEvent extends React.PureComponent {
   state = {
     showBox: false
-  }
+  };
   componentDidMount() {
-    document.body.addEventListener('click', this.handleClickBody, false)
+    document.body.addEventListener('click', this.handleClickBody, false);
   }
   componentWillUnmount() {
-    document.body.removeEventListener('click', this.handleClickBody, false)
+    document.body.removeEventListener('click', this.handleClickBody, false);
   }
   handleClickBody = () => {
     this.setState({
       showBox: false
-    })
-  }
+    });
+  };
   handleClickButton = () => {
     this.setState({
       showBox: true
-    })
-  }
+    });
+  };
 
   render() {
     return (
@@ -53,7 +53,7 @@ class FuckEvent extends React.PureComponent {
           <div onClick={e => e.stopPropagation()}>我是弹窗</div>
         )}
       </div>
-    )
+    );
   }
 }
 ```
@@ -90,7 +90,7 @@ React 实现了一个**合成事件层**，就是这个事件层，把 IE 和 W3
 
 ```js
 {
-  this.state.showBox && <div onClick={e => e.stopPropagation()}>我是弹窗</div>
+  this.state.showBox && <div onClick={e => e.stopPropagation()}>我是弹窗</div>;
 }
 ```
 
@@ -216,12 +216,12 @@ class TaskEvent extends Reac.PureComponent {
     return (
       <div
         onClick={() => {
-          console.log('我是注册事件')
+          console.log('我是注册事件');
         }}
       >
         呵呵呵
       </div>
-    )
+    );
   }
 }
 ```
@@ -277,23 +277,23 @@ _updateDOMProperties: function (lastProps, nextProps, transaction) {
 ```js
 function enqueuePutListener(inst, registrationName, listener, transaction) {
   if (transaction instanceof ReactServerRenderingTransaction) {
-    return
+    return;
   }
-  var containerInfo = inst._hostContainerInfo
+  var containerInfo = inst._hostContainerInfo;
   var isDocumentFragment =
-    containerInfo._node && containerInfo._node.nodeType === DOC_FRAGMENT_TYPE
+    containerInfo._node && containerInfo._node.nodeType === DOC_FRAGMENT_TYPE;
   // 找到document
   var doc = isDocumentFragment
     ? containerInfo._node
-    : containerInfo._ownerDocument
+    : containerInfo._ownerDocument;
   // 注册事件，将事件注册到document上
-  listenTo(registrationName, doc)
+  listenTo(registrationName, doc);
   // 存储事件,放入事务队列中
   transaction.getReactMountReady().enqueue(putListener, {
     inst: inst,
     registrationName: registrationName,
     listener: listener
-  })
+  });
 }
 ```
 
@@ -318,13 +318,13 @@ export function listenTo(
   registrationName: string,
   mountAt: Document | Element | Node
 ): void {
-  const listeningSet = getListeningSetForElement(mountAt)
-  const dependencies = registrationNameDependencies[registrationName]
+  const listeningSet = getListeningSetForElement(mountAt);
+  const dependencies = registrationNameDependencies[registrationName];
 
   for (let i = 0; i < dependencies.length; i++) {
-    const dependency = dependencies[i]
+    const dependency = dependencies[i];
     // 调用该方法进行注册
-    listenToTopLevel(dependency, mountAt, listeningSet)
+    listenToTopLevel(dependency, mountAt, listeningSet);
   }
 }
 ```
@@ -343,17 +343,17 @@ export function listenToTopLevel(
       case TOP_CANCEL:
       case TOP_CLOSE:
         if (isEventSupported(getRawEventName(topLevelType))) {
-          trapCapturedEvent(topLevelType, mountAt) // 捕获阶段
+          trapCapturedEvent(topLevelType, mountAt); // 捕获阶段
         }
-        break
+        break;
       default:
-        const isMediaEvent = mediaEventTypes.indexOf(topLevelType) !== -1
+        const isMediaEvent = mediaEventTypes.indexOf(topLevelType) !== -1;
         if (!isMediaEvent) {
-          trapBubbledEvent(topLevelType, mountAt) // 冒泡阶段
+          trapBubbledEvent(topLevelType, mountAt); // 冒泡阶段
         }
-        break
+        break;
     }
-    listeningSet.add(topLevelType)
+    listeningSet.add(topLevelType);
   }
 }
 ```
@@ -372,7 +372,7 @@ export function trapCapturedEvent(
   topLevelType: DOMTopLevelEventType,
   element: Document | Element | Node
 ): void {
-  trapEventForPluginEventSystem(element, topLevelType, true)
+  trapEventForPluginEventSystem(element, topLevelType, true);
 }
 
 // 冒泡阶段
@@ -380,7 +380,7 @@ export function trapBubbledEvent(
   topLevelType: DOMTopLevelEventType,
   element: Document | Element | Node
 ): void {
-  trapEventForPluginEventSystem(element, topLevelType, false)
+  trapEventForPluginEventSystem(element, topLevelType, false);
 }
 ```
 
@@ -390,14 +390,14 @@ function trapEventForPluginEventSystem(
   topLevelType: DOMTopLevelEventType,
   capture: boolean // 决定捕获还是冒泡阶段
 ): void {
-  let listener
+  let listener;
   switch (getEventPriority(topLevelType)) {
   }
-  const rawEventName = getRawEventName(topLevelType)
+  const rawEventName = getRawEventName(topLevelType);
   if (capture) {
-    addEventCaptureListener(element, rawEventName, listener)
+    addEventCaptureListener(element, rawEventName, listener);
   } else {
-    addEventBubbleListener(element, rawEventName, listener)
+    addEventBubbleListener(element, rawEventName, listener);
   }
 }
 ```
@@ -411,7 +411,7 @@ export function addEventCaptureListener(
   eventType: string,
   listener: Function
 ): void {
-  element.addEventListener(eventType, listener, true)
+  element.addEventListener(eventType, listener, true);
 }
 
 // 冒泡
@@ -420,7 +420,7 @@ export function addEventBubbleListener(
   eventType: string,
   listener: Function
 ): void {
-  element.addEventListener(eventType, listener, false)
+  element.addEventListener(eventType, listener, false);
 }
 ```
 
@@ -434,13 +434,13 @@ export function addEventBubbleListener(
 function enqueuePutListener(inst, registrationName, listener, transaction) {
   //...
   // 注册事件，将事件注册到document上
-  listenTo(registrationName, doc)
+  listenTo(registrationName, doc);
   // 存储事件,放入事务队列中
   transaction.getReactMountReady().enqueue(putListener, {
     inst: inst,
     registrationName: registrationName,
     listener: listener
-  })
+  });
 }
 ```
 
@@ -478,19 +478,19 @@ var getDictionaryKey = function (inst) {
 
 ```js
 // 源码看这里: https://github.com/facebook/react/blob/master/packages/react-dom/src/events/ReactDOMEventListener.js#L419
-const nativeEventTarget = getEventTarget(nativeEvent)
-let targetInst = getClosestInstanceFromNode(nativeEventTarget)
+const nativeEventTarget = getEventTarget(nativeEvent);
+let targetInst = getClosestInstanceFromNode(nativeEventTarget);
 ```
 
 ```js
 function getEventTarget(nativeEvent) {
-  let target = nativeEvent.target || nativeEvent.srcElement || window
+  let target = nativeEvent.target || nativeEvent.srcElement || window;
 
   if (target.correspondingUseElement) {
-    target = target.correspondingUseElement
+    target = target.correspondingUseElement;
   }
 
-  return target.nodeType === TEXT_NODE ? target.parentNode : target
+  return target.nodeType === TEXT_NODE ? target.parentNode : target;
 }
 ```
 
@@ -510,14 +510,14 @@ function dispatchEventForPluginEventSystem(
     nativeEvent,
     targetInst,
     eventSystemFlags
-  )
+  );
 
   try {
     // Event queue being processed in the same cycle allows
     // `preventDefault`.
-    batchedEventUpdates(handleTopLevel, bookKeeping)
+    batchedEventUpdates(handleTopLevel, bookKeeping);
   } finally {
-    releaseTopLevelCallbackBookKeeping(bookKeeping)
+    releaseTopLevelCallbackBookKeeping(bookKeeping);
   }
 }
 ```
@@ -528,29 +528,29 @@ function dispatchEventForPluginEventSystem(
 
 ```js
 function handleTopLevel(bookKeeping: BookKeepingInstance) {
-  let targetInst = bookKeeping.targetInst
+  let targetInst = bookKeeping.targetInst;
 
   // Loop through the hierarchy, in case there's any nested components.
   // It's important that we build the array of ancestors before calling any
   // event handlers, because event handlers can modify the DOM, leading to
   // inconsistencies with ReactMount's node cache. See #1105.
-  let ancestor = targetInst
+  let ancestor = targetInst;
   do {
     if (!ancestor) {
-      const ancestors = bookKeeping.ancestors
-      ;((ancestors: any): Array<Fiber | null>).push(ancestor)
-      break
+      const ancestors = bookKeeping.ancestors;
+      ((ancestors: any): Array<Fiber | null>).push(ancestor);
+      break;
     }
-    const root = findRootContainerNode(ancestor)
+    const root = findRootContainerNode(ancestor);
     if (!root) {
-      break
+      break;
     }
-    const tag = ancestor.tag
+    const tag = ancestor.tag;
     if (tag === HostComponent || tag === HostText) {
-      bookKeeping.ancestors.push(ancestor)
+      bookKeeping.ancestors.push(ancestor);
     }
-    ancestor = getClosestInstanceFromNode(root)
-  } while (ancestor)
+    ancestor = getClosestInstanceFromNode(root);
+  } while (ancestor);
 }
 ```
 
@@ -560,11 +560,11 @@ function handleTopLevel(bookKeeping: BookKeepingInstance) {
 
 ```js
 for (let i = 0; i < bookKeeping.ancestors.length; i++) {
-  targetInst = bookKeeping.ancestors[i]
+  targetInst = bookKeeping.ancestors[i];
   // getEventTarget上边有讲到
-  const eventTarget = getEventTarget(bookKeeping.nativeEvent)
-  const topLevelType = ((bookKeeping.topLevelType: any): DOMTopLevelEventType)
-  const nativeEvent = ((bookKeeping.nativeEvent: any): AnyNativeEvent)
+  const eventTarget = getEventTarget(bookKeeping.nativeEvent);
+  const topLevelType = ((bookKeeping.topLevelType: any): DOMTopLevelEventType);
+  const nativeEvent = ((bookKeeping.nativeEvent: any): AnyNativeEvent);
 
   runExtractedPluginEventsInBatch(
     topLevelType,
@@ -572,7 +572,7 @@ for (let i = 0; i < bookKeeping.ancestors.length; i++) {
     nativeEvent,
     eventTarget,
     bookKeeping.eventSystemFlags
-  )
+  );
 }
 ```
 
@@ -606,10 +606,10 @@ export function runExtractedPluginEventsInBatch(
     nativeEvent,
     nativeEventTarget,
     eventSystemFlags
-  )
+  );
 
   // step2 : 批处理
-  runEventsInBatch(events)
+  runEventsInBatch(events);
 }
 ```
 
@@ -625,10 +625,10 @@ function extractPluginEvents(
   nativeEventTarget: EventTarget,
   eventSystemFlags: EventSystemFlags
 ): Array<ReactSyntheticEvent> | ReactSyntheticEvent | null {
-  let events = null
+  let events = null;
   for (let i = 0; i < plugins.length; i++) {
     // Not every plugin in the ordering may be loaded at runtime.
-    const possiblePlugin: PluginModule<AnyNativeEvent> = plugins[i]
+    const possiblePlugin: PluginModule<AnyNativeEvent> = plugins[i];
     if (possiblePlugin) {
       const extractedEvents = possiblePlugin.extractEvents(
         topLevelType,
@@ -636,13 +636,13 @@ function extractPluginEvents(
         nativeEvent,
         nativeEventTarget,
         eventSystemFlags
-      )
+      );
       if (extractedEvents) {
-        events = accumulateInto(events, extractedEvents)
+        events = accumulateInto(events, extractedEvents);
       }
     }
   }
-  return events
+  return events;
 }
 ```
 
@@ -654,12 +654,12 @@ function extractPluginEvents(
 export const injection = {
   injectEventPluginOrder,
   injectEventPluginsByName
-}
+};
 ```
 
 ```js
 // 📢 源码地址 : https://github.com/facebook/react/blob/master/packages/react-dom/src/client/ReactDOMClientInjection.js#L26
-EventPluginHubInjection.injectEventPluginOrder(DOMEventPluginOrder)
+EventPluginHubInjection.injectEventPluginOrder(DOMEventPluginOrder);
 
 EventPluginHubInjection.injectEventPluginsByName({
   SimpleEventPlugin: SimpleEventPlugin,
@@ -667,7 +667,7 @@ EventPluginHubInjection.injectEventPluginsByName({
   ChangeEventPlugin: ChangeEventPlugin,
   SelectEventPlugin: SelectEventPlugin,
   BeforeInputEventPlugin: BeforeInputEventPlugin
-})
+});
 ```
 
 打住，这里不展开分析，我们继续看`extractEvents`的逻辑代码
@@ -679,9 +679,9 @@ const extractedEvents = possiblePlugin.extractEvents(
   nativeEvent,
   nativeEventTarget,
   eventSystemFlags
-)
+);
 if (extractedEvents) {
-  events = accumulateInto(events, extractedEvents)
+  events = accumulateInto(events, extractedEvents);
 }
 ```
 
@@ -740,44 +740,44 @@ extractEvents: function() {
 
 ```js
 function addEventPoolingTo(EventConstructor) {
-  EventConstructor.eventPool = []
+  EventConstructor.eventPool = [];
   // 就是这里设置了getPooled
-  EventConstructor.getPooled = getPooledEvent
-  EventConstructor.release = releasePooledEvent
+  EventConstructor.getPooled = getPooledEvent;
+  EventConstructor.release = releasePooledEvent;
 }
 
 SyntheticEvent.extend = function(Interface) {
   //...
-  addEventPoolingTo(Class)
+  addEventPoolingTo(Class);
 
-  return Class
-}
+  return Class;
+};
 
-addEventPoolingTo(SyntheticEvent)
+addEventPoolingTo(SyntheticEvent);
 ```
 
 看到这里，我们知道，`getPooled` 就是 `getPooledEvent`，那我们去看看`getPooledEvent`做了啥玩意
 
 ```js
 function getPooledEvent(dispatchConfig, targetInst, nativeEvent, nativeInst) {
-  const EventConstructor = this
+  const EventConstructor = this;
   if (EventConstructor.eventPool.length) {
-    const instance = EventConstructor.eventPool.pop()
+    const instance = EventConstructor.eventPool.pop();
     EventConstructor.call(
       instance,
       dispatchConfig,
       targetInst,
       nativeEvent,
       nativeInst
-    )
-    return instance
+    );
+    return instance;
   }
   return new EventConstructor(
     dispatchConfig,
     targetInst,
     nativeEvent,
     nativeInst
-  )
+  );
 }
 ```
 
@@ -796,26 +796,26 @@ export function runEventsInBatch(
   events: Array<ReactSyntheticEvent> | ReactSyntheticEvent | null
 ) {
   if (events !== null) {
-    eventQueue = accumulateInto(eventQueue, events)
+    eventQueue = accumulateInto(eventQueue, events);
   }
 
   // Set `eventQueue` to null before processing it so that we can tell if more
   // events get enqueued while processing.
-  const processingEventQueue = eventQueue
-  eventQueue = null
+  const processingEventQueue = eventQueue;
+  eventQueue = null;
 
   if (!processingEventQueue) {
-    return
+    return;
   }
 
-  forEachAccumulated(processingEventQueue, executeDispatchesAndReleaseTopLevel)
+  forEachAccumulated(processingEventQueue, executeDispatchesAndReleaseTopLevel);
   invariant(
     !eventQueue,
     'processEventQueue(): Additional events were enqueued while processing ' +
       'an event queue. Support for this has not yet been implemented.'
-  )
+  );
   // This would be a good time to rethrow if any of the event handlers threw.
-  rethrowCaughtError()
+  rethrowCaughtError();
 }
 ```
 
@@ -830,9 +830,9 @@ function forEachAccumulated<T>(
   scope: ?any
 ) {
   if (Array.isArray(arr)) {
-    arr.forEach(cb, scope)
+    arr.forEach(cb, scope);
   } else if (arr) {
-    cb.call(scope, arr)
+    cb.call(scope, arr);
   }
 }
 ```
@@ -844,38 +844,38 @@ function forEachAccumulated<T>(
 ```js
 const executeDispatchesAndRelease = function(event: ReactSyntheticEvent) {
   if (event) {
-    executeDispatchesInOrder(event)
+    executeDispatchesInOrder(event);
 
     if (!event.isPersistent()) {
-      event.constructor.release(event)
+      event.constructor.release(event);
     }
   }
-}
+};
 const executeDispatchesAndReleaseTopLevel = function(e) {
-  return executeDispatchesAndRelease(e)
-}
+  return executeDispatchesAndRelease(e);
+};
 ```
 
 ```js
 export function executeDispatchesInOrder(event) {
-  const dispatchListeners = event._dispatchListeners
-  const dispatchInstances = event._dispatchInstances
+  const dispatchListeners = event._dispatchListeners;
+  const dispatchInstances = event._dispatchInstances;
   if (__DEV__) {
-    validateEventDispatches(event)
+    validateEventDispatches(event);
   }
   if (Array.isArray(dispatchListeners)) {
     for (let i = 0; i < dispatchListeners.length; i++) {
       if (event.isPropagationStopped()) {
-        break
+        break;
       }
       // Listeners and Instances are two parallel arrays that are always in sync.
-      executeDispatch(event, dispatchListeners[i], dispatchInstances[i])
+      executeDispatch(event, dispatchListeners[i], dispatchInstances[i]);
     }
   } else if (dispatchListeners) {
-    executeDispatch(event, dispatchListeners, dispatchInstances)
+    executeDispatch(event, dispatchListeners, dispatchInstances);
   }
-  event._dispatchListeners = null
-  event._dispatchInstances = null
+  event._dispatchListeners = null;
+  event._dispatchInstances = null;
 }
 ```
 

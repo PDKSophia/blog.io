@@ -1,18 +1,20 @@
 ## React 生命周期
-学习一个框架，最重要的莫过于对生命周期的理解了。嗯，很懵，但是人傻就是要多看书，多看掘金上的优秀文章，看了两篇React生命周期的文章之后，大概也能懂得个大概。就记录一下吧 ～
+
+学习一个框架，最重要的莫过于对生命周期的理解了。嗯，很懵，但是人傻就是要多看书，多看掘金上的优秀文章，看了两篇 React 生命周期的文章之后，大概也能懂得个大概。就记录一下吧 ～
 
 ### 先看图，再看字
-《深入浅出React技术》中对生命周期的说明:
 
-<img src='https://github.com/PDKSophia/blog.io/raw/master/ReactImage/lifecycle.png'>
+《深入浅出 React 技术》中对生命周期的说明:
+
+<img src='./ReactImage/lifecycle.png'>
 
 渲染的过程:
 
-<img src='https://user-gold-cdn.xitu.io/2017/5/18/358d2dd29728a85c55a2a171ea34a1b5?imageslim' width='800' height='250'>
+<img src='https://user-gold-cdn.xitu.io/2017/5/18/358d2dd29728a85c55a2a171ea34a1b5?imageslim' width=800 />
 
-上图中的getDefaultProps和getInitialState分别对应ES6中的static defaultProps = {}与构造函数construct中的this.state ={}赋值
+上图中的 ``getDefaultProps`和`getInitialState` 分别对应 ES6 中的 static defaultProps = {} 与构造函数 construct 中的 this.state ={} 赋值
 
-<img src='https://github.com/PDKSophia/blog.io/raw/master/ReactImage/1_11.png' width='800' height='450'>
+<img src='./ReactImage/1_11.png' width=800 />
 
 ### 生命周期 - 初次渲染
 
@@ -45,7 +47,7 @@
       }
 
       componentDidMount () {
-        
+
       }
 
       render () {
@@ -56,9 +58,10 @@
     }
 ```
 
-我们来看看《深入React技术》中如何解读源码
+我们来看看《深入 React 技术》中如何解读源码
 
 <!--more-->
+
 ```javascript
   var React = {
     // ...
@@ -117,19 +120,18 @@
   React规定constructor有三个参数，分别是props、context和updater。
 
   · props是属性，它是不可变的。
-  
+
   · context是全局上下文。
-  
+
   · updater是包含一些更新方法的对象
 
   // this.setState最终调用的是this.updater.enqueueSetState方法
-  
+
   // this.forceUpdate最终调用的是this.updater.enqueueForceUpdate方法
 
 ```
 
-
-<img src='https://github.com/PDKSophia/blog.io/raw/master/ReactImage/1_13.png' width='350' height='300'>
+<img src='./ReactImage/1_13.png' width=400 />
 
 mountComponent 组件挂载代码
 
@@ -161,27 +163,27 @@ mountComponent 组件挂载代码
       inst = new StatelessComponent(Component)
     }
 
-    // 这些初始化参数本应该在构造函数中设置，在此设置是为了便于进行简单的类抽象 
+    // 这些初始化参数本应该在构造函数中设置，在此设置是为了便于进行简单的类抽象
     inst.props = publicProps
     inst.context = publicContext
     inst.refs = emptyObject
     inst.updater = ReactUpdateQueue
 
     this._instance = inst
-    
 
-    // 将实例存储为一个引用 
+
+    // 将实例存储为一个引用
     ReactInstanceMap.set(inst, this)
-    
+
     // 初始化 state
     var initialState = inst.state
     if (initialState === undefined) {
       inst.state = initialState = null
     }
 
-    // 初始化更新队列 
+    // 初始化更新队列
     this._pendingStateQueue = null
-    this._pendingReplaceState = false 
+    this._pendingReplaceState = false
     this._pendingForceUpdate = false
 
     var markup;
@@ -222,7 +224,7 @@ context)
       checkpoint = transaction.checkpoint()
       // 如果捕捉到错误，则执行 unmountComponent 后，再初始化挂载
       this._renderedComponent.unmountComponent(true)
-      
+
       transaction.rollback(checkpoint)
 
       markup = this.performInitialMount(renderedElement, nativeParent, nativeContainerInfo, transaction, context)
@@ -237,7 +239,7 @@ context)
   // 挂载组件
   performInitialMount: function(renderedElement, nativeParent, nativeContainerInfo, transaction, context) {
     var inst = this._instance
-    
+
     // 如果存在 componentWillMount， 则调用
     if (inst.componentWillMount) {
       inst.componentWillMount()
@@ -255,7 +257,7 @@ context)
     }
 
     this._renderedNodeType = ReactNodeTypes.getType(renderedElement)
-     // 得到 _currentElement 对应的 component 类实例 
+     // 得到 _currentElement 对应的 component 类实例
     this._renderedComponent = this._instantiateReactComponent(renderedElement)
 
     // render 递归渲染
@@ -266,24 +268,23 @@ nativeContainerInfo, this._processChildContext(context))
   }
 ```
 
+总结一下 - 初次渲染 ？
 
-总结一下 - 初次渲染 ？ 
+1 . 当使用 ES6 classes 编写 React 组件时，其实就是调用内部方法 createClass 创建组件, 该方法返回一个 Constructor(props, context, updater) 用来生成组件实例，我们发现在调用 React.createClass，已经执行了 getDefaultProps(),并将其赋值于 Constructor 的原型中
 
-1 . 当使用 ES6 classes 编写 React 组件时，其实就是调用内部方法 createClass 创建组件, 该方法返回一个Constructor(props, context, updater) 用来生成组件实例，我们发现在调用React.createClass，已经执行了getDefaultProps(),并将其赋值于Constructor的原型中
-
-2 . 由于通过ReactCompositeComponentBase 返回的是一个虚拟节点，所以需要利用 instantiateReactComponent去得到实例，再使用 mountComponent 拿到结果作为当前自定义元素的结果
+2 . 由于通过 ReactCompositeComponentBase 返回的是一个虚拟节点，所以需要利用 instantiateReactComponent 去得到实例，再使用 mountComponent 拿到结果作为当前自定义元素的结果
 
 > 当使用 React 创建组件时，首先会调用 instantiateReactComponent，这是初始化组件的入口 函数，它通过判断 node 类型来区分不同组件的入口 （具体看下边说明）
 
-3 . 在React中，因为所有class组件都要继承自Component类或者PureComponent类，因此和原生class写法一样，要在constructor里首先调用super方法，才能获得this。通过 mountComponent 挂载组件，初始化序号、标记等参数，判断是否为无状态组件，并进行 对应的组件初始化工作，比如初始化 props、context 等参数。利用 getInitialState 获取初始化 state、初始化更新队列和更新状态。
+3 . 在 React 中，因为所有 class 组件都要继承自 Component 类或者 PureComponent 类，因此和原生 class 写法一样，要在 constructor 里首先调用 super 方法，才能获得 this。通过 mountComponent 挂载组件，初始化序号、标记等参数，判断是否为无状态组件，并进行 对应的组件初始化工作，比如初始化 props、context 等参数。利用 getInitialState 获取初始化 state、初始化更新队列和更新状态。
 
-4 . 若存在 componentWillMount，则执行。如果此时在 componentWillMount 中调用 setState 方法，是不会触发 re-render的，而是会进行 state 合并，且 inst.state = this._processPendingState (inst.props, inst.context) 是在 componentWillMount 之后执行的，因此 componentWillMount 中 的 this.state 并不是最新的，在 render 中才可以获取更新后的 this.state。
+4 . 若存在 componentWillMount，则执行。如果此时在 componentWillMount 中调用 setState 方法，是不会触发 re-render 的，而是会进行 state 合并，且 inst.state = this.\_processPendingState (inst.props, inst.context) 是在 componentWillMount 之后执行的，因此 componentWillMount 中 的 this.state 并不是最新的，在 render 中才可以获取更新后的 this.state。
 
-> React 是利用更新队列 this._pendingStateQueue 以及更新状态 this._pendingReplaceState 和 this._pendingForceUpdate 来实现 setState 的异步更新机制。也就是说 this.setState 最终调用的是this.updater.enqueueSetState方法
+> React 是利用更新队列 this.\_pendingStateQueue 以及更新状态 this.\_pendingReplaceState 和 this.\_pendingForceUpdate 来实现 setState 的异步更新机制。也就是说 this.setState 最终调用的是 this.updater.enqueueSetState 方法
 
 5 . 当渲染完成后，若存在 componentDidMount，则调用。其实，mountComponent 本质上是通过递归渲染内容的，由于递归的特性，父组件的 componentWillMount 在其子组件的 componentWillMount 之前调用，而父组件的 componentDidMount 在其子组件的 componentDidMount 之后调用。
 
-<img src='https://github.com/PDKSophia/blog.io/raw/master/ReactImage/1_12.png' width='600' height='400'>
+<img src='./ReactImage/1_12.png' width=500 />
 
 #### 额外补充
 
@@ -334,13 +335,14 @@ instantiateReactComponent 入口组件
     instance._mountImage = null
 
     return instance
-    
+
   }
-  
+
 ```
+
 ### 生命周期 - 更新阶段
 
-<img src='https://github.com/PDKSophia/blog.io/raw/master/ReactImage/3_12.png' width='600' height='600'>
+<img src='./ReactImage/3_12.png' width=500 />
 
 updateComponent 负责管理生命周期中的 componentWillReceiveProps、shouldComponentUpdate、componentWillUpdate、render 和 componentDidUpdate
 
@@ -355,6 +357,7 @@ updateComponent 本质上也是通过递归渲染内容的，由于递归的特�
 当渲染完成之后，若存在 componentDidUpdate，则触发
 
 #### 相关源码
+
 ```javascript
   // receiveComponent 是通过调用 updateComponent 进行组件更新的
   receiveComponent: function(nextElement, transaction, nextContext) {
@@ -374,7 +377,7 @@ updateComponent 本质上也是通过递归渲染内容的，由于递归的特�
       nextContext = inst.context
     } else {
       nextContext = this._processContext(nextUnmaskedContext)
-      willReceive = true 
+      willReceive = true
     }
 
     if (preParentElement === nextParentElement) {
@@ -444,11 +447,11 @@ updateComponent 本质上也是通过递归渲染内容的，由于递归的特�
     // 调用 render 渲染组件
     this._updateRenderedComponent(transaction, unmaskedContext)
 
-    // 当组件完成更新后，如果存在 componentDidUpdate，则调用 
+    // 当组件完成更新后，如果存在 componentDidUpdate，则调用
     if (hasComponentDidUpdate) {
-      transaction.getReactMountReady().enqueue( 
+      transaction.getReactMountReady().enqueue(
         inst.componentDidUpdate.bind(inst, prevProps, prevState, prevContext),inst
-      ) 
+      )
     }
 
   }
@@ -461,7 +464,7 @@ updateComponent 本质上也是通过递归渲染内容的，由于递归的特�
 
     // 如果需要更新，则调用ReactReconciler.receiveComponent 继续更新组件
     if (shouldUpdateReactComponent(preRenderedElement, nextRenderedElement)) {
-      ReactReconciler.receiveComponent(preComponentInstance, nextRenderedElement, transaction, this._processChildContext(context)) 
+      ReactReconciler.receiveComponent(preComponentInstance, nextRenderedElement, transaction, this._processChildContext(context))
     } else {
       // 如果不需要更新, 则渲染组件
       var oldNativeNode = ReactReconciler.getNativeNode(preComponentInstance)
@@ -483,7 +486,7 @@ updateComponent 本质上也是通过递归渲染内容的，由于递归的特�
 
 #### setState 循环调用的风险
 
-禁止在 shouldComponentUpdate 和 componentWillUpdate 中调用this.setState，因为这样会造成循环调用，直到耗光浏览器内存后奔溃，那么为什么不能呢 ？
+禁止在 shouldComponentUpdate 和 componentWillUpdate 中调用 this.setState，因为这样会造成循环调用，直到耗光浏览器内存后奔溃，那么为什么不能呢 ？
 
 ```javascript
 
@@ -502,6 +505,7 @@ unmountComponent 负责管理生命周期中的 componentWillUnmount
 如果存在 componentWillUnmount，则执行并重置所有相关参数、更新队列以及更新状态，如 果此时在 componentWillUnmount 中调用 setState，是不会触发 re-render 的，这是因为所有更新 队列和更新状态都被重置为 null，并清除了公共类，完成了组件卸载操作
 
 #### 相关源码
+
 ```javascript
   unmountComponent: function(safely) {
     if (!this._renderedComponent) {
@@ -528,10 +532,10 @@ unmountComponent 负责管理生命周期中的 componentWillUnmount
       this._instance = null
     }
 
-    // 重置相关参数、更新队列以及更新状态 
+    // 重置相关参数、更新队列以及更新状态
     this._pendingStateQueue = null   // 更新队列
     this._pendingReplaceState = false // 更新状态
-    this._pendingForceUpdate = false  
+    this._pendingForceUpdate = false
     this._pendingCallbacks = null
     this._pendingElement = null
     this._context = null
@@ -546,7 +550,6 @@ unmountComponent 负责管理生命周期中的 componentWillUnmount
 
 > 在 React 开发中，一个很重要的原则就是让组件尽可能是无状态的，无状态组件没有状态，没有生命周期，只是简单地接受 props 渲染生成 DOM 结构，是一个 纯粹为渲染而生的组件。
 
-
 #### 再看一个图总结生命周期
 
-<img src='https://github.com/PDKSophia/blog.io/raw/master/ReactImage/3_13.png'>
+<img src='./ReactImage/3_13.png' />

@@ -42,13 +42,13 @@
 从小妈妈就告诉我，看源码要从 index.js 入手，就我看来，`index都作为入口文件`，所以我们去 index.js 中看一下代码。简单明了，我就不多说～
 
 ```javascript
-import createStore from './createStore'
-import combineReducers from './combineReducers'
-import bindActionCreators from './bindActionCreators'
-import applyMiddleware from './applyMiddleware'
-import compose from './compose'
-import warning from './utils/warning'
-import __DO_NOT_USE__ActionTypes from './utils/actionTypes'
+import createStore from './createStore';
+import combineReducers from './combineReducers';
+import bindActionCreators from './bindActionCreators';
+import applyMiddleware from './applyMiddleware';
+import compose from './compose';
+import warning from './utils/warning';
+import __DO_NOT_USE__ActionTypes from './utils/actionTypes';
 
 /*
  * 这是一个虚函数，用于检查函数名称是否已被缩小更改.
@@ -61,7 +61,7 @@ if (
   typeof isCrushed.name === 'string' &&
   isCrushed.name !== 'isCrushed'
 ) {
-  warning('巴拉巴拉，反正就是警告用户')
+  warning('巴拉巴拉，反正就是警告用户');
 }
 
 export {
@@ -71,7 +71,7 @@ export {
   applyMiddleware,
   compose,
   __DO_NOT_USE__ActionTypes
-}
+};
 ```
 
 ## createStore.js
@@ -79,7 +79,7 @@ export {
 我们回顾下之前说的 ：**redux 中最核心的 API 就是 —— `createStore`**， 如何使用呢 ？
 
 ```javascript
-const store = createStore(reducers, preloadedState, enhance)
+const store = createStore(reducers, preloadedState, enhance);
 ```
 
 三个参数，reducers、preloadedState、enhance，源码中也有对这三个参数给出了解释
@@ -295,15 +295,15 @@ const randomString = () =>
     .toString(36)
     .substring(7)
     .split('')
-    .join('.')
+    .join('.');
 
 const ActionTypes = {
   INIT: `@@redux/INIT${randomString()}`,
   REPLACE: `@@redux/REPLACE${randomString()}`,
   PROBE_UNKNOWN_ACTION: () => `@@redux/PROBE_UNKNOWN_ACTION${randomString()}`
-}
+};
 
-export default ActionTypes
+export default ActionTypes;
 ```
 
 isPlainObject.js
@@ -314,14 +314,14 @@ isPlainObject.js
  * Object.getPrototypeOf() 方法返回指定对象的原型，如果没有继承属性，则返回 null
  */
 export default function isPlainObject(obj) {
-  if (typeof obj !== 'object' || obj === null) return false
+  if (typeof obj !== 'object' || obj === null) return false;
 
-  let proto = obj
+  let proto = obj;
   while (Object.getPrototypeOf(proto) !== null) {
-    proto = Object.getPrototypeOf(proto)
+    proto = Object.getPrototypeOf(proto);
   }
 
-  return Object.getPrototypeOf(obj) === proto
+  return Object.getPrototypeOf(obj) === proto;
 }
 ```
 
