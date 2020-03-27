@@ -38,8 +38,8 @@ retrieveCode: email => {
     data: {
       email: email
     }
-  })
-}
+  });
+};
 ```
 
 ojbk，稳重，然后在 Node 后端中，盘它
@@ -51,19 +51,19 @@ ojbk，稳重，然后在 Node 后端中，盘它
  */
 router.post('/email-code', async (req, res) => {
   try {
-    const response = await loginController.retrieveCode(req, req.body)
-    res.json(response)
+    const response = await loginController.retrieveCode(req, req.body);
+    res.json(response);
   } catch (err) {
-    throw new Error(err)
+    throw new Error(err);
   }
-})
+});
 ```
 
 到这里应该都没问题，调用 `loginController.retrieveCode()` 去做处理，然后在里边我们应该发送验证码，对吧～然后通过 `express-session` 缓存 code 到 session 中，让我们看看代码
 
 ```javascript
-const types = require('../../utils/error.code')
-const stmp = require('../../config/smtp')
+const types = require('../../utils/error.code');
+const stmp = require('../../config/smtp');
 /**
  * @desc 通过email发送验证码
  * @params {email} 邮箱
@@ -71,31 +71,31 @@ const stmp = require('../../config/smtp')
  */
 async function retrieveCode(req, payload) {
   try {
-    var code = ''
+    var code = '';
     while (code.length < 5) {
-      code += Math.floor(Math.random() * 10)
+      code += Math.floor(Math.random() * 10);
     }
 
-    var emailOptions = stmp.setMailOptions(payload.email, 'code', code)
-    await stmp.transporter.sendMail(emailOptions)
+    var emailOptions = stmp.setMailOptions(payload.email, 'code', code);
+    await stmp.transporter.sendMail(emailOptions);
 
     if (!req.session) {
-      return next(new Error('oh no')) // handle error
+      return next(new Error('oh no')); // handle error
     } else {
-      req.session.email_code = code
-      console.log('打印本次的req', req)
+      req.session.email_code = code;
+      console.log('打印本次的req', req);
     }
     return {
       code: types.login.RETRIEVE_EMAIL_CODE_SUCCESS,
       msg: '验证码发送成功～',
       data: null
-    }
+    };
   } catch (error) {
     return {
       code: types.login.RETRIEVE_EMAIL_CODE_FAIL,
       msg: '验证码发送错误, 请检验邮箱正确性',
       data: null
-    }
+    };
   }
 }
 ```
@@ -130,8 +130,8 @@ async function retrieveCode(req, payload) {
 async function retrieveToken(req) {
   // 1. 先获取 session 缓存的 email_code
   // 2. 与req.body.code 进行比较
-  console.log(req.session.email_code) // undefined
-  console.log('siri, 给我打印这次的req', req)
+  console.log(req.session.email_code); // undefined
+  console.log('siri, 给我打印这次的req', req);
 }
 ```
 
@@ -170,9 +170,9 @@ sessionID: 'MvoJQR8BSQZA6zcfuJFYuJltQH5ZU1rS',
 然后我百度了一下，发现不下 20 篇文章，都是这样配置，然后就设置值，再取值
 
 ```javascript
-var express = require('express')
-var app = express()
-var session = require('express-session')
+var express = require('express');
+var app = express();
+var session = require('express-session');
 
 app.use(
   session({
@@ -184,13 +184,13 @@ app.use(
       secure: false
     }
   })
-)
+);
 
 // 设置值
-req.session.user_id = req.body.user_id
+req.session.user_id = req.body.user_id;
 
 // 取值
-const user_id = req.session.user_id
+const user_id = req.session.user_id;
 ```
 
  <img src='https://github.com/PDKSophia/blog.io/raw/master/image/node-1.jpg'>
@@ -201,15 +201,15 @@ const user_id = req.session.user_id
 // 存session，正常可以存
 async function retrieveCode(req, payload) {
   // code...
-  req.session.email_code = code
-  console.log('缓存code : ', req.session.email_code) // 缓存code 49167
+  req.session.email_code = code;
+  console.log('缓存code : ', req.session.email_code); // 缓存code 49167
   // ...
 }
 
 // 取session，取不到
 async function retrieveToken(req) {
   // code...
-  console.log('从缓存session中取code : ', req.session.email_code) // undefined
+  console.log('从缓存session中取code : ', req.session.email_code); // undefined
 
   // ...
 }
@@ -281,15 +281,15 @@ ok，稳住，此路不通，我换条路走，我又去 issues 搜一下，有�
 redis，对我一个前端来说，又是一趟浑水，没事，百度嘛，反正只要简单使用就好了，嗯，从安装到登陆，再到 node 中引用 `redis`、`connet-redis`，一顿操作猛如虎，接下来就是真枪实弹了
 
 ```javascript
-const session = require('express-session')
-const client = require('./config/redis')
-const RedisStore = require('connect-redis')(session)
+const session = require('express-session');
+const client = require('./config/redis');
+const RedisStore = require('connect-redis')(session);
 
 let redisOptions = {
   client: client,
   host: '127.0.0.1',
   port: 6379
-}
+};
 app.use(
   session({
     secret: 'ticket2019',
@@ -302,7 +302,7 @@ app.use(
     },
     store: new RedisStore(redisOptions)
   })
-)
+);
 ```
 
 老铁，没毛病，我看着文档撸的，这时候呢，我们就把 `res.session` 缓存到 `redis` 中啦，然后呢？？？然后呢？？？然后我百度的那些文章就到这里断更了，就没后续了...
@@ -332,10 +332,10 @@ redis-cli
 
 ```javascript
 if (!req.sessionID) {
-  debug('no SID sent, generating session')
-  generate()
-  next()
-  return
+  debug('no SID sent, generating session');
+  generate();
+  next();
+  return;
 }
 ```
 
@@ -343,14 +343,14 @@ if (!req.sessionID) {
 
 ```javascript
 store.generate = function(req) {
-  req.sessionID = generateId(req)
-  req.session = new Session(req)
-  req.session.cookie = new Cookie(cookieOptions)
+  req.sessionID = generateId(req);
+  req.session = new Session(req);
+  req.session.cookie = new Cookie(cookieOptions);
 
   if (cookieOptions.secure === 'auto') {
-    req.session.cookie.secure = issecure(req, trustProxy)
+    req.session.cookie.secure = issecure(req, trustProxy);
   }
-}
+};
 ```
 
 猜测，是不是每次它都给我生成了一个新的 sessionID，照目前我遇到的情况来看，好像是这样的，然后继续去找问题答案，在 issues 看到了这么一个问题，[generating new sessions with an asynchronous store](https://github.com/expressjs/session/issues/52) , 嗯，了解，继续找... 然后我发现这么一个 issue ！！！⚠️ 这是一个重大发现！！ [Cookies disabled results in loss of session (no workaround via Header)](https://github.com/expressjs/session/issues/185), 没错，翻译过来就是 : 禁用 cookies 结果就是使得 session 丢失，进去，看看什么情况
@@ -378,7 +378,7 @@ app.use(
     },
     store: new RedisStore(redisOptions)
   })
-)
+);
 ```
 
 我就莫名其妙改啊改啊，就莫名其妙只在 redis 中存一个 session 了，但是极少数情况下还是会存在上一次的 session，这个我真搞不懂了，然后缓存了这么一个`email_code`，再通过 `redis.get(key)` 去拿到这个 session，从中取出`email_code`，应该不是啥大问题了。
@@ -392,27 +392,27 @@ app.use(
  */
 router.post('/get-token', async (req, res) => {
   try {
-    const response = await loginController.retrieveToken(req)
-    console.log('???你是不是掉坑了', response) // undefined
-    res.json(response)
+    const response = await loginController.retrieveToken(req);
+    console.log('???你是不是掉坑了', response); // undefined
+    res.json(response);
   } catch (err) {
-    throw new Error(err)
+    throw new Error(err);
   }
-})
+});
 
 /**
  * @desc 获取token
  * @return {Object}
  */
 async function retrieveToken(req) {
-  const { username, password, email, code } = req.body
+  const { username, password, email, code } = req.body;
   try {
     await redisClient.keys('sess:*', async (error, keyList) => {
       for (let key in keyList) {
-        key = keyList[key]
+        key = keyList[key];
         await redisClient.get(key, async function(err, data) {
           const { email_code } =
-            typeof data == 'string' ? JSON.parse(data) : data
+            typeof data == 'string' ? JSON.parse(data) : data;
 
           if (code != email_code) {
             // code ...
@@ -423,7 +423,7 @@ async function retrieveToken(req) {
                 username,
                 password,
                 email
-              )
+              );
               return {
                 code: types.login.LOGIN_SUCCESS,
                 msg: '登陆成功',
@@ -432,17 +432,17 @@ async function retrieveToken(req) {
                   token: user[0].token,
                   email: user[0].email
                 }
-              }
+              };
             } catch (error) {
               // code ...
               // 返回对象告知登陆错误
             }
           }
-        })
+        });
       }
-    })
+    });
   } catch (err) {
-    console.info(err)
+    console.info(err);
   }
 }
 ```
