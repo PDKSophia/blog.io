@@ -1,10 +1,10 @@
-## 异步加载js, async和defer
+## 异步加载 js, async 和 defer
 
-有三种 : defer  、  async  、  动态创建script标签  、  按需异步载入js
+有三种 : defer 、 async 、 动态创建 script 标签 、 按需异步载入 js
 
-+ async : 并行加载脚本文件，下载完毕立即解释执行代码，不会按照页面上的script顺序执行。
+- async : 并行加载脚本文件，下载完毕立即解释执行代码，不会按照页面上的 script 顺序执行。
 
-+ defer : 并行下载js，会按照页面上的script标签的顺序执行，然后在文档解析完成之后执行脚本。
+- defer : 并行下载 js，会按照页面上的 script 标签的顺序执行，然后在文档解析完成之后执行脚本。
 
 <img src="https://sfault-image.b0.upaiyun.com/215/179/2151798436-59da4801c6772_articlex" height="400" width="500">
 
