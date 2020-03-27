@@ -12,15 +12,15 @@
 // 在初始化时，会调用以下代码，生命周期就是通过 callHook 调用的
 
 Vue.prototype._init = function(options) {
-  initLifecycle(vm)
-  initEvents(vm)
-  initRender(vm)
-  callHook(vm, 'beforeCreate') // 拿不到 props data
-  initInjections(vm)
-  initState(vm) // 所有数据的初始化
-  initProvide(vm)
-  callHook(vm, 'created')
-}
+  initLifecycle(vm);
+  initEvents(vm);
+  initRender(vm);
+  callHook(vm, 'beforeCreate'); // 拿不到 props data
+  initInjections(vm);
+  initState(vm); // 所有数据的初始化
+  initProvide(vm);
+  callHook(vm, 'created');
+};
 
 // 可以发现在以上代码中，beforeCreate 调用的时候，是获取不到 props 或者 data 中的数据的，因为这些数据的初始化都在 initState 中。
 ```

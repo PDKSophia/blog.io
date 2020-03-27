@@ -30,7 +30,7 @@
 ```javascript
 // 定义一个函数 @ChangeView
 function ChangeView(val) {
-  console.log('视图更新啦 ～ 新值为 : ' + val)
+  console.log('视图更新啦 ～ 新值为 : ' + val);
 }
 ```
 
@@ -50,15 +50,15 @@ function defineReactive(obj, key, val) {
     configurable: true /* 属性可被修改或删除 */,
     get: function reactiveGetter() {
       // 依赖收集
-      return val
+      return val;
     },
     set: function reactiveSetter(newVal) {
       if (val === newVal) {
-        return
+        return;
       }
-      ChangeView(newVal) // 调用函数，通知视图更新
+      ChangeView(newVal); // 调用函数，通知视图更新
     }
-  })
+  });
 }
 
 // 但这是不够的，我们的对象的某些属性可能还是对象，所以封装一层observer
@@ -67,18 +67,18 @@ function defineReactive(obj, key, val) {
 
 function observer(obj) {
   if (!obj || typeof obj != 'object') {
-    return
+    return;
   }
   Object.keys(obj).forEach(key => {
-    defineReactive(obj, key, obj[key])
-  })
+    defineReactive(obj, key, obj[key]);
+  });
 }
 
 // 这样我们就大功告成了
 class Vue {
   constructor(options) {
-    this.data = options.data
-    observer(this.data)
+    this.data = options.data;
+    observer(this.data);
   }
 }
 
@@ -86,8 +86,8 @@ let t_vue = new Vue({
   data: {
     text: '这是一个测试'
   }
-})
-t_vue.data.text = '改变测试值'
+});
+t_vue.data.text = '改变测试值';
 ```
 
 ### 依赖收集
@@ -121,20 +121,20 @@ t_vue.data.text = '改变测试值'
 ```javascript
 let globaldata = {
   message: '我是全局的数据'
-}
+};
 
 let v1 = new Vue({
   template: `<p>{{ message }}</p>`,
   data: globaldata
-})
+});
 
 let v2 = new Vue({
   template: `<p>{{ message }}</p>`,
   data: globaldata
-})
+});
 
 // 这时候我们将修改message的值
-globaldata.mesage = '修改全局的值'
+globaldata.mesage = '修改全局的值';
 ```
 
 我们应该需要通知 v1 以及 v2 两个 vm 实例进行视图的更新，「依赖收集」会让 message 这个数据知道“哦～有两个地方依赖我的数据，我变化的时候需要通知它们～”。
@@ -147,19 +147,19 @@ globaldata.mesage = '修改全局的值'
 class Dep {
   constructor() {
     // 用来存放所有Watcher对象的数组
-    this.subs = []
+    this.subs = [];
   }
 
   // 添加一个 watcher对象
   addSub(sub) {
-    this.subs.push(sub) //
+    this.subs.push(sub); //
   }
 
   // 通知所有视图更新
   notify() {
     this.subs.forEach(sub => {
-      sub.update()
-    })
+      sub.update();
+    });
   }
 }
 ```
@@ -170,12 +170,12 @@ class Dep {
 class Watcher {
   constructor() {
     /* 在new一个Watcher对象时将该对象赋值给Dep.target，在get中会用到 */
-    Dep.target = this
+    Dep.target = this;
   }
 
   // 更新视图
   update() {
-    console.log('试图更新啦 ～')
+    console.log('试图更新啦 ～');
   }
 }
 ```
@@ -187,34 +187,34 @@ class Watcher {
 ```javascript
 function defineReactive(obj, key, val) {
   // 一个 Dep 类对象
-  const dep = new Dep()
+  const dep = new Dep();
 
   Object.defineProperty(obj, key, {
     enumerable: true /* 属性可枚举 */,
     configurable: true /* 属性可被修改或删除 */,
     get: function reactiveGetter() {
       // 依赖收集,将Dep.target（即当前的Watcher对象存入dep的subs中)
-      dep.addSub(Dep.target)
-      return val
+      dep.addSub(Dep.target);
+      return val;
     },
     set: function reactiveSetter(newVal) {
       if (val === newVal) {
-        return
+        return;
       }
       /* 在set的时候触发dep的notify来通知所有的Watcher对象更新视图 */
-      dep.notify()
+      dep.notify();
     }
-  })
+  });
 }
 
 class Vue {
   constructor(options) {
-    this.data = options.data
-    observer(this.data)
+    this.data = options.data;
+    observer(this.data);
     /* 新建一个Watcher观察者对象，这时候Dep.target会指向这个Watcher对象 */
-    new Watcher()
+    new Watcher();
     /* 在这里模拟render的过程，为了触发test属性的get函数 */
-    console.log('render~', this.data.test)
+    console.log('render~', this.data.test);
   }
 }
 ```
@@ -238,57 +238,57 @@ new Vue {
 ```javascript
 class Dep {
   constructor() {
-    this.subs = [] // 存放所有watcher对象的数组
+    this.subs = []; // 存放所有watcher对象的数组
   }
 
   addSub(sub) {
-    this.subs.push(sub)
+    this.subs.push(sub);
   }
 
   notify() {
     this.subs.forEach(sub => {
-      sub.update()
-    })
+      sub.update();
+    });
   }
 }
 
 class Watcher {
   constructor() {
-    Dep.target = this
+    Dep.target = this;
   }
 
   update() {
-    console.log('视图更新啦')
+    console.log('视图更新啦');
   }
 }
 function observer(obj) {
   if (!obj || typeof obj != 'object') {
-    return
+    return;
   }
   Object.keys(obj).forEach(key => {
-    defineReactive(obj, key, obj[key])
-  })
+    defineReactive(obj, key, obj[key]);
+  });
 }
 
 function defineReactvie(obj, key, val) {
-  const dep = new Dep()
+  const dep = new Dep();
 
   Object.defineProperty(obj, key, {
     enumerable: true /* 属性可枚举 */,
     configurable: true /* 属性可被修改或删除 */,
     get: function reactiveGetter() {
       // 依赖收集,将Dep.target（即当前的Watcher对象存入dep的subs中)
-      dep.addSub(Dep.target)
-      return val
+      dep.addSub(Dep.target);
+      return val;
     },
     set: function reactiveSetter(newVal) {
       if (val === newVal) {
-        return
+        return;
       }
       /* 在set的时候触发dep的notify来通知所有的Watcher对象更新视图 */
-      dep.notify()
+      dep.notify();
     }
-  })
+  });
 }
 ```
 

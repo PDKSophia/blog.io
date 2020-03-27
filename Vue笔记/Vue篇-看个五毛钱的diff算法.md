@@ -56,9 +56,9 @@ OK，知道了 `Vritual DOM` 之后，继续往下看，首先会先根据真实
 我们这里举个例子，我们在 body 里插入一个 `class = style-A` 的 div
 
 ```javascript
-var div = document.createElement('div')
-div.className = 'style-A'
-document.body.appendChild(div)
+var div = document.createElement('div');
+div.className = 'style-A';
+document.body.appendChild(div);
 ```
 
 对于这个 div 可以用一个 Vritual DOM 去代表它，怎么说呢，就是这个 Vritual DOM 存储了对应 DOM 上的一些重要参数，在修改 DOM 之前，会先比较 Vritual DOM 的数据，如果需要改变，才会被映射到真实的 DOM 上
@@ -70,7 +70,7 @@ var divVritual = {
     class: 'style-A'
   },
   children: []
-}
+};
 // 修改了DOM
 var newDivVritual = {
   tag: 'div',
@@ -78,7 +78,7 @@ var newDivVritual = {
     class: 'style-B'
   },
   children: []
-}
+};
 
 // vue / patch.js源码中比较
 function sameVnode(a, b) {
@@ -91,11 +91,11 @@ function sameVnode(a, b) {
       (isTrue(a.isAsyncPlaceholder) &&
         a.asyncFactory === b.asyncFactory &&
         isUndef(b.asyncFactory.error)))
-  )
+  );
 }
 
 // 比较的源码下边会讲到，这里就是将oldVNode和newVNode进行一个比较
-sameVnode(divVritual, newDivVritual)
+sameVnode(divVritual, newDivVritual);
 ```
 
 这里可以看这张图，[React's diff algorithm](https://calendar.perfplanet.com/2013/diff/)，很经典，我们可以知道: **diff 算法比较只会在同一层级进行比较，而不会说出现夸层比较**
@@ -122,9 +122,9 @@ sameVnode(divVritual, newDivVritual)
 const nodeOps = {
   setTextContent(text) {
     if (platform === 'weex') {
-      node.parentNode.setAttr('value', text)
+      node.parentNode.setAttr('value', text);
     } else if (platform === 'web') {
-      node.textContent = text
+      node.textContent = text;
     }
   },
   parentNode() {
@@ -139,7 +139,7 @@ const nodeOps = {
   insertBefore() {
     //......
   }
-}
+};
 
 // 来自《染陌 - 剖析 Vue.js 内部运行机制》
 ```
@@ -156,10 +156,10 @@ const nodeOps = {
 return function patch(oldVnode, vnode, hydrating, removeOnly) {
   /*vnode不存在则直接调用销毁钩子*/
   if (isUndef(vnode)) {
-    if (isDef(oldVnode)) invokeDestroyHook(oldVnode)
-    return
+    if (isDef(oldVnode)) invokeDestroyHook(oldVnode);
+    return;
   }
-}
+};
 ```
 
 ---
