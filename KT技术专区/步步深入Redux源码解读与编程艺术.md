@@ -128,7 +128,8 @@ const KUAN_NEED_GRID_FRIEND = 'KUAN_NEED_GRID_FRIEND'
 ```
 
 ```javascript
-// 一个action对象，比如此action是告诉redux，阿宽想要一个女朋友
+// 一个action对象
+// 比如此action是告诉redux，阿宽想要一个女朋友
 {
   type: KUAN_NEED_GRID_FRIEND,
   params: {
@@ -564,11 +565,11 @@ const mapDispatchToProps => dispatch => {
 
 小彭项目初次搭建的时候，要求小，状态管理比较方便，所以呢，都放在了一个 reducer 中，后边随着不断迭代，于是不断的往这个 `reducer` 中塞数据。
 
-典型的**屁股决定脑袋**，于是有一天，可能某个天使，给 redux 的开发团队提了一个 `issue， “哎呀，你能不能提供一个 API，把我的所有 reducer 都整合在一块啊，我想分模块化的管理状态”
+典型的**屁股决定脑袋**，于是有一天，可能某个天使，给 redux 的开发团队提了一个 `issue`， “哎呀，你能不能提供一个 API，把我的所有 reducer 都整合在一块啊，我想分模块化的管理状态”
 
-> 比如用户模块，就叫 `userReducer`，商品模块，我们叫 `userReducer`，订单模块，我们称之为 `orderReducer`。既然那么多个 reducer，该如何合并成一个呢 ？
+> 比如用户模块，就叫 `userReducer`，商品模块，我们叫 `shopReducer`，订单模块，我们称之为 `orderReducer`。既然那么多个 reducer，该如何合并成一个呢 ？
 
-于是 redux 提供了 `combineReducers` 这个 API，看来 redux 的时间管理学学的很好，你看，这么多个 `reducer` ，都能整合在一起，相比花了很大的功夫～
+于是 redux 提供了 `combineReducers` 这个 API，看来 redux 的时间管理学学的很好，你看，这么多个 `reducer` ，都能整合在一起，想必花了很大的功夫～
 
 <img src="https://user-gold-cdn.xitu.io/2020/6/8/1729305465e147a2?w=1094&h=972&f=png&s=563844" width=120 />
 
@@ -693,7 +694,7 @@ hasChanged = hasChanged || nextStateForKey !== previousStateForKey
 
 比较新旧两个对象是否一致，进行的是`浅比较法`，所以，当我们 reducer 直接返回旧的 state 对象时，Redux 认为没有任何改变，从而导致页面没有更新。
 
-> 这就是为什么！返回旧的 state 不行，需要返回一个新的 state 原因。我们都知道啊，在 JS 中，比较两个对象是否完全一样，那只能深比较，然而，深比较在真实的应用中代码是非常大的，非常耗性能的，并且如果你的对象嵌套足够神，那么需要比较的次数特别多～
+> ❓ 这就是为什么！返回旧的 state 不行，需要返回一个新的 state 原因。我们都知道啊，在 JS 中，比较两个对象是否完全一样，那只能**深比较**，然而，深比较在真实的应用中代码是非常大的，非常耗性能的，并且如果你的对象嵌套足够神，那么需要比较的次数特别多～
 
 所以 redux 就采取了一个较为“委婉”的解决方案：当无论发生任何变化时，都要返回一个新的对象，没有变化时，返回旧的对象～
 
@@ -910,7 +911,7 @@ export default function compose(...funcs) {
 `🙋 我会我会，dispatch 是用来分发 action 的`，good，那么，我们可以得到第一个函数
 
 ```js
-;(store.dispatch) => (action) => {}
+(store.dispatch) => (action) => {}
 ```
 
 问题又来了，我们的 compose 经过一顿骚操作后得到的一组结构相同的函数，最终合并成一个函数。
