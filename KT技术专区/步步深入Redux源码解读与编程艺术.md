@@ -73,7 +73,11 @@ Redux 是 JavaScript 状态容器，提供可预测化的状态管理方案, 官
 
 为此，需要一个库，来作为更加牛逼、专业的顶层 state 发给各组件，于是，我们引入了 redux，这就是 redux 的简单理解。
 
-这就是我们总能看到，为啥在根App组件都有这么个玩意了。
+> 有小伙伴提出，Provider 是 react-redux 库的东西，没错，这是阿宽的锅，由于上边潜意识的把 react 与 redux 联系在一起的了，给大家造成了误会！
+
+> 💥 再一次声明，redux 跟 react 没啥关系 !!! 
+
+这就是我们为啥在 `react` 项目中，总能看到，在根App组件都有这么个玩意了。
 
 ```js
 function App() {
@@ -97,7 +101,9 @@ function App() {
 
 #### Store
 
-`store` 是由 Redux 提供的 `createStore(reducers, preloadedState, enhancer)` 方法生成。从函数签名看出，要想生成 store，必须要传入 reducers，同时也可以传入第二个可选参数初始化状态(preloadedState)。第三个参数一般为中间件 `applyMiddleware(thunkMiddleware)`，看看代码，比较直观
+`store` 是由 Redux 提供的 `createStore(reducers, preloadedState, enhancer)` 方法生成。从函数签名看出，要想生成 store，必须要传入 reducers，同时也可以传入第二个可选参数初始化状态(preloadedState)。
+
+第三个参数一般为中间件 `applyMiddleware(thunkMiddleware)`，看看代码，比较直观
 
 ```javascript
 import { createStore, applyMiddleware } from 'redux'
@@ -410,7 +416,7 @@ function dispatch(action) {
 }
 ```
 
-不是吧，阿 sir，这么严格，前边就做了各种限制，下边这段 `try {} finally {}` 也是神操作啊，为了保证 `isDispatch`在函数内部状态的一致，在 finally 的时候都会将其改为 `false`。牛掰～
+不是吧，阿 sir，这么严格，前边就做了各种限制判断，下边这段 `try {} finally {}` 也是神操作啊，为了保证 `isDispatch`在函数内部状态的一致，在 finally 的时候都会将其改为 `false`。牛掰～
 
 从源码注释里边，我也看到这么一段话 ～
 
@@ -418,7 +424,7 @@ function dispatch(action) {
 
 > You may then call `getState()` to read the current state tree inside the callback.
 
-意味着，当你执行了之前订阅的函数 listener 之后，你必须，通过 `store.getState()` 去那最新的数据。因为这个订阅函数 listener 是没有参数的，真的很严格。
+意味着，**当你执行了之前订阅的函数 listener 之后，你必须，通过 `store.getState()` 去那最新的数据**。因为这个订阅函数 listener 是没有参数的，真的很严格。
 
 <img src="https://user-gold-cdn.xitu.io/2020/6/6/172883732b66a752?w=279&h=181&f=png&s=142177" width=300 />
 
@@ -446,7 +452,7 @@ const mapDispatchToProps => dispatch => {
 我们来说说，这个 `bindActionCreators` 它到底做了什么事情。首先来看官方源码注释：
 
 - 将值为 action creators 的对象转换为具有相同键的对象
-- 将每个函数包装为“dispatch”调用，以便可以直接调用它们
+- 将每个函数包装为`dispatch`调用，以便可以直接调用它们
 - 当然你也可以调用 `store.dispatch(MyActionCreator.doSomething)`
 
 ```js
@@ -544,7 +550,7 @@ const mapDispatchToProps => dispatch => {
 }
 ```
 
-问题知道在哪了吧，所以如何解决呢，我个人看法， 你要么就 actionName 不要一样，可以叫 `changePengAge`、`changeKuanAge`，要么就是多包一个对象。
+问题知道在哪了吧，所以如何解决呢，我个人看法， 你要么就 actionName 不要一样，可以叫 `changePengAge`、`changeKuanAge`，要么就是多包一层～
 
 ```js
 const mapDispatchToProps => dispatch => {
@@ -561,7 +567,7 @@ const mapDispatchToProps => dispatch => {
 
 ### combineReducers
 
-既然前边都说了，整个应用的 `state` 都存储在一颗 state tree 中，并且**只存在于唯一一个 store 中**, 那么我们来看看这究竟是何方神圣～
+既然前边都说了，整个应用的 `state` 都存储在一颗 state tree 中，并且<span style="color: #FA5523">只存在于唯一一个 store 中<span>, 那么我们来看看这究竟是何方神圣～
 
 小彭项目初次搭建的时候，要求小，状态管理比较方便，所以呢，都放在了一个 reducer 中，后边随着不断迭代，于是不断的往这个 `reducer` 中塞数据。
 
@@ -686,7 +692,7 @@ function pengReducer(state = initialState, action) {
 const nextStateForKey = reducer(previousStateForKey, action)
 ```
 
-这里主要就是，得到通过 reducer 执行之后的 state，它不是一个 key，它是一个 state，然后呢，往下继续执行了这行代码～
+这里主要就是，得到通过 reducer 执行之后的 state，它不是一个 key，它是一个 state ，然后呢，往下继续执行了这行代码～
 
 ```js
 hasChanged = hasChanged || nextStateForKey !== previousStateForKey
@@ -694,7 +700,7 @@ hasChanged = hasChanged || nextStateForKey !== previousStateForKey
 
 比较新旧两个对象是否一致，进行的是`浅比较法`，所以，当我们 reducer 直接返回旧的 state 对象时，Redux 认为没有任何改变，从而导致页面没有更新。
 
-> ❓ 这就是为什么！返回旧的 state 不行，需要返回一个新的 state 原因。我们都知道啊，在 JS 中，比较两个对象是否完全一样，那只能**深比较**，然而，深比较在真实的应用中代码是非常大的，非常耗性能的，并且如果你的对象嵌套足够神，那么需要比较的次数特别多～
+这就是为什么！返回旧的 state 不行，需要返回一个新的 state 原因。我们都知道啊，<span style="color: #FA5523">在 JS 中，比较两个对象是否完全一样，那只能深比较</span>，然而，深比较在真实的应用中代码是非常大的，非常耗性能的，并且如果你的对象嵌套足够神，那么需要比较的次数特别多～
 
 所以 redux 就采取了一个较为“委婉”的解决方案：当无论发生任何变化时，都要返回一个新的对象，没有变化时，返回旧的对象～
 
@@ -730,6 +736,12 @@ function demo2() {
 在函数式编程语言中，数据是不可变的，所有的数据一旦产生，就不能改变其中的值，如果要改变，那就只能生成一个新的数据。
 
 可能有些小伙伴会有过这个库 : `seamless-immutable` ，在 redux 中，强调了，不能直接修改 state 的值（上边有说了，不听课的，出去吃屁），只能返回一个新的 state ～
+
+> 额外补充一下，下边的两句话引用来自 `Dan Abramov` 的博客: [How Are Function Components Different from Classes?](https://overreacted.io/how-are-function-components-different-from-classes/)
+
+> 在 react 中，我们从 `this.props.xxx` 中读取数据。为什么我们可以得到最新的实例？其实不是因为 props 改变了，在 React 中 Props 是不可变(immutable)的，他们永远不会改变。然而，this是，而且永远是，可变(mutable)的。
+
+> 这就是 react 类组件 this 存在的意义。React本身会随着时间的推移而改变，以便你可以在渲染方法以及生命周期方法中得到最新的实例。
 
 3. 函数只接受一个参数
 
@@ -971,7 +983,7 @@ dispatch = chain1(chain2(chain3(store.dispatch)))
 chain1、chain2、chain3 就是 chain 中的元素，进行了一次柯里化，稳。dispatch 在这里边扮演了什么角色？
 
 - 绑定了各个中间件的 next，说了 next 实际上就是 store.dispatch
-- 暴露一个接口用来接受 action
+- 暴露一个接口用来接收 action
 
 > 你可以这么理解，中间件其实就是我们自定义了一个 dispatch，然后这个 dispatch 会按照洋葱模型进行 pipe
 
@@ -991,10 +1003,15 @@ let middlewareAPI = {
 
 到了这一步，还没听懂的小伙伴，可以再多看一遍，正所谓温故而知新，多看看，多捋捋，就能知道啦～
 
-这篇文章写了我五天，设计到的知识点略多，可以说是有些知识点，现学现用，不过问题不大，因为延伸的知识点不是本文的重点～通过写这篇文章，可以说是加深了我对 redux 的认识。不知道有没有小伙伴跟我一样，想去看源码，正面刚，刚不过，去看一些博客文章对其解读，又太难，可能我没 get 到作者想表达的意思，或者是对于其中的一些知识点，一带而过，所以我想把我遇到的问题，在学习的路上踩到的坑，跟大家一同分享，当然我的理解也不一定正确，理解有误可一同交流。奥力给，不说了，我去准备动手做 demo 了，期待下一篇吧 ～
+这篇文章写了我五天，涉及到的知识点略多，可以说是有些知识点，现学现用，不过问题不大，因为延伸的知识点不是本文的重点～通过写这篇文章，可以说是加深了我对 redux 的认识。不知道有没有小伙伴跟我一样，想去看源码，正面刚，刚不过，于是辗转战场，决定去看一些博客文章的解读，又太难，可能是我没 get 到作者想表达的意思？并且对于其中的一些知识点，博主一带而过。这就让我不知道上下游是什么，生硬的看，然后马上就忘。
+
+所以有了这个【KT】专栏，我想把我遇到的问题，在学习的路上踩到的坑，跟大家一同分享，当然我的理解也不一定正确，理解有误可一同交流。奥力给，不说了，我去准备动手做 demo 了，期待下一篇吧 ～
+
+> 别问，问就是我也有自己公众号，不过我不会公开，公众号是17年开通的，起初是自己想写一些身边朋友的故事（比较非主流）后来由于自己写的博客文章被偷到一些公众号上，为了维护原创，你懂的～
 
 ## 相关链接
 
 - [阿宽的博客](https://github.com/PDKSophia/blog.io)
 - [redux 源码](https://github.com/reduxjs/redux/tree/master/src)
 - [redux 之洋葱模型的源码分析与感悟](https://cloud.tencent.com/developer/news/41333)
+- [Dan Abramov](https://overreacted.io/) `推荐可以看一下他的博客`
