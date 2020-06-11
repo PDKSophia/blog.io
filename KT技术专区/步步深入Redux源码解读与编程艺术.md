@@ -53,7 +53,7 @@ Redux 是 JavaScript 状态容器，提供可预测化的状态管理方案, 官
 
 要理解 redux 是啥子，先看我画的一个图 👇
 
-![](https://user-gold-cdn.xitu.io/2020/5/26/1725055b47ae7ebf?w=1742&h=230&f=png&s=42996)
+<img src="https://user-gold-cdn.xitu.io/2020/6/11/172a12549f9fb399?w=1746&h=190&f=png&s=29559" width=650 />
 
 我们知道哈，react 中，有 props 和 state，当我们想从父组件给子组件传递数据的时候，可通过 props 进行数据传递，如果我们想在组件内部自行管理状态，那可以选择使用 state。但是呢，我们忽略了 react 的自身感受～
 
@@ -63,11 +63,13 @@ Redux 是 JavaScript 状态容器，提供可预测化的状态管理方案, 官
 
 我们模拟一个场景，Peng 组件和 Kuan 组件想共享互相交换一些数据，按照 react 单向数据流的方式，该怎么解决？
 
-<img src="https://user-gold-cdn.xitu.io/2020/5/26/1725069be0973d81?w=1454&h=904&f=png&s=130955" width=600 />
+<img src="https://user-gold-cdn.xitu.io/2020/6/11/172a1244639f47cd?w=1156&h=816&f=png&s=62503" width=520 />
 
 这个图应该都看得懂哈，也就是说，我们兄弟组件想互相交流，交换对方的数据，那么唯一的解决方案就是：**提升 state**，将原本 Peng、Kuan 组件的 state 提升到共有的父组件中管理，然后由父组件向下传递数据。子组件进行处理，然后回调函数回传修改 state，这样的 state 一定程度上是响应式的。
 
 <img src="https://user-gold-cdn.xitu.io/2018/8/1/164f4bd707704a5c?w=300&h=230&f=jpeg&s=9018" width=200 />
+
+
 
 这会存在什么问题？你会发现如果你想共享数据，你得把所有需要共享的 state 集中放到所有组件顶层，然后分发给所有组件。
 
