@@ -128,7 +128,7 @@ function User() {
 
 但是 hox，你不使用 createModel 时，它就是一个业务 hooks，随时建，随时用，会导致后期维护非常麻烦，特别是无 dev-tools 下，你根本不知道哪些 hooks 是变成了持久化、全局共享的 model hooks
 
-> 会不会有一种情况，那就是 A 在开发的时候，一开始它写的就是一个业务 hooks，后边它需要把这个数据变成全局共享，于是它直接在当前目录下，直接用 `createModel` 包一下，完事，后边的开发人员发现有人这样写了，照猫画虎，渐渐的... 这就是典型的“破窗效应”啊
+> 会不会有一种情况，那就是 A 在开发的时候，一开始它写的就是一个业务 hooks，后边它需要把这个数据变成全局共享，于是它直接在当前目录下，直接用 `createModel` 包一下，完事，后边的开发人员发现有人这样写了，照猫画虎，渐渐的就成为了一种"规范"... 这就是典型的“破窗效应”啊
 
 > 破窗效应 : 一幢有少许破窗的建筑，如果那些窗不被修理好，可能将会有破坏者破坏更多的窗户。一面墙，如果出现一些涂鸦没有被清洗掉，很快的，墙上就布满了乱七八糟、不堪入目的东西
 
@@ -144,7 +144,7 @@ function User() {
 
 这才是痛点 ！！！**你想想，我们使用了 createModel 包裹之后，如何知道这个数据是否真的被持久化、全局共享呢** ？
 
-常规操作就是，在组件中 import 这个数据源，然后 console.log 打印看看，但是在 [redux-devtools](https://github.com/reduxjs/redux-devtools) 插件下，我们可以直接看到这颗 state tree 的。这就很方便了。
+常规操作就是，在组件中 import 这个数据源，然后 console.log 打印看看，但是如果是使用redux，那么我们可以在 [redux-devtools](https://github.com/reduxjs/redux-devtools) 插件下，直接看到这颗 state tree 的。这就很方便了。
 
 比如我想看看 user 下是否存在我想要的字段，那么我只需要在插件中看一下 state tree
 
@@ -189,6 +189,7 @@ render(
 
 ```js
 function Executor(props) {
+  // 原逻辑代码，巴拉巴拉xxxx
   // 下边这段代码是新增的
   if (!window.hox) {
     window.hox = {}
@@ -334,7 +335,9 @@ format = (model) => {
 
 <img src="https://user-gold-cdn.xitu.io/2020/7/23/173799e504224e76?w=638&h=741&f=png&s=91696" width=400 />
 
-## 缺点
+> 这个还是有点小问题的，后期打算优化一波，问题不大，大家知道一下思路就好～
+
+## 提问环节
 
 如果我代码这么写，你们觉得有什么问题吗?
 
@@ -367,7 +370,7 @@ export default createModel(useSelectClass)
 
 如果我是一个新人，我就只会 react，什么 redux、什么 dva、mobx 我都不会，我就只想写一些小项目，那么我会选择 hox ～～
 
-对于小项目，可能需要 store 存储的字段比较少，那么配上简陋版本的 dev-tools，hox 或许会比较香，引入 redux 那套 action->saga->reducer 等，前期投入比较大，但是对于大项目，还是用 redux 吧，毕竟 redux 算比较成熟，生态圈也很丰富
+对于小项目，可能需要 store 存储的字段比较少，那么配上简陋版本的 dev-tools，那么hox 或许比较适合此场景，如果引入 redux 那套 action->saga->reducer 等，前期投入比较大；但是对于大项目，还是用 redux 吧，毕竟 redux 算比较成熟，生态圈也很丰富
 
 个人还是觉得 hox 这个设计思想还是挺不错的，但是我很担心一点，那就是 : **这会不会是一个 KPI 的产物，到后期没人维护，也没人更新。**
 
