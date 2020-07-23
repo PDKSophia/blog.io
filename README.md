@@ -40,6 +40,10 @@ github : https://github.com/PDKSophia
 
 ## ⏳ 最新文章
 
+- [【KT】hox 的实践感受及零开发写了个组件版的 dev-tools](./KT技术专区/hox的实践感受及零开发写了个组件版的dev-tools.md)`[📌 update on 2020-07-23 ]`
+
+- [【KT】查缺补漏 React 状态管理](./KT技术专区/查缺补漏React状态管理.md)`[📌 update on 2020-07-22 ]`
+
 - [【KT】步步深入 Redux 源码解读与编程艺术](./KT技术专区/步步深入Redux源码解读与编程艺术.md)`[📌 update on 2020-06-08 ]`
 
 - [【KT】浅谈前端设计模式](./KT技术专区/浅谈前端设计模式.md) `[📌 update on 2020-04-26 ]`
