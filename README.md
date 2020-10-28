@@ -18,7 +18,9 @@
 
 博主是一枚 2019 应届生，因为当时很多大厂的校招已经打响，博主前两天也通过学长学姐们，内推了些大公司，简历一关应该都能过，所以得开始准备一下面试，得复习一哈，在这边的会记录我面试准备看的些书籍和知识点，如果有兴趣的小伙伴，可以看看哦 ~
 
-所有的内容都是结合自己平常复习面试以及面试官提问，还有看《面试图谱》进行的归纳总结，包括会整理自己日常工作中踩到的坑，如果觉得哪个地方写错误导大家的，麻烦邮件私一下我，我会进行修改更正，最重要的是，**如有转载，请注明原出处！！！**并且邮箱告知一声！谢谢！毕竟我总结写的也不容易，辛苦各位。
+`所有的内容都是结合自己平常复习面试以及面试官提问，还有看《面试图谱》进行的归纳总结，包括会整理自己日常工作中踩到的坑`，如果觉得哪个地方写错误导大家的，麻烦邮件私一下我，我会进行修改更正，最重要的是，**如有转载，请注明原出处**！！！并且邮箱告知一声！谢谢！毕竟我总结写的也不容易，辛苦各位。
+
+接下来会有一个书单专区，除了书籍打卡，更多的是一个知识技术体系的梳理和复习，感兴趣的可以看看 : [read-booklist](https://github.com/PDKSophia/read-booklist)
 
 ## 客官，点个赞?
 
@@ -38,11 +40,15 @@ github : https://github.com/PDKSophia
 
 邮箱 : 1063137960@qq.com
 
+STSC : https://github.com/SugarTurboS
+
 ## ⏳ 最新文章
 
-- [【开源项目】rc-redux-model从0到1](./KT技术专区/【开源项目】rc-redux-model%20从0到1.md) `[📌 update on 2020-08-23 ]`
+- [【KT】简易 react 脚手架](./KT技术专区/简易react脚手架.md) `[📌 update on 2020-10-28 ]`
 
-- [【开源项目】rc-redux-model介绍](./KT技术专区/【开源项目】rc-redux-model介绍.md) `[📌 update on 2020-08-23 ]`
+- [【KT】rc-redux-model 从 0 到 1](./KT技术专区/【开源项目】rc-redux-model%20从0到1.md) `[📌 update on 2020-08-23 ]`
+
+- [【KT】rc-redux-model 介绍](./KT技术专区/【开源项目】rc-redux-model介绍.md) `[📌 update on 2020-08-23 ]`
 
 - [【KT】hox 的实践感受及零开发写了个组件版的 dev-tools](./KT技术专区/hox的实践感受及零开发写了个组件版的dev-tools.md)`[📌 update on 2020-07-23 ]`
 
@@ -170,10 +176,23 @@ github : https://github.com/PDKSophia
 
 - [Redux 的内幕（一）](./React笔记/React篇-Redux的内幕（一）.md) `· new`
 - [Redux 的内幕（二）](./React笔记/React篇-Redux的内幕（二）.md) `· new`
+- [步步深入 Redux 源码解读与编程艺术](./KT技术专区/步步深入Redux源码解读与编程艺术.md) `· hot`
 - [React 合成事件的背后故事](./React笔记/React篇-React合成事件的背后故事.md) `· hot`
 - [从源码看 React 的生命周期](./React笔记/React篇-从源码看React的生命周期.md)
 - [Vue 和 React 中 key 的作用吗](./React笔记/React篇-关于Vue和React中key的作用.md)
 - [今天的考核题目: 你知道 Vue 和 React 的区别吗?](./React笔记/React篇-React和Vue的区别.md) `· hot`
+- [简易 react 脚手架](./KT技术专区/简易react脚手架.md) `· hot`
+- [rc-redux-model 从 0 到 1](./KT技术专区/【开源项目】rc-redux-model%20从0到1.md)
+- [rc-redux-model 介绍](./KT技术专区/【开源项目】rc-redux-model介绍.md)
+- [hox 的实践感受及零开发写了个组件版的 dev-tools](./KT技术专区/hox的实践感受及零开发写了个组件版的dev-tools.md)
+- [查缺补漏 React 状态管理](./KT技术专区/查缺补漏React状态管理.md) `· hot`
+- [前端渣渣使用 react hooks 进行重构的新认识](./工作笔记/工作篇-前端渣渣使用react_hooks进行重构的新认识.md)
+
+### 设计思考
+
+- [浅谈前端设计模式](./KT技术专区/浅谈前端设计模式.md) `· hot`
+- [前端渣渣对 UI 组件开发的新认识](./工作笔记/工作篇-前端渣渣开发共公组件的思考.md)
+- [前端渣渣对手把手开发公共组件的思考和设计](./工作笔记/React篇-前端渣渣对手把手开发公共组件的思考和设计.md) `· hot`
 
 ### 🦉 算法
 
@@ -220,13 +239,13 @@ github : https://github.com/PDKSophia
 
 erek-resumes 云简历平台是由彭道宽完成，致力于为简历差劲不懂如何制作简历的同学在线制作一份较为完美的简历。
 
-📢 更多介绍看这里 : [erek-resumes](https://github.com/PDKSophia/erek-resume/blob/master/docs/README.md)
+📢 更多介绍看这里 : [erek-resumes](https://github.com/PDKSophia/erek-resume)
 
 ### 📈 vue-erek-manage
 
 Vue-Erek-Manage 是一款基于 Vue 2.5 + iView UI 的后台管理, 借鉴模仿 pro-ant-design 的设计，👉 适用于小型项目后台管理，个人维护项目
 
-📢 更多介绍看这里 : [vue-erek-manage](https://github.com/PDKSophia/vue-erek-manage/blob/master/README.md)
+📢 更多介绍看这里 : [vue-erek-manage](https://github.com/PDKSophia/vue-erek-manage)
 
 ### 📕 read-booklist
 
@@ -234,12 +253,39 @@ read-booklist 书库，书中自有黄金屋，书中自有颜如玉，人丑就
 
 📢 更多介绍看这里 : [read-booklist](https://github.com/PDKSophia/read-booklist/blob/master/README.md)
 
-## 🍓 书单打卡
+## 开源项目
+
+### rc-redux-model
+
+✍️ 提供一种较为舒适的数据状态管理书写方式，让你简洁优雅的去开发；内部自动生成 action, 只需记住一个 action，可以修改任意的 state 值，方便简洁，释放你的 CV 键～
+
+📢 更多介绍看这里 : [rc-redux-model](https://github.com/SugarTurboS/rc-redux-model)
+
+### sugar-hox-devtools
+
+hox 库的 Model 数据展示组件，更多功能计划中
+
+📢 更多介绍看这里 : [sugar-hox-devtools](https://github.com/SugarTurboS/sugar-hox-devtools)
+
+## 开源组织 STSC
+
+SugarTurboS Club 开源组织委员会成员，内部土拨鼠分享大会负责人，欢迎大家的加入，目前开源组织的相关建设也需要大家的支持～
+
+- 官网 : https://sugarturbos-1a0e94-1303212867.tcloudbaseapp.com （备案中，临时域名）
+- 组织 : https://github.com/SugarTurboS
+- 掘金 ： https://juejin.im/user/3526889001458910
+- 博客 : https://github.com/SugarTurboS/Blogs
+- 社区 : https://github.com/SugarTurboS/Sugar-Community
+
+## 书单打卡
 
 下边是 `2019-2020` 年度的书单，很抱歉，立下的 Flag 没能做到，因为前段时间忙于毕业设计，毕业旅行，已经其他事情耽搁，现已经毕业入职工作，更没时间读书了，但是，不学习怎么能行，所以现在重新拾回书单，感兴趣的可以一起学习哈，如果有好的书籍推荐，可以提 `issues`
 
 > 📢 书单里的书是自己列的，有些书只是挂起，但还没时间读，同时，在读书中，可能会跑去读其他不在此书单中的书，也就是会阶段性的更新书单 ~
 
+> 2020-10-28 更新，很快 2020 年就要结束了，也读了一两本书，但是没时间整理总结，接下来会开一个专区，用于技术知识的扩展和复习，欢迎大家加入～ 一起奥利给！！！
+
+<!--
 | Serial number |                  BookName                   | Estimated StartTime | Estimated EndTime |                         Status                          |
 | :-----------: | :-----------------------------------------: | :-----------------: | :---------------: | :-----------------------------------------------------: |
 |       1       |     《JavaScript 高级程序设计 第 3 版》     |    📆 2018-11-05    |   📆 2018-11-26   |    ![](https://img.shields.io/badge/FINISH-blue.svg)    |
@@ -265,7 +311,7 @@ read-booklist 书库，书中自有黄金屋，书中自有颜如玉，人丑就
 |      21       |            《了不起到 Node.js》             |     ⏳Tentative     |    ⏳Tentative    |  ![](https://img.shields.io/badge/UNREAD-inactive.svg)  |
 |      22       |               《黑客与画家》                |     ⏳Tentative     |    ⏳Tentative    |  ![](https://img.shields.io/badge/UNREAD-inactive.svg)  |
 |      23       |              《丑陋的中国人》               |     ⏳Tentative     |    ⏳Tentative    |  ![](https://img.shields.io/badge/UNREAD-inactive.svg)  |
-|      24       |      《程序员修炼之道——从小工到专家》       |     ⏳Tentative     |    ⏳Tentative    |  ![](https://img.shields.io/badge/UNREAD-inactive.svg)  |
+|      24       |      《程序员修炼之道——从小工到专家》       |     ⏳Tentative     |    ⏳Tentative    |  ![](https://img.shields.io/badge/UNREAD-inactive.svg)  | -->
 
 ### 吐槽一下
 
