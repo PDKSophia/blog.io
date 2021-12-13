@@ -1,9 +1,19 @@
+<!--
+ * @Description:
+ * @Author: pengdaokuan
+ * @LastEditors: pengdaokuan
+ * @Date: 2020-06-27 16:53:36
+ * @LastEditTime: 2021-12-13 13:22:47
+-->
+
 ## 算法笔记
 
-📝 这里记录一些常见的算法题，或者是最基础的排序算法，包括 《剑指 offer》的数据结构算法
+📝 这里将会记录前端面试中常见的算法
 
-- [排序算法](./排序算法/README.md)
+主要分为：
 
-- [常见的面试题](./常见的面试题.md)
-
-- [剑指 offer](./剑指offer部分算法/README.md)
+1. 《算法图解》
+2. 排序算法
+3. 常见面试题
+4. 《剑指 offer》
+5. leet-code
